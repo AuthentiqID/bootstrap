@@ -104,7 +104,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
 
     $('#less-variables-section input')
       .each(function () {
-        $(this).val() && (vars[$(this).prev().text()] = $(this).val())
+        $(this).val() && (vars[$(this).data('var')] = $(this).val())
       })
 
     var data = {
@@ -296,7 +296,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
 
     $('#less-variables-section input')
       .each(function () {
-        $(this).val() && (vars[$(this).prev().text()] = $(this).val())
+        $(this).val() && (vars[$(this).data('var')] = $(this).val())
       })
 
     var bsLessSource    = preamble + generateLESS('bootstrap.less', lessFileIncludes, vars)

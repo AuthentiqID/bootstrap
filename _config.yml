@@ -10,17 +10,17 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-url:              http://getbootstrap.com
+url:              http://theme.authentiq.io/
 encoding:         UTF-8
 
 # Custom vars
 current_version:  3.3.4
-repo:             https://github.com/twbs/bootstrap
+repo:             https://github.com/AuthentiqID/bootstrap
 sass_repo:        https://github.com/twbs/bootstrap-sass
 
 download:
-  source:         https://github.com/twbs/bootstrap/archive/v3.3.4.zip
-  dist:           https://github.com/twbs/bootstrap/releases/download/v3.3.4/bootstrap-3.3.4-dist.zip
+  source:         https://github.com/AuthentiqID/bootstrap/archive/v3.3.4.zip
+  dist:           https://github.com/AuthentiqID/bootstrap/releases/download/v3.3.4/bootstrap-3.3.4-dist.zip
   sass:           https://github.com/twbs/bootstrap-sass/archive/v3.3.4.tar.gz
 
 blog:             http://blog.getbootstrap.com
