@@ -37,16 +37,16 @@ h4 code {
 
 /* Outline button for use within the docs */
 .btn-outline {
-  color: #563d7c;
+  color: #895fc0;
   background-color: transparent;
-  border-color: #563d7c;
+  border-color: #895fc0;
 }
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #895fc0;
+  border-color: #895fc0;
 }
 
 /* Inverted outline button (white on dark) */
@@ -58,7 +58,7 @@ h4 code {
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
 .btn-outline-inverse:active {
-  color: #563d7c;
+  color: #895fc0;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
@@ -71,7 +71,7 @@ h4 code {
   color: #fff;
   text-align: center;
   cursor: default;
-  background-color: #563d7c;
+  background-color: #895fc0;
   border-radius: 15%;
 }
 .bs-docs-booticon-sm {
@@ -87,7 +87,7 @@ h4 code {
   line-height: 140px;
 }
 .bs-docs-booticon-inverse {
-  color: #563d7c;
+  color: #895fc0;
   background-color: #fff;
 }
 .bs-docs-booticon-outline {
@@ -138,7 +138,7 @@ h4 code {
 .bs-docs-nav .navbar-brand,
 .bs-docs-nav .navbar-nav > li > a {
   font-weight: 500;
-  color: #563d7c;
+  color: #895fc0;
 }
 .bs-docs-nav .navbar-nav > li > a:hover,
 .bs-docs-nav .navbar-nav > .active > a,
@@ -147,7 +147,7 @@ h4 code {
   background-color: #f9f9f9;
 }
 .bs-docs-nav .navbar-toggle .icon-bar {
-  background-color: #563d7c;
+  background-color: #895fc0;
 }
 .bs-docs-nav .navbar-header .navbar-toggle {
   border-color: #fff;
@@ -241,11 +241,11 @@ h4 code {
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
   background-color: #6f5499;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));
-  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
-  background-image:      -o-linear-gradient(top, #563d7c 0%, #6f5499 100%);
-  background-image:         linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#895fc0), to(#6f5499));
+  background-image: -webkit-linear-gradient(top, #895fc0 0%, #6f5499 100%);
+  background-image:      -o-linear-gradient(top, #895fc0 0%, #6f5499 100%);
+  background-image:         linear-gradient(to bottom, #895fc0 0%, #6f5499 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#895FC0', endColorstr='#6F5499', GradientType=0);
   background-repeat: repeat-x;
 }
 
@@ -591,19 +591,19 @@ h4 code {
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
   padding-left: 19px;
-  color: #563d7c;
+  color: #895fc0;
   text-decoration: none;
   background-color: transparent;
-  border-left: 1px solid #563d7c;
+  border-left: 1px solid #895fc0;
 }
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
-  color: #563d7c;
+  color: #895fc0;
   background-color: transparent;
-  border-left: 2px solid #563d7c;
+  border-left: 2px solid #895fc0;
 }
 
 /* Nav: second level (shown on .active) */
@@ -642,7 +642,7 @@ h4 code {
 }
 .back-to-top:hover,
 .bs-docs-theme-toggle:hover {
-  color: #563d7c;
+  color: #895fc0;
   text-decoration: none;
 }
 .bs-docs-theme-toggle {
@@ -775,6 +775,10 @@ h1[id] {
   width: 60px;
   height: 60px;
   margin: 0 5px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
   border-radius: 3px;
 }
 
@@ -782,6 +786,7 @@ h1[id] {
   .color-swatch {
     width: 100px;
     height: 100px;
+    line-height: 100px;
   }
 }
 
@@ -819,7 +824,7 @@ h1[id] {
 
 /* Docs colors */
 .color-swatches .bs-purple {
-  background-color: #563d7c;
+  background-color: #895fc0;
 }
 .color-swatches .bs-purple-light {
   background-color: #c7bfd3;
@@ -829,6 +834,10 @@ h1[id] {
 }
 .color-swatches .bs-gray {
   background-color: #f9f9f9;
+}
+
+.color-swatches .bs-orange {
+  background-color: #f26641;
 }
 
 
@@ -845,6 +854,10 @@ h1[id] {
 .bs-team .team-member:hover {
   color: #333;
   text-decoration: none;
+}
+.bs-team .member-role {
+  float: right;
+  width: 280px;
 }
 .bs-team .github-btn {
   float: right;
@@ -1353,7 +1366,7 @@ h1[id] {
 }
 .bs-glyphicons li:hover {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #895fc0;
 }
 
 @media (min-width: 768px) {
@@ -1497,7 +1510,7 @@ h1[id] {
   width: 100%;
   margin-bottom: 15px;
   overflow: hidden;
-  color: #563d7c;
+  color: #895fc0;
   background-color: #f9f9f9;
   border-radius: 4px;
 }
@@ -1512,7 +1525,7 @@ h1[id] {
 }
 .bs-brand-logos .inverse {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #895fc0;
 }
 
 /* Heading content within */
@@ -1581,8 +1594,8 @@ h1[id] {
 }
 .btn-clipboard-hover {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #895fc0;
+  border-color: #895fc0;
 }
 
 @media (min-width: 768px) {
