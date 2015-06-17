@@ -855,6 +855,10 @@ h1[id] {
   color: #333;
   text-decoration: none;
 }
+.bs-team .member-role {
+  float: right;
+  width: 280px;
+}
 .bs-team .github-btn {
   float: right;
   width: 180px;

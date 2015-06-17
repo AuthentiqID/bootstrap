@@ -1,27 +1,14 @@
-- name: Mark Otto
-  user: mdo
-  gravatar: bc4ab438f7a4ce1c406aadc688427f2c
+- name: Stan van de Burgt
+  user: stannie
+  role: Founder
+  gravatar: 6a43bf388245cfad0e86d5aa9b299ad5
 
-- name: Jacob Thornton
-  user: fat
-  gravatar: a98244cbdacaf1c0b55499466002f7a8
+- name: Pieter Ennes
+  user: pennes
+  role: Founder
+  gravatar: 5629e8ee30157e5c9ee496b5748d2c3b
 
-- name: Chris Rebert
-  user: cvrebert
-  gravatar: edec428c425453955f770095a7d26c50
-
-- name: Julian Thilo
-  user: juthilo
-  gravatar: 0f7dd3ce58a416be5685ea6194f82b11
-
-- name: XhmikosR
-  user: xhmikosr
-  gravatar: e37759b1ea0125d4e97b1e00b5eed26f
-
-- name: Heinrich Fenkart
-  user: hnrch02
-  gravatar: 0d53f5d3d3d28bd470f394d98f7ef48f
-
-- name: Patrick H. Lauke
-  user: patrickhlauke
-  gravatar: 357f279672db832fc41a5a2f36559fcb
+- name: Chris Ziogas
+  user: ziogaschr
+  role: iOS & full stack developer
+  gravatar: b7e13c6327ea9b60b5f4a99ea1762026
