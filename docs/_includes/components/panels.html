@@ -76,6 +76,35 @@
 </div>
 {% endhighlight %}
 
+  <h2 id="panels-heading-desc">Panel with heading descriptions</h2>
+  <p>Add description in <code>.panel-heading</code>.</p>
+  <div class="bs-example" data-example-id="contextual-panels">
+    <div class="panel panel-primary">
+      <div class="panel-heading clearfix">
+        <span class="pull-right">secondary description</span>
+        <h3 class="panel-title">Panel title
+          <small>description</small>
+        </h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-primary">
+  <div class="panel-heading clearfix">
+    <span class="pull-right">secondary description</span>
+    <h3 class="panel-title">Panel title
+      <small>description</small>
+    </h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+{% endhighlight %}
+
   <h2 id="panels-alternatives">Contextual alternatives</h2>
   <p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
   <div class="bs-example" data-example-id="contextual-panels">
