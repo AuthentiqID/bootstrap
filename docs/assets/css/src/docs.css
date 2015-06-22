@@ -1380,6 +1380,58 @@ h1[id] {
   }
 }
 
+/*
+ * Material icons
+ *
+ * Special styles for displaying the icons and their classes in the docs.
+ */
+
+.bs-material-icons {
+  margin: 0 -10px 20px;
+  overflow: hidden;
+}
+.bs-material-icons-list {
+  padding-left: 0;
+  list-style: none;
+}
+.bs-material-icons li {
+  float: left;
+  width: 25%;
+  height: 135px;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #fff;
+}
+.bs-material-icons .material-icons {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.bs-material-icons .material-icon-class {
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  word-wrap: break-word; /* Help out IE10+ with class names */
+}
+.bs-material-icons li:hover {
+  color: #fff;
+  background-color: #895fc0;
+}
+
+@media (min-width: 768px) {
+  .bs-material-icons {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .bs-material-icons li {
+    width: 12.5%;
+    font-size: 12px;
+  }
+}
+
 
 /*
  * Customizer
