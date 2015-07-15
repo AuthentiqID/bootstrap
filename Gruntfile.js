@@ -19,6 +19,7 @@ module.exports = function (grunt) {
   var path = require('path');
   var npmShrinkwrap = require('npm-shrinkwrap');
   var generateGlyphiconsData = require('./grunt/bs-glyphicons-data-generator.js');
+  var generateMaterialIconsData = require('./grunt/bs-material-design-icons-data-generator.js');
   var BsLessdocParser = require('./grunt/bs-lessdoc-parser.js');
   var getLessVarsData = function () {
     var filePath = path.join(__dirname, 'less/variables.less');
@@ -498,6 +499,7 @@ module.exports = function (grunt) {
   grunt.registerTask('change-version-number', 'sed');
 
   grunt.registerTask('build-glyphicons-data', function () { generateGlyphiconsData.call(this, grunt); });
+  grunt.registerTask('build-material-icons-data', function () { generateMaterialIconsData.call(this, grunt); });
 
   // task for building customizer
   grunt.registerTask('build-customizer', ['build-customizer-html', 'build-raw-files']);
@@ -518,7 +520,7 @@ module.exports = function (grunt) {
   grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
   grunt.registerTask('docs-js', ['uglify:docsJs', 'uglify:customize']);
   grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
-  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data', 'build-customizer']);
+  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-glyphicons-data', 'build-material-icons-data', 'build-customizer']);
 
   grunt.registerTask('prep-release', ['dist', 'docs', 'jekyll:github', 'htmlmin', 'compress']);
 

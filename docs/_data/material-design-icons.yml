@@ -1,2384 +1,798 @@
-- name: 3d Rotation
-  num: e84d
-
-- name: Access Alarm
-  num: e190
-
-- name: Access Alarms
-  num: e191
-
-- name: Access Time
-  num: e192
-
-- name: Accessibility
-  num: e84e
-
-- name: Account Balance
-  num: e84f
-
-- name: Account Balance Wallet
-  num: e850
-
-- name: Account Box
-  num: e851
-
-- name: Account Circle
-  num: e853
-
-- name: Adb
-  num: e60e
-
-- name: Add
-  num: e145
-
-- name: Add Alarm
-  num: e193
-
-- name: Add Alert
-  num: e003
-
-- name: Add Box
-  num: e146
-
-- name: Add Circle
-  num: e147
-
-- name: Add Circle Outline
-  num: e148
-
-- name: Add Shopping Cart
-  num: e854
-
-- name: Add To Photos
-  num: e39d
-
-- name: Adjust
-  num: e39e
-
-- name: Airline Seat Flat
-  num: e630
-
-- name: Airline Seat Flat Angled
-  num: e631
-
-- name: Airline Seat Individual Suite
-  num: e632
-
-- name: Airline Seat Legroom Extra
-  num: e633
-
-- name: Airline Seat Legroom Normal
-  num: e634
-
-- name: Airline Seat Legroom Reduced
-  num: e635
-
-- name: Airline Seat Recline Extra
-  num: e636
-
-- name: Airline Seat Recline Normal
-  num: e637
-
-- name: Airplanemode Active
-  num: e195
-
-- name: Airplanemode Inactive
-  num: e194
-
-- name: Airplay
-  num: e055
-
-- name: Alarm
-  num: e855
-
-- name: Alarm Add
-  num: e856
-
-- name: Alarm Off
-  num: e857
-
-- name: Alarm On
-  num: e858
-
-- name: Album
-  num: e019
-
-- name: Android
-  num: e859
-
-- name: Announcement
-  num: e85a
-
-- name: Apps
-  num: e5c3
-
-- name: Archive
-  num: e149
-
-- name: Arrow Back
-  num: e5c4
-
-- name: Arrow Drop Down
-  num: e5c5
-
-- name: Arrow Drop Down Circle
-  num: e5c6
-
-- name: Arrow Drop Up
-  num: e5c7
-
-- name: Arrow Forward
-  num: e5c8
-
-- name: Aspect Ratio
-  num: e85b
-
-- name: Assessment
-  num: e85c
-
-- name: Assignment
-  num: e85d
-
-- name: Assignment Ind
-  num: e85e
-
-- name: Assignment Late
-  num: e85f
-
-- name: Assignment Return
-  num: e860
-
-- name: Assignment Returned
-  num: e861
-
-- name: Assignment Turned In
-  num: e862
-
-- name: Assistant
-  num: e39f
-
-- name: Assistant Photo
-  num: e3a0
-
-- name: Attach File
-  num: e226
-
-- name: Attach Money
-  num: e227
-
-- name: Attachment
-  num: e2bc
-
-- name: Audiotrack
-  num: e3a1
-
-- name: Autorenew
-  num: e863
-
-- name: Av Timer
-  num: e01b
-
-- name: Backspace
-  num: e14a
-
-- name: Backup
-  num: e864
-
-- name: Battery Alert
-  num: e19c
-
-- name: Battery Charging Full
-  num: e1a3
-
-- name: Battery Full
-  num: e1a4
-
-- name: Battery Std
-  num: e1a5
-
-- name: Battery Unknown
-  num: e1a6
-
-- name: Beenhere
-  num: e52d
-
-- name: Block
-  num: e14b
-
-- name: Bluetooth
-  num: e1a7
-
-- name: Bluetooth Audio
-  num: e60f
-
-- name: Bluetooth Connected
-  num: e1a8
-
-- name: Bluetooth Disabled
-  num: e1a9
-
-- name: Bluetooth Searching
-  num: e1aa
-
-- name: Blur Circular
-  num: e3a2
-
-- name: Blur Linear
-  num: e3a3
-
-- name: Blur Off
-  num: e3a4
-
-- name: Blur On
-  num: e3a5
-
-- name: Book
-  num: e865
-
-- name: Bookmark
-  num: e866
-
-- name: Bookmark Border
-  num: e867
-
-- name: Border All
-  num: e228
-
-- name: Border Bottom
-  num: e229
-
-- name: Border Clear
-  num: e22a
-
-- name: Border Color
-  num: e22b
-
-- name: Border Horizontal
-  num: e22c
-
-- name: Border Inner
-  num: e22d
-
-- name: Border Left
-  num: e22e
-
-- name: Border Outer
-  num: e22f
-
-- name: Border Right
-  num: e230
-
-- name: Border Style
-  num: e231
-
-- name: Border Top
-  num: e232
-
-- name: Border Vertical
-  num: e233
-
-- name: Brightness 1
-  num: e3a6
-
-- name: Brightness 2
-  num: e3a7
-
-- name: Brightness 3
-  num: e3a8
-
-- name: Brightness 4
-  num: e3a9
-
-- name: Brightness 5
-  num: e3aa
-
-- name: Brightness 6
-  num: e3ab
-
-- name: Brightness 7
-  num: e3ac
-
-- name: Brightness Auto
-  num: e1ab
-
-- name: Brightness High
-  num: e1ac
-
-- name: Brightness Low
-  num: e1ad
-
-- name: Brightness Medium
-  num: e1ae
-
-- name: Broken Image
-  num: e3ad
-
-- name: Brush
-  num: e3ae
-
-- name: Bug Report
-  num: e868
-
-- name: Build
-  num: e869
-
-- name: Business
-  num: e0af
-
-- name: Cached
-  num: e86a
-
-- name: Cake
-  num: e7e9
-
-- name: Call
-  num: e0b0
-
-- name: Call End
-  num: e0b1
-
-- name: Call Made
-  num: e0b2
-
-- name: Call Merge
-  num: e0b3
-
-- name: Call Missed
-  num: e0b4
-
-- name: Call Received
-  num: e0b5
-
-- name: Call Split
-  num: e0b6
-
-- name: Camera
-  num: e3af
-
-- name: Camera Alt
-  num: e3b0
-
-- name: Camera Enhance
-  num: e8fc
-
-- name: Camera Front
-  num: e3b1
-
-- name: Camera Rear
-  num: e3b2
-
-- name: Camera Roll
-  num: e3b3
-
-- name: Cancel
-  num: e5c9
-
-- name: Card Giftcard
-  num: e8f6
-
-- name: Card Membership
-  num: e8f7
-
-- name: Card Travel
-  num: e8f8
-
-- name: Cast
-  num: e307
-
-- name: Cast Connected
-  num: e308
-
-- name: Center Focus Strong
-  num: e3b4
-
-- name: Center Focus Weak
-  num: e3b5
-
-- name: Change History
-  num: e86b
-
-- name: Chat
-  num: e0b7
-
-- name: Chat Bubble
-  num: e0ca
-
-- name: Chat Bubble Outline
-  num: e0cb
-
-- name: Check
-  num: e5ca
-
-- name: Check Box
-  num: e834
-
-- name: Check Box Outline Blank
-  num: e835
-
-- name: Check Circle
-  num: e86c
-
-- name: Chevron Left
-  num: e5cb
-
-- name: Chevron Right
-  num: e5cc
-
-- name: Chrome Reader Mode
-  num: e86d
-
-- name: Class
-  num: e86e
-
-- name: Clear
-  num: e14c
-
-- name: Clear All
-  num: e0b8
-
-- name: Close
-  num: e5cd
-
-- name: Closed Caption
-  num: e01c
-
-- name: Cloud
-  num: e2bd
-
-- name: Cloud Circle
-  num: e2be
-
-- name: Cloud Done
-  num: e2bf
-
-- name: Cloud Download
-  num: e2c0
-
-- name: Cloud Off
-  num: e2c1
-
-- name: Cloud Queue
-  num: e2c2
-
-- name: Cloud Upload
-  num: e2c3
-
-- name: Code
-  num: e86f
-
-- name: Collections
-  num: e3b6
-
-- name: Collections Bookmark
-  num: e431
-
-- name: Color Lens
-  num: e3b7
-
-- name: Colorize
-  num: e3b8
-
-- name: Comment
-  num: e0b9
-
-- name: Compare
-  num: e3b9
-
-- name: Computer
-  num: e30a
-
-- name: Confirmation Number
-  num: e638
-
-- name: Contact Phone
-  num: e0cf
-
-- name: Contacts
-  num: e0ba
-
-- name: Content Copy
-  num: e14d
-
-- name: Content Cut
-  num: e14e
-
-- name: Content Paste
-  num: e14f
-
-- name: Control Point
-  num: e3ba
-
-- name: Control Point Duplicate
-  num: e3bb
-
-- name: Create
-  num: e150
-
-- name: Credit Card
-  num: e870
-
-- name: Crop
-  num: e3be
-
-- name: Crop 16 9
-  num: e3bc
-
-- name: Crop 3 2
-  num: e3bd
-
-- name: Crop 5 4
-  num: e3bf
-
-- name: Crop 7 5
-  num: e3c0
-
-- name: Crop Din
-  num: e3c1
-
-- name: Crop Free
-  num: e3c2
-
-- name: Crop Landscape
-  num: e3c3
-
-- name: Crop Original
-  num: e3c4
-
-- name: Crop Portrait
-  num: e3c5
-
-- name: Crop Square
-  num: e3c6
-
-- name: Dashboard
-  num: e871
-
-- name: Data Usage
-  num: e1af
-
-- name: Dehaze
-  num: e3c7
-
-- name: Delete
-  num: e872
-
-- name: Description
-  num: e873
-
-- name: Desktop Mac
-  num: e30b
-
-- name: Desktop Windows
-  num: e30c
-
-- name: Details
-  num: e3c8
-
-- name: Developer Board
-  num: e30d
-
-- name: Developer Mode
-  num: e1b0
-
-- name: Device Hub
-  num: e335
-
-- name: Devices
-  num: e1b1
-
-- name: Dialer Sip
-  num: e0bb
-
-- name: Dialpad
-  num: e0bc
-
-- name: Directions
-  num: e52e
-
-- name: Directions Bike
-  num: e52f
-
-- name: Directions Boat
-  num: e532
-
-- name: Directions Bus
-  num: e530
-
-- name: Directions Car
-  num: e531
-
-- name: Directions Railway
-  num: e534
-
-- name: Directions Run
-  num: e566
-
-- name: Directions Subway
-  num: e533
-
-- name: Directions Transit
-  num: e535
-
-- name: Directions Walk
-  num: e536
-
-- name: Disc Full
-  num: e610
-
-- name: Dns
-  num: e875
-
-- name: Do Not Disturb
-  num: e612
-
-- name: Do Not Disturb Alt
-  num: e611
-
-- name: Dock
-  num: e30e
-
-- name: Domain
-  num: e7ee
-
-- name: Done
-  num: e876
-
-- name: Done All
-  num: e877
-
-- name: Drafts
-  num: e151
-
-- name: Drive Eta
-  num: e613
-
-- name: Dvr
-  num: e1b2
-
-- name: Edit
-  num: e3c9
-
-- name: Eject
-  num: e8fb
-
-- name: Email
-  num: e0be
-
-- name: Equalizer
-  num: e01d
-
-- name: Error
-  num: e000
-
-- name: Error Outline
-  num: e001
-
-- name: Event
-  num: e878
-
-- name: Event Available
-  num: e614
-
-- name: Event Busy
-  num: e615
-
-- name: Event Note
-  num: e616
-
-- name: Event Seat
-  num: e903
-
-- name: Exit To App
-  num: e879
-
-- name: Expand Less
-  num: e5ce
-
-- name: Expand More
-  num: e5cf
-
-- name: Explicit
-  num: e01e
-
-- name: Explore
-  num: e87a
-
-- name: Exposure
-  num: e3ca
-
-- name: Exposure Neg 1
-  num: e3cb
-
-- name: Exposure Neg 2
-  num: e3cc
-
-- name: Exposure Plus 1
-  num: e3cd
-
-- name: Exposure Plus 2
-  num: e3ce
-
-- name: Exposure Zero
-  num: e3cf
-
-- name: Extension
-  num: e87b
-
-- name: Face
-  num: e87c
-
-- name: Fast Forward
-  num: e01f
-
-- name: Fast Rewind
-  num: e020
-
-- name: Favorite
-  num: e87d
-
-- name: Favorite Border
-  num: e87e
-
-- name: Feedback
-  num: e87f
-
-- name: File Download
-  num: e2c4
-
-- name: File Upload
-  num: e2c6
-
-- name: Filter
-  num: e3d3
-
-- name: Filter 1
-  num: e3d0
-
-- name: Filter 2
-  num: e3d1
-
-- name: Filter 3
-  num: e3d2
-
-- name: Filter 4
-  num: e3d4
-
-- name: Filter 5
-  num: e3d5
-
-- name: Filter 6
-  num: e3d6
-
-- name: Filter 7
-  num: e3d7
-
-- name: Filter 8
-  num: e3d8
-
-- name: Filter 9
-  num: e3d9
-
-- name: Filter 9 Plus
-  num: e3da
-
-- name: Filter B And W
-  num: e3db
-
-- name: Filter Center Focus
-  num: e3dc
-
-- name: Filter Drama
-  num: e3dd
-
-- name: Filter Frames
-  num: e3de
-
-- name: Filter Hdr
-  num: e3df
-
-- name: Filter List
-  num: e152
-
-- name: Filter None
-  num: e3e0
-
-- name: Filter Tilt Shift
-  num: e3e2
-
-- name: Filter Vintage
-  num: e3e3
-
-- name: Find In Page
-  num: e880
-
-- name: Find Replace
-  num: e881
-
-- name: Flag
-  num: e153
-
-- name: Flare
-  num: e3e4
-
-- name: Flash Auto
-  num: e3e5
-
-- name: Flash Off
-  num: e3e6
-
-- name: Flash On
-  num: e3e7
-
-- name: Flight
-  num: e539
-
-- name: Flight Land
-  num: e904
-
-- name: Flight Takeoff
-  num: e905
-
-- name: Flip
-  num: e3e8
-
-- name: Flip To Back
-  num: e882
-
-- name: Flip To Front
-  num: e883
-
-- name: Folder
-  num: e2c7
-
-- name: Folder Open
-  num: e2c8
-
-- name: Folder Shared
-  num: e2c9
-
-- name: Folder Special
-  num: e617
-
-- name: Font Download
-  num: e167
-
-- name: Format Align Center
-  num: e234
-
-- name: Format Align Justify
-  num: e235
-
-- name: Format Align Left
-  num: e236
-
-- name: Format Align Right
-  num: e237
-
-- name: Format Bold
-  num: e238
-
-- name: Format Clear
-  num: e239
-
-- name: Format Color Fill
-  num: e23a
-
-- name: Format Color Reset
-  num: e23b
-
-- name: Format Color Text
-  num: e23c
-
-- name: Format Indent Decrease
-  num: e23d
-
-- name: Format Indent Increase
-  num: e23e
-
-- name: Format Italic
-  num: e23f
-
-- name: Format Line Spacing
-  num: e240
-
-- name: Format List Bulleted
-  num: e241
-
-- name: Format List Numbered
-  num: e242
-
-- name: Format Paint
-  num: e243
-
-- name: Format Quote
-  num: e244
-
-- name: Format Size
-  num: e245
-
-- name: Format Strikethrough
-  num: e246
-
-- name: Format Textdirection L To R
-  num: e247
-
-- name: Format Textdirection R To L
-  num: e248
-
-- name: Format Underlined
-  num: e249
-
-- name: Forum
-  num: e0bf
-
-- name: Forward
-  num: e154
-
-- name: Forward 10
-  num: e056
-
-- name: Forward 30
-  num: e057
-
-- name: Forward 5
-  num: e058
-
-- name: Fullscreen
-  num: e5d0
-
-- name: Fullscreen Exit
-  num: e5d1
-
-- name: Functions
-  num: e24a
-
-- name: Gamepad
-  num: e30f
-
-- name: Games
-  num: e021
-
-- name: Gesture
-  num: e155
-
-- name: Get App
-  num: e884
-
-- name: Gif
-  num: e908
-
-- name: Gps Fixed
-  num: e1b3
-
-- name: Gps Not Fixed
-  num: e1b4
-
-- name: Gps Off
-  num: e1b5
-
-- name: Grade
-  num: e885
-
-- name: Gradient
-  num: e3e9
-
-- name: Grain
-  num: e3ea
-
-- name: Graphic Eq
-  num: e1b8
-
-- name: Grid Off
-  num: e3eb
-
-- name: Grid On
-  num: e3ec
-
-- name: Group
-  num: e7ef
-
-- name: Group Add
-  num: e7f0
-
-- name: Group Work
-  num: e886
-
-- name: Hd
-  num: e052
-
-- name: Hdr Off
-  num: e3ed
-
-- name: Hdr On
-  num: e3ee
-
-- name: Hdr Strong
-  num: e3f1
-
-- name: Hdr Weak
-  num: e3f2
-
-- name: Headset
-  num: e310
-
-- name: Headset Mic
-  num: e311
-
-- name: Healing
-  num: e3f3
-
-- name: Hearing
-  num: e023
-
-- name: Help
-  num: e887
-
-- name: Help Outline
-  num: e8fd
-
-- name: High Quality
-  num: e024
-
-- name: Highlight Off
-  num: e888
-
-- name: History
-  num: e889
-
-- name: Home
-  num: e88a
-
-- name: Hotel
-  num: e53a
-
-- name: Hourglass Empty
-  num: e88b
-
-- name: Hourglass Full
-  num: e88c
-
-- name: Http
-  num: e902
-
-- name: Https
-  num: e88d
-
-- name: Image
-  num: e3f4
-
-- name: Image Aspect Ratio
-  num: e3f5
-
-- name: Import Export
-  num: e0c3
-
-- name: Inbox
-  num: e156
-
-- name: Indeterminate Check Box
-  num: e909
-
-- name: Info
-  num: e88e
-
-- name: Info Outline
-  num: e88f
-
-- name: Input
-  num: e890
-
-- name: Insert Chart
-  num: e24b
-
-- name: Insert Comment
-  num: e24c
-
-- name: Insert Drive File
-  num: e24d
-
-- name: Insert Emoticon
-  num: e24e
-
-- name: Insert Invitation
-  num: e24f
-
-- name: Insert Link
-  num: e250
-
-- name: Insert Photo
-  num: e251
-
-- name: Invert Colors
-  num: e891
-
-- name: Invert Colors Off
-  num: e0c4
-
-- name: Iso
-  num: e3f6
-
-- name: Keyboard
-  num: e312
-
-- name: Keyboard Arrow Down
-  num: e313
-
-- name: Keyboard Arrow Left
-  num: e314
-
-- name: Keyboard Arrow Right
-  num: e315
-
-- name: Keyboard Arrow Up
-  num: e316
-
-- name: Keyboard Backspace
-  num: e317
-
-- name: Keyboard Capslock
-  num: e318
-
-- name: Keyboard Hide
-  num: e31a
-
-- name: Keyboard Return
-  num: e31b
-
-- name: Keyboard Tab
-  num: e31c
-
-- name: Keyboard Voice
-  num: e31d
-
-- name: Label
-  num: e892
-
-- name: Label Outline
-  num: e893
-
-- name: Landscape
-  num: e3f7
-
-- name: Language
-  num: e894
-
-- name: Laptop
-  num: e31e
-
-- name: Laptop Chromebook
-  num: e31f
-
-- name: Laptop Mac
-  num: e320
-
-- name: Laptop Windows
-  num: e321
-
-- name: Launch
-  num: e895
-
-- name: Layers
-  num: e53b
-
-- name: Layers Clear
-  num: e53c
-
-- name: Leak Add
-  num: e3f8
-
-- name: Leak Remove
-  num: e3f9
-
-- name: Lens
-  num: e3fa
-
-- name: Library Add
-  num: e02e
-
-- name: Library Books
-  num: e02f
-
-- name: Library Music
-  num: e030
-
-- name: Link
-  num: e157
-
-- name: List
-  num: e896
-
-- name: Live Help
-  num: e0c6
-
-- name: Live Tv
-  num: e639
-
-- name: Local Activity
-  num: e53f
-
-- name: Local Airport
-  num: e53d
-
-- name: Local Atm
-  num: e53e
-
-- name: Local Bar
-  num: e540
-
-- name: Local Cafe
-  num: e541
-
-- name: Local Car Wash
-  num: e542
-
-- name: Local Convenience Store
-  num: e543
-
-- name: Local Dining
-  num: e556
-
-- name: Local Drink
-  num: e544
-
-- name: Local Florist
-  num: e545
-
-- name: Local Gas Station
-  num: e546
-
-- name: Local Grocery Store
-  num: e547
-
-- name: Local Hospital
-  num: e548
-
-- name: Local Hotel
-  num: e549
-
-- name: Local Laundry Service
-  num: e54a
-
-- name: Local Library
-  num: e54b
-
-- name: Local Mall
-  num: e54c
-
-- name: Local Movies
-  num: e54d
-
-- name: Local Offer
-  num: e54e
-
-- name: Local Parking
-  num: e54f
-
-- name: Local Pharmacy
-  num: e550
-
-- name: Local Phone
-  num: e551
-
-- name: Local Pizza
-  num: e552
-
-- name: Local Play
-  num: e553
-
-- name: Local Post Office
-  num: e554
-
-- name: Local Printshop
-  num: e555
-
-- name: Local See
-  num: e557
-
-- name: Local Shipping
-  num: e558
-
-- name: Local Taxi
-  num: e559
-
-- name: Location City
-  num: e7f1
-
-- name: Location Disabled
-  num: e1b6
-
-- name: Location Off
-  num: e0c7
-
-- name: Location On
-  num: e0c8
-
-- name: Location Searching
-  num: e1b7
-
-- name: Lock
-  num: e897
-
-- name: Lock Open
-  num: e898
-
-- name: Lock Outline
-  num: e899
-
-- name: Looks
-  num: e3fc
-
-- name: Looks 3
-  num: e3fb
-
-- name: Looks 4
-  num: e3fd
-
-- name: Looks 5
-  num: e3fe
-
-- name: Looks 6
-  num: e3ff
-
-- name: Looks One
-  num: e400
-
-- name: Looks Two
-  num: e401
-
-- name: Loop
-  num: e028
-
-- name: Loupe
-  num: e402
-
-- name: Loyalty
-  num: e89a
-
-- name: Mail
-  num: e158
-
-- name: Map
-  num: e55b
-
-- name: Markunread
-  num: e159
-
-- name: Markunread Mailbox
-  num: e89b
-
-- name: Memory
-  num: e322
-
-- name: Menu
-  num: e5d2
-
-- name: Merge Type
-  num: e252
-
-- name: Message
-  num: e0c9
-
-- name: Mic
-  num: e029
-
-- name: Mic None
-  num: e02a
-
-- name: Mic Off
-  num: e02b
-
-- name: Mms
-  num: e618
-
-- name: Mode Comment
-  num: e253
-
-- name: Mode Edit
-  num: e254
-
-- name: Money Off
-  num: e25c
-
-- name: Monochrome Photos
-  num: e403
-
-- name: Mood
-  num: e7f2
-
-- name: Mood Bad
-  num: e7f3
-
-- name: More
-  num: e619
-
-- name: More Horiz
-  num: e5d3
-
-- name: More Vert
-  num: e5d4
-
-- name: Mouse
-  num: e323
-
-- name: Movie
-  num: e02c
-
-- name: Movie Creation
-  num: e404
-
-- name: Music Note
-  num: e405
-
-- name: My Location
-  num: e55c
-
-- name: Nature
-  num: e406
-
-- name: Nature People
-  num: e407
-
-- name: Navigate Before
-  num: e408
-
-- name: Navigate Next
-  num: e409
-
-- name: Navigation
-  num: e55d
-
-- name: Network Cell
-  num: e1b9
-
-- name: Network Locked
-  num: e61a
-
-- name: Network Wifi
-  num: e1ba
-
-- name: New Releases
-  num: e031
-
-- name: Nfc
-  num: e1bb
-
-- name: No Sim
-  num: e0cc
-
-- name: Not Interested
-  num: e033
-
-- name: Note Add
-  num: e89c
-
-- name: Notifications
-  num: e7f4
-
-- name: Notifications Active
-  num: e7f7
-
-- name: Notifications None
-  num: e7f5
-
-- name: Notifications Off
-  num: e7f6
-
-- name: Notifications Paused
-  num: e7f8
-
-- name: Offline Pin
-  num: e90a
-
-- name: Ondemand Video
-  num: e63a
-
-- name: Open In Browser
-  num: e89d
-
-- name: Open In New
-  num: e89e
-
-- name: Open With
-  num: e89f
-
-- name: Pages
-  num: e7f9
-
-- name: Pageview
-  num: e8a0
-
-- name: Palette
-  num: e40a
-
-- name: Panorama
-  num: e40b
-
-- name: Panorama Fish Eye
-  num: e40c
-
-- name: Panorama Horizontal
-  num: e40d
-
-- name: Panorama Vertical
-  num: e40e
-
-- name: Panorama Wide Angle
-  num: e40f
-
-- name: Party Mode
-  num: e7fa
-
-- name: Pause
-  num: e034
-
-- name: Pause Circle Filled
-  num: e035
-
-- name: Pause Circle Outline
-  num: e036
-
-- name: Payment
-  num: e8a1
-
-- name: People
-  num: e7fb
-
-- name: People Outline
-  num: e7fc
-
-- name: Perm Camera Mic
-  num: e8a2
-
-- name: Perm Contact Calendar
-  num: e8a3
-
-- name: Perm Data Setting
-  num: e8a4
-
-- name: Perm Device Information
-  num: e8a5
-
-- name: Perm Identity
-  num: e8a6
-
-- name: Perm Media
-  num: e8a7
-
-- name: Perm Phone Msg
-  num: e8a8
-
-- name: Perm Scan Wifi
-  num: e8a9
-
-- name: Person
-  num: e7fd
-
-- name: Person Add
-  num: e7fe
-
-- name: Person Outline
-  num: e7ff
-
-- name: Person Pin
-  num: e55a
-
-- name: Personal Video
-  num: e63b
-
-- name: Phone
-  num: e0cd
-
-- name: Phone Android
-  num: e324
-
-- name: Phone Bluetooth Speaker
-  num: e61b
-
-- name: Phone Forwarded
-  num: e61c
-
-- name: Phone In Talk
-  num: e61d
-
-- name: Phone Iphone
-  num: e325
-
-- name: Phone Locked
-  num: e61e
-
-- name: Phone Missed
-  num: e61f
-
-- name: Phone Paused
-  num: e620
-
-- name: Phonelink
-  num: e326
-
-- name: Phonelink Erase
-  num: e0db
-
-- name: Phonelink Lock
-  num: e0dc
-
-- name: Phonelink Off
-  num: e327
-
-- name: Phonelink Ring
-  num: e0dd
-
-- name: Phonelink Setup
-  num: e0de
-
-- name: Photo
-  num: e410
-
-- name: Photo Album
-  num: e411
-
-- name: Photo Camera
-  num: e412
-
-- name: Photo Library
-  num: e413
-
-- name: Photo Size Select Actual
-  num: e432
-
-- name: Photo Size Select Large
-  num: e433
-
-- name: Photo Size Select Small
-  num: e434
-
-- name: Picture As Pdf
-  num: e415
-
-- name: Picture In Picture
-  num: e8aa
-
-- name: Pin Drop
-  num: e55e
-
-- name: Place
-  num: e55f
-
-- name: Play Arrow
-  num: e037
-
-- name: Play Circle Filled
-  num: e038
-
-- name: Play Circle Outline
-  num: e039
-
-- name: Play For Work
-  num: e906
-
-- name: Playlist Add
-  num: e03b
-
-- name: Plus One
-  num: e800
-
-- name: Poll
-  num: e801
-
-- name: Polymer
-  num: e8ab
-
-- name: Portable Wifi Off
-  num: e0ce
-
-- name: Portrait
-  num: e416
-
-- name: Power
-  num: e63c
-
-- name: Power Input
-  num: e336
-
-- name: Power Settings New
-  num: e8ac
-
-- name: Present To All
-  num: e0df
-
-- name: Print
-  num: e8ad
-
-- name: Public
-  num: e80b
-
-- name: Publish
-  num: e255
-
-- name: Query Builder
-  num: e8ae
-
-- name: Question Answer
-  num: e8af
-
-- name: Queue
-  num: e03c
-
-- name: Queue Music
-  num: e03d
-
-- name: Radio
-  num: e03e
-
-- name: Radio Button Checked
-  num: e837
-
-- name: Radio Button Unchecked
-  num: e836
-
-- name: Rate Review
-  num: e560
-
-- name: Receipt
-  num: e8b0
-
-- name: Recent Actors
-  num: e03f
-
-- name: Redeem
-  num: e8b1
-
-- name: Redo
-  num: e15a
-
-- name: Refresh
-  num: e5d5
-
-- name: Remove
-  num: e15b
-
-- name: Remove Circle
-  num: e15c
-
-- name: Remove Circle Outline
-  num: e15d
-
-- name: Remove Red Eye
-  num: e417
-
-- name: Reorder
-  num: e8fe
-
-- name: Repeat
-  num: e040
-
-- name: Repeat One
-  num: e041
-
-- name: Replay
-  num: e042
-
-- name: Replay 10
-  num: e059
-
-- name: Replay 30
-  num: e05a
-
-- name: Replay 5
-  num: e05b
-
-- name: Reply
-  num: e15e
-
-- name: Reply All
-  num: e15f
-
-- name: Report
-  num: e160
-
-- name: Report Problem
-  num: e8b2
-
-- name: Restaurant Menu
-  num: e561
-
-- name: Restore
-  num: e8b3
-
-- name: Ring Volume
-  num: e0d1
-
-- name: Room
-  num: e8b4
-
-- name: Rotate 90 Degrees Ccw
-  num: e418
-
-- name: Rotate Left
-  num: e419
-
-- name: Rotate Right
-  num: e41a
-
-- name: Router
-  num: e328
-
-- name: Satellite
-  num: e562
-
-- name: Save
-  num: e161
-
-- name: Scanner
-  num: e329
-
-- name: Schedule
-  num: e8b5
-
-- name: School
-  num: e80c
-
-- name: Screen Lock Landscape
-  num: e1be
-
-- name: Screen Lock Portrait
-  num: e1bf
-
-- name: Screen Lock Rotation
-  num: e1c0
-
-- name: Screen Rotation
-  num: e1c1
-
-- name: Sd Card
-  num: e623
-
-- name: Sd Storage
-  num: e1c2
-
-- name: Search
-  num: e8b6
-
-- name: Security
-  num: e32a
-
-- name: Select All
-  num: e162
-
-- name: Send
-  num: e163
-
-- name: Settings
-  num: e8b8
-
-- name: Settings Applications
-  num: e8b9
-
-- name: Settings Backup Restore
-  num: e8ba
-
-- name: Settings Bluetooth
-  num: e8bb
-
-- name: Settings Brightness
-  num: e8bd
-
-- name: Settings Cell
-  num: e8bc
-
-- name: Settings Ethernet
-  num: e8be
-
-- name: Settings Input Antenna
-  num: e8bf
-
-- name: Settings Input Component
-  num: e8c0
-
-- name: Settings Input Composite
-  num: e8c1
-
-- name: Settings Input Hdmi
-  num: e8c2
-
-- name: Settings Input Svideo
-  num: e8c3
-
-- name: Settings Overscan
-  num: e8c4
-
-- name: Settings Phone
-  num: e8c5
-
-- name: Settings Power
-  num: e8c6
-
-- name: Settings Remote
-  num: e8c7
-
-- name: Settings System Daydream
-  num: e1c3
-
-- name: Settings Voice
-  num: e8c8
-
-- name: Share
-  num: e80d
-
-- name: Shop
-  num: e8c9
-
-- name: Shop Two
-  num: e8ca
-
-- name: Shopping Basket
-  num: e8cb
-
-- name: Shopping Cart
-  num: e8cc
-
-- name: Shuffle
-  num: e043
-
-- name: Signal Cellular 4 Bar
-  num: e1c8
-
-- name: Signal Cellular Connected No Internet 4 Bar
-  num: e1cd
-
-- name: Signal Cellular No Sim
-  num: e1ce
-
-- name: Signal Cellular Null
-  num: e1cf
-
-- name: Signal Cellular Off
-  num: e1d0
-
-- name: Signal Wifi 4 Bar
-  num: e1d8
-
-- name: Signal Wifi 4 Bar Lock
-  num: e1d9
-
-- name: Signal Wifi Off
-  num: e1da
-
-- name: Sim Card
-  num: e32b
-
-- name: Sim Card Alert
-  num: e624
-
-- name: Skip Next
-  num: e044
-
-- name: Skip Previous
-  num: e045
-
-- name: Slideshow
-  num: e41b
-
-- name: Smartphone
-  num: e32c
-
-- name: Sms
-  num: e625
-
-- name: Sms Failed
-  num: e626
-
-- name: Snooze
-  num: e046
-
-- name: Sort
-  num: e164
-
-- name: Sort By Alpha
-  num: e053
-
-- name: Space Bar
-  num: e256
-
-- name: Speaker
-  num: e32d
-
-- name: Speaker Group
-  num: e32e
-
-- name: Speaker Notes
-  num: e8cd
-
-- name: Speaker Phone
-  num: e0d2
-
-- name: Spellcheck
-  num: e8ce
-
-- name: Star
-  num: e838
-
-- name: Star Border
-  num: e83a
-
-- name: Star Half
-  num: e839
-
-- name: Stars
-  num: e8d0
-
-- name: Stay Current Landscape
-  num: e0d3
-
-- name: Stay Current Portrait
-  num: e0d4
-
-- name: Stay Primary Landscape
-  num: e0d5
-
-- name: Stay Primary Portrait
-  num: e0d6
-
-- name: Stop
-  num: e047
-
-- name: Storage
-  num: e1db
-
-- name: Store
-  num: e8d1
-
-- name: Store Mall Directory
-  num: e563
-
-- name: Straighten
-  num: e41c
-
-- name: Strikethrough S
-  num: e257
-
-- name: Style
-  num: e41d
-
-- name: Subject
-  num: e8d2
-
-- name: Subtitles
-  num: e048
-
-- name: Supervisor Account
-  num: e8d3
-
-- name: Surround Sound
-  num: e049
-
-- name: Swap Calls
-  num: e0d7
-
-- name: Swap Horiz
-  num: e8d4
-
-- name: Swap Vert
-  num: e8d5
-
-- name: Swap Vertical Circle
-  num: e8d6
-
-- name: Switch Camera
-  num: e41e
-
-- name: Switch Video
-  num: e41f
-
-- name: Sync
-  num: e627
-
-- name: Sync Disabled
-  num: e628
-
-- name: Sync Problem
-  num: e629
-
-- name: System Update
-  num: e62a
-
-- name: System Update Alt
-  num: e8d7
-
-- name: Tab
-  num: e8d8
-
-- name: Tab Unselected
-  num: e8d9
-
-- name: Tablet
-  num: e32f
-
-- name: Tablet Android
-  num: e330
-
-- name: Tablet Mac
-  num: e331
-
-- name: Tag Faces
-  num: e420
-
-- name: Tap And Play
-  num: e62b
-
-- name: Terrain
-  num: e564
-
-- name: Text Format
-  num: e165
-
-- name: Textsms
-  num: e0d8
-
-- name: Texture
-  num: e421
-
-- name: Theaters
-  num: e8da
-
-- name: Thumb Down
-  num: e8db
-
-- name: Thumb Up
-  num: e8dc
-
-- name: Thumbs Up Down
-  num: e8dd
-
-- name: Time To Leave
-  num: e62c
-
-- name: Timelapse
-  num: e422
-
-- name: Timer
-  num: e425
-
-- name: Timer 10
-  num: e423
-
-- name: Timer 3
-  num: e424
-
-- name: Timer Off
-  num: e426
-
-- name: Toc
-  num: e8de
-
-- name: Today
-  num: e8df
-
-- name: Toll
-  num: e8e0
-
-- name: Tonality
-  num: e427
-
-- name: Toys
-  num: e332
-
-- name: Track Changes
-  num: e8e1
-
-- name: Traffic
-  num: e565
-
-- name: Transform
-  num: e428
-
-- name: Translate
-  num: e8e2
-
-- name: Trending Down
-  num: e8e3
-
-- name: Trending Flat
-  num: e8e4
-
-- name: Trending Up
-  num: e8e5
-
-- name: Tune
-  num: e429
-
-- name: Turned In
-  num: e8e6
-
-- name: Turned In Not
-  num: e8e7
-
-- name: Tv
-  num: e333
-
-- name: Undo
-  num: e166
-
-- name: Unfold Less
-  num: e5d6
-
-- name: Unfold More
-  num: e5d7
-
-- name: Usb
-  num: e1e0
-
-- name: Verified User
-  num: e8e8
-
-- name: Vertical Align Bottom
-  num: e258
-
-- name: Vertical Align Center
-  num: e259
-
-- name: Vertical Align Top
-  num: e25a
-
-- name: Vibration
-  num: e62d
-
-- name: Video Library
-  num: e04a
-
-- name: Videocam
-  num: e04b
-
-- name: Videocam Off
-  num: e04c
-
-- name: View Agenda
-  num: e8e9
-
-- name: View Array
-  num: e8ea
-
-- name: View Carousel
-  num: e8eb
-
-- name: View Column
-  num: e8ec
-
-- name: View Comfy
-  num: e42a
-
-- name: View Compact
-  num: e42b
-
-- name: View Day
-  num: e8ed
-
-- name: View Headline
-  num: e8ee
-
-- name: View List
-  num: e8ef
-
-- name: View Module
-  num: e8f0
-
-- name: View Quilt
-  num: e8f1
-
-- name: View Stream
-  num: e8f2
-
-- name: View Week
-  num: e8f3
-
-- name: Vignette
-  num: e435
-
-- name: Visibility
-  num: e8f4
-
-- name: Visibility Off
-  num: e8f5
-
-- name: Voice Chat
-  num: e62e
-
-- name: Voicemail
-  num: e0d9
-
-- name: Volume Down
-  num: e04d
-
-- name: Volume Mute
-  num: e04e
-
-- name: Volume Off
-  num: e04f
-
-- name: Volume Up
-  num: e050
-
-- name: Vpn Key
-  num: e0da
-
-- name: Vpn Lock
-  num: e62f
-
-- name: Wallpaper
-  num: e1bc
-
-- name: Warning
-  num: e002
-
-- name: Watch
-  num: e334
-
-- name: Wb Auto
-  num: e42c
-
-- name: Wb Cloudy
-  num: e42d
-
-- name: Wb Incandescent
-  num: e42e
-
-- name: Wb Iridescent
-  num: e436
-
-- name: Wb Sunny
-  num: e430
-
-- name: Wc
-  num: e63d
-
-- name: Web
-  num: e051
-
-- name: Whatshot
-  num: e80e
-
-- name: Widgets
-  num: e1bd
-
-- name: Wifi
-  num: e63e
-
-- name: Wifi Lock
-  num: e1e1
-
-- name: Wifi Tethering
-  num: e1e2
-
-- name: Work
-  num: e8f9
-
-- name: Wrap Text
-  num: e25b
-
-- name: Youtube Searched For
-  num: e8fa
-
-- name: Zoom In
-  num: e8ff
-
-- name: Zoom Out
-  num: e900
+# This file is generated via Grunt task. **Do not edit directly.**
+# See the 'build-material-icons-data' task in Gruntfile.js.
+
+- mdi-3d-rotation
+- mdi-access-alarm
+- mdi-access-alarms
+- mdi-access-time
+- mdi-accessibility
+- mdi-account-balance
+- mdi-account-balance-wallet
+- mdi-account-box
+- mdi-account-circle
+- mdi-adb
+- mdi-add
+- mdi-add-alarm
+- mdi-add-alert
+- mdi-add-box
+- mdi-add-circle
+- mdi-add-circle-outline
+- mdi-add-shopping-cart
+- mdi-add-to-photos
+- mdi-adjust
+- mdi-airline-seat-flat
+- mdi-airline-seat-flat-angled
+- mdi-airline-seat-individual-suite
+- mdi-airline-seat-legroom-extra
+- mdi-airline-seat-legroom-normal
+- mdi-airline-seat-legroom-reduced
+- mdi-airline-seat-recline-extra
+- mdi-airline-seat-recline-normal
+- mdi-airplanemode-active
+- mdi-airplanemode-inactive
+- mdi-airplay
+- mdi-alarm
+- mdi-alarm-add
+- mdi-alarm-off
+- mdi-alarm-on
+- mdi-album
+- mdi-android
+- mdi-announcement
+- mdi-apps
+- mdi-archive
+- mdi-arrow-back
+- mdi-arrow-drop-down
+- mdi-arrow-drop-down-circle
+- mdi-arrow-drop-up
+- mdi-arrow-forward
+- mdi-aspect-ratio
+- mdi-assessment
+- mdi-assignment
+- mdi-assignment-ind
+- mdi-assignment-late
+- mdi-assignment-return
+- mdi-assignment-returned
+- mdi-assignment-turned-in
+- mdi-assistant
+- mdi-assistant-photo
+- mdi-attach-file
+- mdi-attach-money
+- mdi-attachment
+- mdi-audiotrack
+- mdi-autorenew
+- mdi-av-timer
+- mdi-backspace
+- mdi-backup
+- mdi-battery-alert
+- mdi-battery-charging-full
+- mdi-battery-full
+- mdi-battery-std
+- mdi-battery-unknown
+- mdi-beenhere
+- mdi-block
+- mdi-bluetooth
+- mdi-bluetooth-audio
+- mdi-bluetooth-connected
+- mdi-bluetooth-disabled
+- mdi-bluetooth-searching
+- mdi-blur-circular
+- mdi-blur-linear
+- mdi-blur-off
+- mdi-blur-on
+- mdi-book
+- mdi-bookmark
+- mdi-bookmark-border
+- mdi-border-all
+- mdi-border-bottom
+- mdi-border-clear
+- mdi-border-color
+- mdi-border-horizontal
+- mdi-border-inner
+- mdi-border-left
+- mdi-border-outer
+- mdi-border-right
+- mdi-border-style
+- mdi-border-top
+- mdi-border-vertical
+- mdi-brightness-1
+- mdi-brightness-2
+- mdi-brightness-3
+- mdi-brightness-4
+- mdi-brightness-5
+- mdi-brightness-6
+- mdi-brightness-7
+- mdi-brightness-auto
+- mdi-brightness-high
+- mdi-brightness-low
+- mdi-brightness-medium
+- mdi-broken-image
+- mdi-brush
+- mdi-bug-report
+- mdi-build
+- mdi-business
+- mdi-cached
+- mdi-cake
+- mdi-call
+- mdi-call-end
+- mdi-call-made
+- mdi-call-merge
+- mdi-call-missed
+- mdi-call-received
+- mdi-call-split
+- mdi-camera
+- mdi-camera-alt
+- mdi-camera-enhance
+- mdi-camera-front
+- mdi-camera-rear
+- mdi-camera-roll
+- mdi-cancel
+- mdi-card-giftcard
+- mdi-card-membership
+- mdi-card-travel
+- mdi-cast
+- mdi-cast-connected
+- mdi-center-focus-strong
+- mdi-center-focus-weak
+- mdi-change-history
+- mdi-chat
+- mdi-chat-bubble
+- mdi-chat-bubble-outline
+- mdi-check
+- mdi-check-box
+- mdi-check-box-outline-blank
+- mdi-check-circle
+- mdi-chevron-left
+- mdi-chevron-right
+- mdi-chrome-reader-mode
+- mdi-class
+- mdi-clear
+- mdi-clear-all
+- mdi-close
+- mdi-closed-caption
+- mdi-cloud
+- mdi-cloud-circle
+- mdi-cloud-done
+- mdi-cloud-download
+- mdi-cloud-off
+- mdi-cloud-queue
+- mdi-cloud-upload
+- mdi-code
+- mdi-collections
+- mdi-collections-bookmark
+- mdi-color-lens
+- mdi-colorize
+- mdi-comment
+- mdi-compare
+- mdi-computer
+- mdi-confirmation-number
+- mdi-contact-phone
+- mdi-contacts
+- mdi-content-copy
+- mdi-content-cut
+- mdi-content-paste
+- mdi-control-point
+- mdi-control-point-duplicate
+- mdi-create
+- mdi-credit-card
+- mdi-crop
+- mdi-crop-16-9
+- mdi-crop-3-2
+- mdi-crop-5-4
+- mdi-crop-7-5
+- mdi-crop-din
+- mdi-crop-free
+- mdi-crop-landscape
+- mdi-crop-original
+- mdi-crop-portrait
+- mdi-crop-square
+- mdi-dashboard
+- mdi-data-usage
+- mdi-dehaze
+- mdi-delete
+- mdi-description
+- mdi-desktop-mac
+- mdi-desktop-windows
+- mdi-details
+- mdi-developer-board
+- mdi-developer-mode
+- mdi-device-hub
+- mdi-devices
+- mdi-dialer-sip
+- mdi-dialpad
+- mdi-directions
+- mdi-directions-bike
+- mdi-directions-boat
+- mdi-directions-bus
+- mdi-directions-car
+- mdi-directions-railway
+- mdi-directions-run
+- mdi-directions-subway
+- mdi-directions-transit
+- mdi-directions-walk
+- mdi-disc-full
+- mdi-dns
+- mdi-do-not-disturb
+- mdi-do-not-disturb-alt
+- mdi-dock
+- mdi-domain
+- mdi-done
+- mdi-done-all
+- mdi-drafts
+- mdi-drive-eta
+- mdi-dvr
+- mdi-edit
+- mdi-eject
+- mdi-email
+- mdi-equalizer
+- mdi-error
+- mdi-error-outline
+- mdi-event
+- mdi-event-available
+- mdi-event-busy
+- mdi-event-note
+- mdi-event-seat
+- mdi-exit-to-app
+- mdi-expand-less
+- mdi-expand-more
+- mdi-explicit
+- mdi-explore
+- mdi-exposure
+- mdi-exposure-neg-1
+- mdi-exposure-neg-2
+- mdi-exposure-plus-1
+- mdi-exposure-plus-2
+- mdi-exposure-zero
+- mdi-extension
+- mdi-face
+- mdi-fast-forward
+- mdi-fast-rewind
+- mdi-favorite
+- mdi-favorite-border
+- mdi-feedback
+- mdi-file-download
+- mdi-file-upload
+- mdi-filter
+- mdi-filter-1
+- mdi-filter-2
+- mdi-filter-3
+- mdi-filter-4
+- mdi-filter-5
+- mdi-filter-6
+- mdi-filter-7
+- mdi-filter-8
+- mdi-filter-9
+- mdi-filter-9-plus
+- mdi-filter-b-and-w
+- mdi-filter-center-focus
+- mdi-filter-drama
+- mdi-filter-frames
+- mdi-filter-hdr
+- mdi-filter-list
+- mdi-filter-none
+- mdi-filter-tilt-shift
+- mdi-filter-vintage
+- mdi-find-in-page
+- mdi-find-replace
+- mdi-flag
+- mdi-flare
+- mdi-flash-auto
+- mdi-flash-off
+- mdi-flash-on
+- mdi-flight
+- mdi-flight-land
+- mdi-flight-takeoff
+- mdi-flip
+- mdi-flip-to-back
+- mdi-flip-to-front
+- mdi-folder
+- mdi-folder-open
+- mdi-folder-shared
+- mdi-folder-special
+- mdi-font-download
+- mdi-format-align-center
+- mdi-format-align-justify
+- mdi-format-align-left
+- mdi-format-align-right
+- mdi-format-bold
+- mdi-format-clear
+- mdi-format-color-fill
+- mdi-format-color-reset
+- mdi-format-color-text
+- mdi-format-indent-decrease
+- mdi-format-indent-increase
+- mdi-format-italic
+- mdi-format-line-spacing
+- mdi-format-list-bulleted
+- mdi-format-list-numbered
+- mdi-format-paint
+- mdi-format-quote
+- mdi-format-size
+- mdi-format-strikethrough
+- mdi-format-textdirection-l-to-r
+- mdi-format-textdirection-r-to-l
+- mdi-format-underlined
+- mdi-forum
+- mdi-forward
+- mdi-forward-10
+- mdi-forward-30
+- mdi-forward-5
+- mdi-fullscreen
+- mdi-fullscreen-exit
+- mdi-functions
+- mdi-gamepad
+- mdi-games
+- mdi-gesture
+- mdi-get-app
+- mdi-gif
+- mdi-gps-fixed
+- mdi-gps-not-fixed
+- mdi-gps-off
+- mdi-grade
+- mdi-gradient
+- mdi-grain
+- mdi-graphic-eq
+- mdi-grid-off
+- mdi-grid-on
+- mdi-group
+- mdi-group-add
+- mdi-group-work
+- mdi-hd
+- mdi-hdr-off
+- mdi-hdr-on
+- mdi-hdr-strong
+- mdi-hdr-weak
+- mdi-headset
+- mdi-headset-mic
+- mdi-healing
+- mdi-hearing
+- mdi-help
+- mdi-help-outline
+- mdi-high-quality
+- mdi-highlight-off
+- mdi-history
+- mdi-home
+- mdi-hotel
+- mdi-hourglass-empty
+- mdi-hourglass-full
+- mdi-http
+- mdi-https
+- mdi-image
+- mdi-image-aspect-ratio
+- mdi-import-export
+- mdi-inbox
+- mdi-indeterminate-check-box
+- mdi-info
+- mdi-info-outline
+- mdi-input
+- mdi-insert-chart
+- mdi-insert-comment
+- mdi-insert-drive-file
+- mdi-insert-emoticon
+- mdi-insert-invitation
+- mdi-insert-link
+- mdi-insert-photo
+- mdi-invert-colors
+- mdi-invert-colors-off
+- mdi-iso
+- mdi-keyboard
+- mdi-keyboard-arrow-down
+- mdi-keyboard-arrow-left
+- mdi-keyboard-arrow-right
+- mdi-keyboard-arrow-up
+- mdi-keyboard-backspace
+- mdi-keyboard-capslock
+- mdi-keyboard-hide
+- mdi-keyboard-return
+- mdi-keyboard-tab
+- mdi-keyboard-voice
+- mdi-label
+- mdi-label-outline
+- mdi-landscape
+- mdi-language
+- mdi-laptop
+- mdi-laptop-chromebook
+- mdi-laptop-mac
+- mdi-laptop-windows
+- mdi-launch
+- mdi-layers
+- mdi-layers-clear
+- mdi-leak-add
+- mdi-leak-remove
+- mdi-lens
+- mdi-library-add
+- mdi-library-books
+- mdi-library-music
+- mdi-link
+- mdi-list
+- mdi-live-help
+- mdi-live-tv
+- mdi-local-activity
+- mdi-local-airport
+- mdi-local-atm
+- mdi-local-bar
+- mdi-local-cafe
+- mdi-local-car-wash
+- mdi-local-convenience-store
+- mdi-local-dining
+- mdi-local-drink
+- mdi-local-florist
+- mdi-local-gas-station
+- mdi-local-grocery-store
+- mdi-local-hospital
+- mdi-local-hotel
+- mdi-local-laundry-service
+- mdi-local-library
+- mdi-local-mall
+- mdi-local-movies
+- mdi-local-offer
+- mdi-local-parking
+- mdi-local-pharmacy
+- mdi-local-phone
+- mdi-local-pizza
+- mdi-local-play
+- mdi-local-post-office
+- mdi-local-printshop
+- mdi-local-see
+- mdi-local-shipping
+- mdi-local-taxi
+- mdi-location-city
+- mdi-location-disabled
+- mdi-location-off
+- mdi-location-on
+- mdi-location-searching
+- mdi-lock
+- mdi-lock-open
+- mdi-lock-outline
+- mdi-looks
+- mdi-looks-3
+- mdi-looks-4
+- mdi-looks-5
+- mdi-looks-6
+- mdi-looks-one
+- mdi-looks-two
+- mdi-loop
+- mdi-loupe
+- mdi-loyalty
+- mdi-mail
+- mdi-map
+- mdi-markunread
+- mdi-markunread-mailbox
+- mdi-memory
+- mdi-menu
+- mdi-merge-type
+- mdi-message
+- mdi-mic
+- mdi-mic-none
+- mdi-mic-off
+- mdi-mms
+- mdi-mode-comment
+- mdi-mode-edit
+- mdi-money-off
+- mdi-monochrome-photos
+- mdi-mood
+- mdi-mood-bad
+- mdi-more
+- mdi-more-horiz
+- mdi-more-vert
+- mdi-mouse
+- mdi-movie
+- mdi-movie-creation
+- mdi-music-note
+- mdi-my-location
+- mdi-nature
+- mdi-nature-people
+- mdi-navigate-before
+- mdi-navigate-next
+- mdi-navigation
+- mdi-network-cell
+- mdi-network-locked
+- mdi-network-wifi
+- mdi-new-releases
+- mdi-nfc
+- mdi-no-sim
+- mdi-not-interested
+- mdi-note-add
+- mdi-notifications
+- mdi-notifications-active
+- mdi-notifications-none
+- mdi-notifications-off
+- mdi-notifications-paused
+- mdi-offline-pin
+- mdi-ondemand-video
+- mdi-open-in-browser
+- mdi-open-in-new
+- mdi-open-with
+- mdi-pages
+- mdi-pageview
+- mdi-palette
+- mdi-panorama
+- mdi-panorama-fish-eye
+- mdi-panorama-horizontal
+- mdi-panorama-vertical
+- mdi-panorama-wide-angle
+- mdi-party-mode
+- mdi-pause
+- mdi-pause-circle-filled
+- mdi-pause-circle-outline
+- mdi-payment
+- mdi-people
+- mdi-people-outline
+- mdi-perm-camera-mic
+- mdi-perm-contact-calendar
+- mdi-perm-data-setting
+- mdi-perm-device-information
+- mdi-perm-identity
+- mdi-perm-media
+- mdi-perm-phone-msg
+- mdi-perm-scan-wifi
+- mdi-person
+- mdi-person-add
+- mdi-person-outline
+- mdi-person-pin
+- mdi-personal-video
+- mdi-phone
+- mdi-phone-android
+- mdi-phone-bluetooth-speaker
+- mdi-phone-forwarded
+- mdi-phone-in-talk
+- mdi-phone-iphone
+- mdi-phone-locked
+- mdi-phone-missed
+- mdi-phone-paused
+- mdi-phonelink
+- mdi-phonelink-erase
+- mdi-phonelink-lock
+- mdi-phonelink-off
+- mdi-phonelink-ring
+- mdi-phonelink-setup
+- mdi-photo
+- mdi-photo-album
+- mdi-photo-camera
+- mdi-photo-library
+- mdi-photo-size-select-actual
+- mdi-photo-size-select-large
+- mdi-photo-size-select-small
+- mdi-picture-as-pdf
+- mdi-picture-in-picture
+- mdi-pin-drop
+- mdi-place
+- mdi-play-arrow
+- mdi-play-circle-filled
+- mdi-play-circle-outline
+- mdi-play-for-work
+- mdi-playlist-add
+- mdi-plus-one
+- mdi-poll
+- mdi-polymer
+- mdi-portable-wifi-off
+- mdi-portrait
+- mdi-power
+- mdi-power-input
+- mdi-power-settings-new
+- mdi-present-to-all
+- mdi-print
+- mdi-public
+- mdi-publish
+- mdi-query-builder
+- mdi-question-answer
+- mdi-queue
+- mdi-queue-music
+- mdi-radio
+- mdi-radio-button-checked
+- mdi-radio-button-unchecked
+- mdi-rate-review
+- mdi-receipt
+- mdi-recent-actors
+- mdi-redeem
+- mdi-redo
+- mdi-refresh
+- mdi-remove
+- mdi-remove-circle
+- mdi-remove-circle-outline
+- mdi-remove-red-eye
+- mdi-reorder
+- mdi-repeat
+- mdi-repeat-one
+- mdi-replay
+- mdi-replay-10
+- mdi-replay-30
+- mdi-replay-5
+- mdi-reply
+- mdi-reply-all
+- mdi-report
+- mdi-report-problem
+- mdi-restaurant-menu
+- mdi-restore
+- mdi-ring-volume
+- mdi-room
+- mdi-rotate-90-degrees-ccw
+- mdi-rotate-left
+- mdi-rotate-right
+- mdi-router
+- mdi-satellite
+- mdi-save
+- mdi-scanner
+- mdi-schedule
+- mdi-school
+- mdi-screen-lock-landscape
+- mdi-screen-lock-portrait
+- mdi-screen-lock-rotation
+- mdi-screen-rotation
+- mdi-sd-card
+- mdi-sd-storage
+- mdi-search
+- mdi-security
+- mdi-select-all
+- mdi-send
+- mdi-settings
+- mdi-settings-applications
+- mdi-settings-backup-restore
+- mdi-settings-bluetooth
+- mdi-settings-brightness
+- mdi-settings-cell
+- mdi-settings-ethernet
+- mdi-settings-input-antenna
+- mdi-settings-input-component
+- mdi-settings-input-composite
+- mdi-settings-input-hdmi
+- mdi-settings-input-svideo
+- mdi-settings-overscan
+- mdi-settings-phone
+- mdi-settings-power
+- mdi-settings-remote
+- mdi-settings-system-daydream
+- mdi-settings-voice
+- mdi-share
+- mdi-shop
+- mdi-shop-two
+- mdi-shopping-basket
+- mdi-shopping-cart
+- mdi-shuffle
+- mdi-signal-cellular-4-bar
+- mdi-signal
+- mdi-signal-cellular-no-sim
+- mdi-signal-cellular-null
+- mdi-signal-cellular-off
+- mdi-signal-wifi-4-bar
+- mdi-signal-wifi-4-bar-lock
+- mdi-signal-wifi-off
+- mdi-sim-card
+- mdi-sim-card-alert
+- mdi-skip-next
+- mdi-skip-previous
+- mdi-slideshow
+- mdi-smartphone
+- mdi-sms
+- mdi-sms-failed
+- mdi-snooze
+- mdi-sort
+- mdi-sort-by-alpha
+- mdi-space-bar
+- mdi-speaker
+- mdi-speaker-group
+- mdi-speaker-notes
+- mdi-speaker-phone
+- mdi-spellcheck
+- mdi-star
+- mdi-star-border
+- mdi-star-half
+- mdi-stars
+- mdi-stay-current-landscape
+- mdi-stay-current-portrait
+- mdi-stay-primary-landscape
+- mdi-stay-primary-portrait
+- mdi-stop
+- mdi-storage
+- mdi-store
+- mdi-store-mall-directory
+- mdi-straighten
+- mdi-strikethrough-s
+- mdi-style
+- mdi-subject
+- mdi-subtitles
+- mdi-supervisor-account
+- mdi-surround-sound
+- mdi-swap-calls
+- mdi-swap-horiz
+- mdi-swap-vert
+- mdi-swap-vertical-circle
+- mdi-switch-camera
+- mdi-switch-video
+- mdi-sync
+- mdi-sync-disabled
+- mdi-sync-problem
+- mdi-system-update
+- mdi-system-update-alt
+- mdi-tab
+- mdi-tab-unselected
+- mdi-tablet
+- mdi-tablet-android
+- mdi-tablet-mac
+- mdi-tag-faces
+- mdi-tap-and-play
+- mdi-terrain
+- mdi-text-format
+- mdi-textsms
+- mdi-texture
+- mdi-theaters
+- mdi-thumb-down
+- mdi-thumb-up
+- mdi-thumbs-up-down
+- mdi-time-to-leave
+- mdi-timelapse
+- mdi-timer
+- mdi-timer-10
+- mdi-timer-3
+- mdi-timer-off
+- mdi-toc
+- mdi-today
+- mdi-toll
+- mdi-tonality
+- mdi-toys
+- mdi-track-changes
+- mdi-traffic
+- mdi-transform
+- mdi-translate
+- mdi-trending-down
+- mdi-trending-flat
+- mdi-trending-up
+- mdi-tune
+- mdi-turned-in
+- mdi-turned-in-not
+- mdi-tv
+- mdi-undo
+- mdi-unfold-less
+- mdi-unfold-more
+- mdi-usb
+- mdi-verified-user
+- mdi-vertical-align-bottom
+- mdi-vertical-align-center
+- mdi-vertical-align-top
+- mdi-vibration
+- mdi-video-library
+- mdi-videocam
+- mdi-videocam-off
+- mdi-view-agenda
+- mdi-view-array
+- mdi-view-carousel
+- mdi-view-column
+- mdi-view-comfy
+- mdi-view-compact
+- mdi-view-day
+- mdi-view-headline
+- mdi-view-list
+- mdi-view-module
+- mdi-view-quilt
+- mdi-view-stream
+- mdi-view-week
+- mdi-vignette
+- mdi-visibility
+- mdi-visibility-off
+- mdi-voice-chat
+- mdi-voicemail
+- mdi-volume-down
+- mdi-volume-mute
+- mdi-volume-off
+- mdi-volume-up
+- mdi-vpn-key
+- mdi-vpn-lock
+- mdi-wallpaper
+- mdi-warning
+- mdi-watch
+- mdi-wb-auto
+- mdi-wb-cloudy
+- mdi-wb-incandescent
+- mdi-wb-iridescent
+- mdi-wb-sunny
+- mdi-wc
+- mdi-web
+- mdi-whatshot
+- mdi-widgets
+- mdi-wifi
+- mdi-wifi-lock
+- mdi-wifi-tethering
+- mdi-work
+- mdi-wrap-text
+- mdi-youtube-searched-for
+- mdi-zoom-in
+- mdi-zoom-out
