@@ -172,7 +172,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-base">@font-size-base</label>
-    <input id="input-@font-size-base" type="text" value="14px" data-var="@font-size-base" class="form-control"/>
+    <input id="input-@font-size-base" type="text" value="16px" data-var="@font-size-base" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-large">@font-size-large</label>
@@ -211,7 +211,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@line-height-base">@line-height-base</label>
-    <input id="input-@line-height-base" type="text" aria-describedby="help-block-@line-height-base" value="1.428571429" data-var="@line-height-base" class="form-control"/>
+    <input id="input-@line-height-base" type="text" aria-describedby="help-block-@line-height-base" value="1.5" data-var="@line-height-base" class="form-control"/>
     <p id="help-block-@line-height-base" class="help-block">Unit-less <code>line-height</code> for use in components like buttons.</p>
   </div>
   <div class="col-xs-4">
@@ -1343,17 +1343,14 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@tooltip-color">@tooltip-color</label>
-    <div class="input-group">
-      <input id="input-@tooltip-color" type="text" aria-describedby="help-block-@tooltip-color" value="#fff" data-var="@tooltip-color" class="form-control"/>
-      <div style="font-size: 45px; line-height: 14px; color: transparent; color: #fff;" class="input-group-addon">&#8226;</div>
-    </div>
+    <input id="input-@tooltip-color" type="text" aria-describedby="help-block-@tooltip-color" value="@brand-primary" data-var="@tooltip-color" class="form-control"/>
     <p id="help-block-@tooltip-color" class="help-block">Tooltip text color</p>
   </div>
   <div class="col-xs-4">
     <label for="input-@tooltip-bg">@tooltip-bg</label>
     <div class="input-group">
-      <input id="input-@tooltip-bg" type="text" aria-describedby="help-block-@tooltip-bg" value="#000" data-var="@tooltip-bg" class="form-control"/>
-      <div style="font-size: 45px; line-height: 14px; color: transparent; color: #000;" class="input-group-addon">&#8226;</div>
+      <input id="input-@tooltip-bg" type="text" aria-describedby="help-block-@tooltip-bg" value="#fff" data-var="@tooltip-bg" class="form-control"/>
+      <div style="font-size: 45px; line-height: 14px; color: transparent; color: #fff;" class="input-group-addon">&#8226;</div>
     </div>
     <p id="help-block-@tooltip-bg" class="help-block">Tooltip background color</p>
   </div>
@@ -1369,7 +1366,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@tooltip-arrow-color">@tooltip-arrow-color</label>
-    <input id="input-@tooltip-arrow-color" type="text" aria-describedby="help-block-@tooltip-arrow-color" value="@tooltip-bg" data-var="@tooltip-arrow-color" class="form-control"/>
+    <input id="input-@tooltip-arrow-color" type="text" aria-describedby="help-block-@tooltip-arrow-color" value="@tooltip-color" data-var="@tooltip-arrow-color" class="form-control"/>
     <p id="help-block-@tooltip-arrow-color" class="help-block">Tooltip arrow color</p>
   </div>
 </div>
