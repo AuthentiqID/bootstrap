@@ -8643,8 +8643,7 @@ input[type="radio"],
   background-color: transparent;
   border: none;
 
-     -moz-appearance: none;
-          appearance: none;
+          appearance: normal;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="radio"],
@@ -8726,8 +8725,7 @@ input[type="checkbox"],
   cursor: pointer;
   border: none;
 
-     -moz-appearance: none;
-          appearance: none;
+          appearance: normal;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="checkbox"],
