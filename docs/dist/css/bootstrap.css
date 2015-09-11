@@ -8639,13 +8639,17 @@ input[type="radio"],
   -webkit-appearance: none;
   margin-top: 5px;
   margin-right: 4px;
-  vertical-align: -4px;
   cursor: pointer;
   background-color: transparent;
   border: none;
 
      -moz-appearance: none;
           appearance: none;
+}
+input[type="radio"]:not(*:root),
+.radio input[type="radio"]:not(*:root),
+.radio-inline input[type="radio"]:not(*:root) {
+  vertical-align: -4px;
 }
 input[type="radio"]:focus,
 .radio input[type="radio"]:focus,
@@ -8716,12 +8720,17 @@ input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: relative;
   -webkit-appearance: none;
-  vertical-align: -4px;
+  margin-right: 4px;
   cursor: pointer;
   border: none;
 
      -moz-appearance: none;
           appearance: none;
+}
+input[type="checkbox"]:not(*:root),
+.checkbox input[type="checkbox"]:not(*:root),
+.checkbox-inline input[type="checkbox"]:not(*:root) {
+  vertical-align: -4px;
 }
 input[type="checkbox"]:focus,
 .checkbox input[type="checkbox"]:focus,

@@ -147,12 +147,16 @@ input[type="radio"],
   position: relative;
   margin-top: 5px;
   margin-right: 4px;
-  vertical-align: -4px;
   border: none;
   background-color: transparent;
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
+
+  // hack for alignment of custom radio in webkit browsers, where works
+  &:not(*:root) {
+    vertical-align: -4px;
+  }
 
   &:focus {
     outline: none;
@@ -203,11 +207,16 @@ input[type="checkbox"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: relative;
-  vertical-align: -4px;
+  margin-right: 4px;
   border: none;
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
+
+  // hack for alignment of custom radio in webkit browsers, where works
+  &:not(*:root) {
+    vertical-align: -4px;
+  }
 
   &:focus {
     outline: none;
