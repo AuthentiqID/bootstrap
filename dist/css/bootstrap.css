@@ -8646,10 +8646,12 @@ input[type="radio"],
      -moz-appearance: none;
           appearance: none;
 }
-input[type="radio"]:not(*:root),
-.radio input[type="radio"]:not(*:root),
-.radio-inline input[type="radio"]:not(*:root) {
-  vertical-align: -4px;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="radio"],
+  .radio input[type="radio"],
+  .radio-inline input[type="radio"] {
+    vertical-align: -4px;
+  }
 }
 input[type="radio"]:focus,
 .radio input[type="radio"]:focus,
@@ -8727,10 +8729,12 @@ input[type="checkbox"],
      -moz-appearance: none;
           appearance: none;
 }
-input[type="checkbox"]:not(*:root),
-.checkbox input[type="checkbox"]:not(*:root),
-.checkbox-inline input[type="checkbox"]:not(*:root) {
-  vertical-align: -4px;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="checkbox"],
+  .checkbox input[type="checkbox"],
+  .checkbox-inline input[type="checkbox"] {
+    vertical-align: -4px;
+  }
 }
 input[type="checkbox"]:focus,
 .checkbox input[type="checkbox"]:focus,

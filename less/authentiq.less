@@ -154,8 +154,10 @@ input[type="radio"],
   cursor: pointer;
 
   // hack for alignment of custom radio in webkit browsers, where works
-  &:not(*:root) {
-    vertical-align: -4px;
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    & {
+      vertical-align: -4px;
+    }
   }
 
   &:focus {
@@ -214,8 +216,10 @@ input[type="checkbox"],
   cursor: pointer;
 
   // hack for alignment of custom radio in webkit browsers, where works
-  &:not(*:root) {
-    vertical-align: -4px;
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    & {
+      vertical-align: -4px;
+    }
   }
 
   &:focus {
