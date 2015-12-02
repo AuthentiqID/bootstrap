@@ -122,11 +122,11 @@ fieldset[disabled] .btn-danger {
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .active > a {
-  background-image: -webkit-linear-gradient(top, #ef4011 0%, #f0491d 100%);
-  background-image:      -o-linear-gradient(top, #ef4011 0%, #f0491d 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef4011), to(#f0491d));
-  background-image:         linear-gradient(to bottom, #ef4011 0%, #f0491d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffef4011', endColorstr='#fff0491d', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #cf5231 0%, #d15b3b 100%);
+  background-image:      -o-linear-gradient(top, #cf5231 0%, #d15b3b 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cf5231), to(#d15b3b));
+  background-image:         linear-gradient(to bottom, #cf5231 0%, #d15b3b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcf5231', endColorstr='#ffd15b3b', GradientType=0);
   background-repeat: repeat-x;
   -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
           box-shadow: inset 0 3px 9px rgba(0, 0, 0, .25);
