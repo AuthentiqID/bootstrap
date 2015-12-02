@@ -149,6 +149,23 @@
 {% endhighlight %}
 
 
+  <h3 id="helper-classes-spacer">Spacer</h3>
+  <p>Easily add <code>vertical space</code> by adding <code>.spacer</code>. Check the example with <code>spacer double</code> (space between the <code>hr</code>). It's also responsive.</p>
+  <hr />
+  <div class="spacer double" style="background-color: #f9f2f4;">&nbsp;</div>
+  <hr />
+{% highlight html %}
+<!-- Usage as a class -->
+<div class="spacer">&nbsp;</div>
+
+<!-- with double size -->
+<div class="spacer double">&nbsp;</div>
+
+<!-- with extra height -->
+<div class="spacer" style="height: 30px;">&nbsp;</div>
+{% endhighlight %}
+
+
   <h3 id="helper-classes-show-hide">Showing and hiding content</h3>
   <p>Force an element to be shown or hidden (<strong>including for screen readers</strong>) with the use of <code>.show</code> and <code>.hidden</code> classes. These classes use <code>!important</code> to avoid specificity conflicts, just like the <a href="#helper-classes-floats">quick floats</a>. They are only available for block level toggling. They can also be used as mixins.</p>
   <p><code>.hide</code> is available, but it does not always affect screen readers and is <strong>deprecated</strong> as of v3.0.1. Use <code>.hidden</code> or <code>.sr-only</code> instead.</p>

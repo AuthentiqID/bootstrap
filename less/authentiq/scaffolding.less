@@ -1,0 +1,53 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Body reset
+
+body {
+  line-height: @line-height-base;
+  font-family: @font-family-base;
+  font-weight: 300;
+  letter-spacing: .01em;
+  word-spacing: -.07em;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Reset fonts for relevant elements
+button {
+  font-family: @font-family-sans-serif;
+}
+
+input,
+button {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Links
+
+a {
+  .transition(all 0.2s);
+}
+
+
+// Horizontal rules
+
+hr {
+
+	&.primary {
+		border-top-color: @brand-primary;
+	}
+
+	&.thick {
+		border-top-width: 2px;
+	}
+
+	&.small {
+		width: 100px;
+		margin: (@line-height-computed / 2) 0;
+	}
+}
