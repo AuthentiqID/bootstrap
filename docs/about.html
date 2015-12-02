@@ -1,0 +1,44 @@
+---
+layout: default
+title: About
+slug: about
+lead: "Learn about the project's history, meet the maintaining teams."
+---
+
+
+<!-- History
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="history" class="page-header">History</h1>
+
+  <p class="lead">Your Phone..... Your Identity..... Skip Passwords.</p>
+  <p>
+    On sites that support Authentiq ID, there is no need for passwords anymore. Not for registration, and not for subsequent visits. Just point you phone's camera at the web site, and you're in.  On following visits you can even log in with a simple touch.  
+
+    Forgot to log out on your friends computer? Just end the session right from your phone. And you are in full control of what information is shared with each site.
+
+    Secured by cryptographic algorithms validating your online identify, the website you visit can have full confidence without an elaborate sign-up process, and receives up to date credentials every time you visit them. No need to type in all your details every time you register on a new site.
+
+    Feedback welcome! Contact us by email or on Twitter: @AuthentiqID
+  </p>
+</div>
+
+
+<!-- Team
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="team" class="page-header">Team</h1>
+
+  <div class="list-group bs-team">
+    {% for member in site.data.core-team %}
+      <div class="list-group-item">
+        <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user={{ member.user }}&amp;type=follow"></iframe>
+        <span class="member-role">{{ member.role }}</span>
+        <a class="team-member" href="https://github.com/{{ member.user }}">
+          <img src="https://secure.gravatar.com/avatar/{{ member.gravatar }}.jpg?s=32" alt="@{{ member.user }} avatar" width="32" height="32">
+          <strong>{{ member.name }}</strong> <small>@{{ member.user }}</small>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
