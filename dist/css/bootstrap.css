@@ -4689,7 +4689,8 @@ select[multiple].input-lg {
 .has-feedback .form-control {
   padding-right: 52.5px;
 }
-.form-control-feedback {
+.form-control-feedback,
+.form-control-feedback.material-icons {
   position: absolute;
   top: 0;
   right: 0;
@@ -5836,7 +5837,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control {
+.input-group .form-control,
+.input-group-addon.material-icons,
+.input-group-btn.material-icons,
+.input-group .form-control.material-icons {
   display: table-cell;
 }
 .input-group-addon:not(:first-child):not(:last-child),
@@ -8735,9 +8739,9 @@ button {
   text-rendering: optimizeLegibility;
 }
 a {
-  -webkit-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
+  -webkit-transition: color outline .2s;
+       -o-transition: color outline .2s;
+          transition: color outline .2s;
 }
 hr.primary {
   border-top-color: #895fc0;
@@ -8775,9 +8779,9 @@ h6,
 .table-hover > tbody > tr,
 .table-hover > tbody > tr > th,
 .table-hover > tbody > tr > td {
-  -webkit-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
+  -webkit-transition: background-color border .2s;
+       -o-transition: background-color border .2s;
+          transition: background-color border .2s;
 }
 textarea:focus,
 textarea.form-control:focus,
@@ -8854,13 +8858,13 @@ input[type="radio"]:after,
   margin-top: -3px;
   content: "";
   border-radius: 50%;
-  -webkit-transition: 240ms;
-       -o-transition: 240ms;
-          transition: 240ms;
+  -webkit-transition: background-color 240ms;
+       -o-transition: background-color 240ms;
+          transition: background-color 240ms;
 }
-input[type="radio"]:before,
-.radio input[type="radio"]:before,
-.radio-inline input[type="radio"]:before {
+background input[type="radio"]:before,
+background .radio input[type="radio"]:before,
+background .radio-inline input[type="radio"]:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -8935,9 +8939,9 @@ input[type="checkbox"]:after,
   content: "";
   border: 2px solid #777;
   border-radius: 2px;
-  -webkit-transition: 240ms;
-       -o-transition: 240ms;
-          transition: 240ms;
+  -webkit-transition: background-color 240ms;
+       -o-transition: background-color 240ms;
+          transition: background-color 240ms;
 }
 input[type="checkbox"]:checked:before,
 .checkbox input[type="checkbox"]:checked:before,
@@ -9144,9 +9148,9 @@ fieldset[disabled] .btn {
   border: none;
   -webkit-box-shadow: inset 0 -1px 0 #ddd;
           box-shadow: inset 0 -1px 0 #ddd;
-  -webkit-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
+  -webkit-transition: border -webkit-box-shadow background-color color .2s;
+       -o-transition: border box-shadow background-color color .2s;
+          transition: border box-shadow background-color color .2s;
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus:hover {
@@ -9255,9 +9259,9 @@ ul.with-icons .material-icons {
   line-height: 24px;
   filter: alpha(opacity=60);
   opacity: .6;
-  -webkit-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
+  -webkit-transition: opacity .2s;
+       -o-transition: opacity .2s;
+          transition: opacity .2s;
 }
 .close:hover {
   filter: alpha(opacity=100);
