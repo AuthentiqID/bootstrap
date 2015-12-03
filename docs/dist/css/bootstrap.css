@@ -8862,9 +8862,9 @@ input[type="radio"]:after,
        -o-transition: background-color 240ms;
           transition: background-color 240ms;
 }
-background input[type="radio"]:before,
-background .radio input[type="radio"]:before,
-background .radio-inline input[type="radio"]:before {
+input[type="radio"]:before,
+.radio input[type="radio"]:before,
+.radio-inline input[type="radio"]:before {
   position: absolute;
   top: 0;
   left: 0;
