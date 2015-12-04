@@ -9272,15 +9272,9 @@ ul.with-icons .material-icons {
   font-weight: 300;
 }
 .tooltip-inner {
+  padding: 12px;
   text-align: left;
   border: 0 transparent;
-}
-.tooltip-arrow {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
 }
 .spacer {
   height: 0;

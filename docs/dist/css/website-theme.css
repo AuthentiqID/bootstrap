@@ -9274,15 +9274,9 @@ ul.with-icons .material-icons {
   font-weight: 300;
 }
 .tooltip-inner {
+  padding: 12px;
   text-align: left;
   border: 0 transparent;
-}
-.tooltip-arrow {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
 }
 .spacer {
   height: 0;
@@ -9325,6 +9319,7 @@ h1,
   font-weight: 700;
 }
 .tooltip-inner {
+  padding: 3px 8px;
   -webkit-box-shadow: 0 0 5px #ccc;
           box-shadow: 0 0 5px #ccc;
 }
