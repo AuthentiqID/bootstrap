@@ -9128,9 +9128,9 @@ input[type="checkbox"]:disabled:checked:after,
           box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
 }
 .btn {
-  -webkit-transition: background .2s;
-       -o-transition: background .2s;
-          transition: background .2s;
+  -webkit-transition: background-color color .2s;
+       -o-transition: background-color color .2s;
+          transition: background-color color .2s;
 }
 .btn.disabled,
 .btn[disabled],
