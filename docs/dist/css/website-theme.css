@@ -9276,8 +9276,6 @@ ul.with-icons .material-icons {
 .tooltip-inner {
   text-align: left;
   border: 0 transparent;
-  -webkit-box-shadow: 0 0 5px #ccc;
-          box-shadow: 0 0 5px #ccc;
 }
 .tooltip-arrow {
   position: absolute;
@@ -9325,5 +9323,9 @@ body {
 h1,
 .h1 {
   font-weight: 700;
+}
+.tooltip-inner {
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
 }
 /*# sourceMappingURL=website-theme.css.map */
