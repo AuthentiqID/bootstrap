@@ -8748,11 +8748,16 @@ a {
 hr.primary {
   border-top-color: #895fc0;
 }
+hr.secondary {
+  border-top-color: #f26641;
+}
 hr.thick {
   border-top-width: 2px;
 }
 hr.small {
   width: 100px;
+}
+hr.left {
   margin: 15px 0;
 }
 h1,
@@ -9235,6 +9240,9 @@ fieldset[disabled] .btn {
   padding-top: 20px;
   font-size: 20px;
 }
+.navbar-nav > li > .dropdown-menu {
+  word-spacing: initial;
+}
 .list-group-item {
   padding: 15px;
 }
@@ -9302,6 +9310,49 @@ ul.with-icons .material-icons {
 @-moz-document url-prefix() {
   border-radius: 50%;
 }
+.hexagon-outline {
+  position: relative;
+  display: inline-block;
+  padding: 18px;
+  color: #895fc0;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.hexagon-outline .with-icon {
+  position: relative;
+  z-index: 3;
+  font-size: 36px;
+  line-height: 1;
+  color: currentColor;
+}
+.hexagon-outline:before,
+.hexagon-outline:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  background-color: currentColor;
+}
+.hexagon-outline:after {
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  z-index: 2;
+  background-color: inherit;
+}
+.hexagon-outline,
+.hexagon-outline:before,
+.hexagon-outline:after {
+  -webkit-clip-path: polygon(48% .4%, 50% 0%, 52% .4%, 98% 24.5%, 98.5% 25.2%, 100% 28%, 100% 72%, 98.5% 74.8%, 98% 75.5%, 52% 99.6%, 50% 100%, 48% 99.6%, 2% 75.5%, 1.3% 74.8%, 0% 72%, 0% 28%, 1.3% 25.2%, 2% 24.5%);
+          clip-path: polygon(48% .4%, 50% 0%, 52% .4%, 98% 24.5%, 98.5% 25.2%, 100% 28%, 100% 72%, 98.5% 74.8%, 98% 75.5%, 52% 99.6%, 50% 100%, 48% 99.6%, 2% 75.5%, 1.3% 74.8%, 0% 72%, 0% 28%, 1.3% 25.2%, 2% 24.5%);
+}
+@-moz-document url-prefix() {
+  border-radius: 50%;
+}
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -9320,7 +9371,7 @@ h1,
 }
 .tooltip-inner {
   padding: 3px 8px;
-  -webkit-box-shadow: 0 0 5px #ccc;
-          box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 10px rgba(50, 50, 50, .4);
+          box-shadow: 0 0 10px rgba(50, 50, 50, .4);
 }
 /*# sourceMappingURL=website-theme.css.map */
