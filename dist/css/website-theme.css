@@ -9240,8 +9240,11 @@ fieldset[disabled] .btn {
   padding-top: 20px;
   font-size: 20px;
 }
-.navbar-nav > li > .dropdown {
+.navbar-nav > li.dropdown {
   word-spacing: initial;
+}
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 1px;
 }
 .list-group-item {
   padding: 15px;
