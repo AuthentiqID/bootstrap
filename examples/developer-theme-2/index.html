@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/dashboard-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Load needed fonts -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Serif:400|Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="./images/logo.svg" /></a>
+        </div>
+        <ul class="nav navbar-nav navbar-selector">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Demo Client <i class="caret"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Client #1</a></li>
+              <li><a href="#">Client #2</a></li>
+              <li><a href="#">Client #3</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Add client</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="navbar" class="collapse navbar-collapse">
+          <div class="navbar-form navbar-left navbar-action">
+            CONFIGURATION MODE
+            <button type="submit" class="btn btn-primary">Activate</button>
+          </div>
+
+          <p class="navbar-text navbar-right">
+            <a href="#" class="navbar-link">
+              <span class="hidden-sm">Sign out Mark Otto</span>
+              <img src="./images/sign-out-icon.svg" class="hidden-sm" />
+              <img src="./images/sign-out-icon.svg" class="visible-sm" data-toggle="tooltip" title="Sign out Mark Otto" data-placement="bottom" />
+            </a>
+          </p>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-sidebar row-sidebar-left">
+
+        <div class="col-xs-6 col-sm-4 col-md-3 sidebar" id="sidebar">
+          <ul class="nav nav-toolbar">
+            <li>
+              <a href="#">
+                <img src="./images/icon-dashboard.svg" />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-quickstart.svg" />
+                Quick start
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-configuration.svg" />
+                Configuration
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-webhooks.svg" />
+                Webhooks
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-analytics.svg" />
+                Analytics
+              </a>
+            </li>
+          </ul>
+
+          <hr />
+
+          <ul class="nav nav-toolbar">
+            <li>
+              <a href="#">
+                <img src="./images/icon-billing.svg" />
+                Billing
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-devdocs.svg" />
+                Developer docs
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-support.svg" />
+                Support
+              </a>
+            </li>
+          </ul>
+        </div><!--/.sidebar-->
+
+        <div class="col-xs-12 col-sm-8 col-md-9">
+          <p class="pull-right visible-xs visible-sm">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#sidebar">Toggle nav</button>
+          </p>
+
+          <h1 id="introduction">Introduction</h1>
+          <p>If you are reading this you’re probably curious how to integrate <a href="http://authentiq.com/">Authentiq</a> on your website. </p>
+          <p>The easiest to get started is to include the <a href="#show-me-the-code">AuthentiqJS snippet</a> on your page as described below. Alternatively you can point your <a href="integration/#third-party-integrations">favourite OAuth 2.0 or OpenID Connect client library</a> at Authentiq.</p>
+          <p>As we run Authentiq Connect as a Service, there is no need to install or run anything locally.</p>
+          <p class="alert alert-success" role="alert">Soon you will also be able to <a class="alert-link" href="installation/">install the Authentiq Connect daemon locally</a>, from source, or using pre-built packages for Debian 7.0, 8.0 and Ubuntu 15.04.</p>
+          <h2 id="show-me-the-code">Show me the code!</h2>
+          <p><a href="integration/#configurator">Register an app</a> and paste the following code into an HTML page at the point where you want render a Sign in button. Replace the placeholder with the Client ID of your new application.</p>
+          <pre class="codehilite"><code class="hljs vbscript-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://developers.authentiq.io/js/authentiq.js"</span>
+                  <span class="hljs-attribute">class</span>=<span class="hljs-value">"authentiq-snippet"</span>
+                  <span class="hljs-attribute">data-client-id</span>=<span class="hljs-value">"&lt;YOUR-CLIENT-ID&gt;"</span>
+                  <span class="hljs-attribute">data-button</span>=<span class="hljs-value">"yes"</span>&gt;</span><span class="undefined">
+          </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></span></code></pre>
+
+
+          <p>You can view a <a href="./examples/signin.html">live demo</a> of the above code wrapped in some basic HTML.</p>
+          <p class="alert alert-info" role="alert">Make sure to register the app as a <a href="#application-types">client-side or hybrid</a> application, and to paste the exact URL your example is loaded on (e.g. <code>http://localhost:8000/authentiq.html</code>) in the <code>Redirect URI</code> field. This is an essential security measure for the Authentiq Connect server. An easy way to serve local files is by executing <code>python3 -m http.server</code> in the same directory.</p>
+          <h2 id="next-steps">Next steps</h2>
+          <p>Great, let’s dive a bit deeper. Some suggestions:</p>
+          <ul>
+            <li>Check the different <a href="#identity-claims">identity claims</a> you can request from a user, and add them to the example including a <code>data-scope</code> attribute.</li>
+            <li>Play with some of the other <a href="integration/#authentiqjs-attributes">script tag attributes</a>, such as <code>data-display</code>, <code>data-sign-in-text</code>, <code>data-sign-out-text</code> and <code>data-sign-out-claim</code>.</li>
+            <li>Add a “profile” <a href="integration/#event-handlers">event handler</a> to the example and print the identity claims it receives.</li>
+          </ul>
+          <p>To develop a more complete application, </p>
+          <ul>
+            <li>Check the <a href="./integration#third-party-integrations">third-party integrations</a> and browse the <a href="https://github.com/AuthentiqID/authentiq-examples/">example code</a>. </li>
+            <li>Understand whether you are building a <a href="#application-type">client-side, server-side or hybrid application</a>.</li>
+            <li>Fine tune your application’s configuration, attach a title and a logo, in the <a href="yourapps.md">client console</a>.</li>
+            <li>Finally, <a href="#support">let us know</a> how it went or <a href="https://github.com/AuthentiqID/authentiq-docs/">help fix a documentation error</a>!</li>
+          </ul>
+
+        </div><!--/.col-xs-12.col-sm-9-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Documentation Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../dist/css/dashboard-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Load needed fonts -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Serif:400|Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="full-bg" data-spy="scroll" data-target=".toc" data-offset="145">
+    <!--<div id="wrapper">-->
+      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./images/logo.svg" /></a>
+          </div>
+          <!-- Top Menu Items -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav top-nav">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Integration</a></li>
+              <li><a href="#">Installation</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  API Reference
+                  <span class="material-icons mdi-keyboard-arrow-down" aria-hidden="true"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Provider</a></li>
+                  <li><a href="#">Issuer</a></li>
+                </ul>
+              </li>
+              <li><a href="#">FAQ's</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+      </nav><!-- /.navbar -->
+
+      <!--<div id="page-wrapper" class="page-wrapper">-->
+      <div class="container">
+        <div class="row row-sidebar row-sidebar-left">
+          <div class="col-xs-6 col-sm-4 col-md-3 sidebar">
+            <div class="toc hidden-print" role="complementary">
+              <ul class="nav" data-spy="affix">
+                <li class="main active"><a href="#introduction">Introduction</a></li>
+                <li><a href="#show-me-the-code">Show me the code!</a></li>
+                <li><a href="#next-steps">Next steps</a></li>
+
+                <li class="main "><a href="#protocol">Protocol</a></li>
+
+                <li class="main "><a href="#concepts">Concepts</a></li>
+                <li><a href="#authentiq-id">Authentiq ID</a></li>
+                <li><a href="#application-types">Application types</a></li>
+                <li><a href="#integration-types">Integration types lorem ipsum</a></li>
+                <li><a href="#scopes">Scopes</a></li>
+                <li><a href="#errors">Errors</a></li>
+                <li><a href="#terminology">Terminology</a></li>
+
+                <li class="main "><a href="#support">Support</a></li>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#email">Email</a></li>
+                <li><a href="#tweet">Tweet</a></li>
+                <li><a href="#hack">Hack</a></li>
+                <li><a href="#write">Write</a></li>
+                <li><a href="#security">Security</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-8 col-md-9 content">
+            <h1 id="introduction">Introduction</h1>
+            <p>If you are reading this you’re probably curious how to integrate <a href="http://authentiq.com/">Authentiq</a> on your website. </p>
+            <p>The easiest to get started is to include the <a href="#show-me-the-code">AuthentiqJS snippet</a> on your page as described below. Alternatively you can point your <a href="integration/#third-party-integrations">favourite OAuth 2.0 or OpenID Connect client library</a> at Authentiq.</p>
+            <p>As we run Authentiq Connect as a Service, there is no need to install or run anything locally.</p>
+
+            <h2 id="show-me-the-code">Show me the code!</h2>
+            <p><a href="integration/#configurator">Register an app</a> and paste the following code into an HTML page at the point where you want render a Sign in button. Replace the placeholder with the Client ID of your new application.</p>
+            <pre class="codehilite"><code class="hljs vbscript-html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://developers.authentiq.io/js/authentiq.js"</span>
+                    <span class="hljs-attribute">class</span>=<span class="hljs-value">"authentiq-snippet"</span>
+                    <span class="hljs-attribute">data-client-id</span>=<span class="hljs-value">"&lt;YOUR-CLIENT-ID&gt;"</span>
+                    <span class="hljs-attribute">data-button</span>=<span class="hljs-value">"yes"</span>&gt;</span><span class="undefined">
+            </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></span></code></pre>
+
+
+            <p>You can view a <a href="./examples/signin.html">live demo</a> of the above code wrapped in some basic HTML.</p>
+            <p class="alert alert-info" role="alert">Make sure to register the app as a <a href="#application-types">client-side or hybrid</a> application, and to paste the exact URL your example is loaded on (e.g. <code>http://localhost:8000/authentiq.html</code>) in the <code>Redirect URI</code> field. This is an essential security measure for the Authentiq Connect server. An easy way to serve local files is by executing <code>python3 -m http.server</code> in the same directory.</p>
+            <h2 id="next-steps">Next steps</h2>
+            <p>Great, let’s dive a bit deeper. Some suggestions:</p>
+            <ul>
+              <li>Check the different <a href="#identity-claims">identity claims</a> you can request from a user, and add them to the example including a <code>data-scope</code> attribute.</li>
+              <li>Play with some of the other <a href="integration/#authentiqjs-attributes">script tag attributes</a>, such as <code>data-display</code>, <code>data-sign-in-text</code>, <code>data-sign-out-text</code> and <code>data-sign-out-claim</code>.</li>
+              <li>Add a “profile” <a href="integration/#event-handlers">event handler</a> to the example and print the identity claims it receives.</li>
+            </ul>
+            <p>To develop a more complete application, </p>
+            <ul>
+              <li>Check the <a href="./integration#third-party-integrations">third-party integrations</a> and browse the <a href="https://github.com/AuthentiqID/authentiq-examples/">example code</a>. </li>
+              <li>Understand whether you are building a <a href="#application-type">client-side, server-side or hybrid application</a>.</li>
+              <li>Fine tune your application’s configuration, attach a title and a logo, in the <a href="yourapps.md">client console</a>.</li>
+              <li>Finally, <a href="#support">let us know</a> how it went or <a href="https://github.com/AuthentiqID/authentiq-docs/">help fix a documentation error</a>!</li>
+            </ul>
+
+            <hr />
+
+            <h2>Headings</h2>
+            <h1>H1 - The Header Text</h1>
+            <h2>H2 - The Header Text</h2>
+            <h3>H3 - The Header Text</h3>
+            <h4>H4 - The Header Text</h4>
+            <h5>H5 - The Header Text</h5>
+            <h6>H6 - The Header Text</h6>
+
+            <hr />
+
+            <h2>Alerts</h2>
+            <div class="alert alert-danger alert-dismissible mdi-error-outline" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <span class="sr-only">Error:</span>
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+            </div>
+
+            <div class="alert alert-warning alert-dismissible mdi-warning" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+            </div>
+
+            <div class="alert alert-success alert-dismissible mdi-check" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+            </div>
+
+            <div class="alert alert-info alert-dismissible mdi-info-outline" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+            </div>
+
+            <div class="alert alert-dismissible mdi-info-outline" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+            </div>
+
+            <div class="alert alert-outline alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+            </div>
+
+            <div class="alert alert-outline" role="alert">
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>.
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+              Better check yourself, you're not looking too good. <a href="">Sample link</a>
+            </div>
+
+            <hr />
+
+            <h2>Buttons</h2>
+            <!-- CTA button -->
+            <p>
+              <button type="button" class="btn btn-primary">Primary CTA button</button>
+              <button type="button" class="btn btn-primary btn-outline">Secondary CTA button</button>
+              <button type="button" class="btn btn-link">Tertiary button</button>
+            </p>
+
+            <!-- Primary button -->
+            <p>
+              <button type="button" class="btn btn-secondary">Primary button</button>
+              <button type="button" class="btn btn-secondary btn-outline">Secondary button</button>
+              <button type="button" class="btn btn-link btn-link-secondary">Tertiary button</button>
+            </p>
+
+            <!-- Indicates a dangerous or potentially negative action -->
+            <button type="button" class="btn btn-danger">
+              Delete button
+              <span class="material-icons mdi-clear" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="btn btn-default">
+              Default button
+            </button>
+
+            <hr />
+
+            <!-- button sizes -->
+            <h3>Sizes</h3>
+            <p>
+              <button type="button" class="btn btn-primary btn-sm">Primary small button</button>
+              <button type="button" class="btn btn-primary">Primary button</button>
+              <button type="button" class="btn btn-primary btn-lg">Primary large button</button>
+            </p>
+
+
+            <h2>Form elements</h2>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <div class="input-group">
+                  <div class="input-group-addon">$</div>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  <div class="input-group-addon">.00</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="form-group form-group-lg">
+                <label for="exampleInputEmail1">Big size</label>
+                <div class="input-group">
+                  <div class="input-group-addon">$</div>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  <div class="input-group-addon">.00</div>
+                </div>
+              </div>
+              <div class="form-group form-group-sm">
+                <label for="exampleInputPassword1">Small size</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  Option one is this
+                </label>
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2">
+                  Option two is this and that
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <hr />
+
+            <h2>Dropdowns</h2>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <h2>Navs</h2>
+            <p>
+              <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation" class="disabled"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages <span class="badge">4</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Dropdown header</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+            <p>
+              <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation" class="disabled"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages <span class="badge">42</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Dropdown header</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+            <p>
+              <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages <span class="badge">42</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+            <p>
+              <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages <span class="badge">42</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+
+            <hr />
+
+            <h2>Button groups</h2>
+
+            <div class="row">
+              <p>
+                <div class="btn-group" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default">Left</button>
+                  <button type="button" class="btn btn-default active">Middle</button>
+                  <button type="button" class="btn btn-default">Right</button>
+                </div>
+              </p>
+
+              <p>
+                <div class="btn-group btn-group-pills" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default">Left</button>
+                  <button type="button" class="btn btn-default active">Right</button>
+                </div>
+              </p>
+
+              <p>
+                <div class="btn-group-vertical" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default active">Left</button>
+                  <button type="button" class="btn btn-default">Middle</button>
+                  <button type="button" class="btn btn-default">Right</button>
+                </div>
+              </p>
+            </div>
+
+            <hr />
+
+            <h2>Pagination</h2>
+
+            <nav>
+              <ul class="pagination">
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a> </li>
+              </ul>
+            </nav>
+
+            <nav>
+              <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </nav>
+
+            <nav>
+              <ul class="pager">
+                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </nav>
+
+            <hr />
+
+            <h2>Breadcrumbs</h2>
+
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Library</a></li>
+              <li class="active">Data</li>
+            </ol>
+
+            <hr />
+
+            <h2>Panels</h2>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                Panel title
+                <small>description</small>
+                <span class="desc">secondary description</span>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+              <div class="panel-footer">Panel footer</div>
+            </div>
+
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  Panel title
+                  <small>description</small>
+                </h4>
+                <span class="desc">secondary description</span>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+              <div class="panel-footer">Panel footer</div>
+            </div>
+
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                Panel title
+                <small>description</small>
+                <span class="desc">secondary description</span>
+              </div>
+            </div>
+
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                Panel title
+                <small>description</small>
+                <span class="desc">secondary description</span>
+              </div>
+            </div>
+
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                Panel title
+                <small>description</small>
+                <span class="desc">secondary description</span>
+              </div>
+            </div>
+
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                Panel title
+                <small>description</small>
+                <span class="desc">secondary description</span>
+              </div>
+            </div>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-success">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer id="footer" class="inverse-links">
+              <a href="#">Disclaimer</a> |
+              <a href="#">Terms of service</a> |
+              <a href="#">Help</a> |
+              <a href="#">Contact us</a>
+            </footer>
+
+          </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/.row-->
+      </div><!--/.container-->
+      <!--</div>&lt;!&ndash;/.page-wrapper&ndash;&gt;-->
+    <!--</div>&lt;!&ndash;/.wrapper&ndash;&gt;-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
