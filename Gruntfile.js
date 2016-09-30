@@ -386,6 +386,15 @@ module.exports = function (grunt) {
       less: {
         files: 'less/**/*.less',
         tasks: 'less'
+      },
+      docs: {
+        files: [
+          'less/**/*.less',
+          'docs/{,*/}*.js',
+          'docs/{,*/}*.html',
+          'docs/{,*/}*.jade'
+        ],
+        tasks: ['less', 'docs']
       }
     },
 
