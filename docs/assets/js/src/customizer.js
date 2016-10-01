@@ -204,6 +204,11 @@ window.onload = function () { // wait for load in a dumb way because B-0
     if ($glyphicons.length) {
       return __fonts
     }
+
+    var $materialDesignIcons = $('#less-section [value="material-design-icons.less"]:checked')
+    if ($materialDesignIcons.length) {
+      return __fonts
+    }
   }
 
   // Returns an Array of @import'd filenames in the order

@@ -256,7 +256,7 @@
 
   <h3>Checkboxes and radios</h3>
   <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
-  <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
+  <p>A checkbox or radio with the <code>disabled</code> attribute will be styled appropriately. To have the <code>&lt;label&gt;</code> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the <code>.disabled</code> class to your <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, <code>.checkbox-inline</code>, or <code>&lt;fieldset&gt;</code>.</p>
   <h4>Default (stacked)</h4>
   <div class="bs-example" data-example-id="block-checkboxes-radios">
     <form>
@@ -609,30 +609,6 @@
 {% endhighlight %}
 
 
-  <h2 id="forms-help-text">Help text</h2>
-  <p>Block level help text for form controls.</p>
-  <div class="bs-callout bs-callout-info" id="callout-help-text-accessibility">
-    <h4>Associating help text with form controls</h4>
-    <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
-  </div>
-  <div class="bs-example" data-example-id="simple-help-text">
-    <form>
-      <div class="form-group">
-        <label for="inputHelpBlock">Input with help text</label>
-        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
-      </div>
-      <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-    </form>
-  </div><!-- /.bs-example -->
-{% highlight html %}
-<label class="sr-only" for="inputHelpBlock">Input with help text</label>
-<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
-...
-<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-{% endhighlight %}
-</div>
-
-
   <h2 id="forms-control-validation">Validation states</h2>
   <p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
 
@@ -646,8 +622,7 @@
     <form>
       <div class="form-group has-success">
         <label class="control-label" for="inputSuccess1">Input with success</label>
-        <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
-        <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+        <input type="text" class="form-control" id="inputSuccess1">
       </div>
       <div class="form-group has-warning">
         <label class="control-label" for="inputWarning1">Input with warning</label>
@@ -686,8 +661,7 @@
 {% highlight html %}
 <div class="form-group has-success">
   <label class="control-label" for="inputSuccess1">Input with success</label>
-  <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
-  <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  <input type="text" class="form-control" id="inputSuccess1">
 </div>
 <div class="form-group has-warning">
   <label class="control-label" for="inputWarning1">Input with warning</label>
@@ -740,19 +714,19 @@
       <div class="form-group has-success has-feedback">
         <label class="control-label" for="inputSuccess2">Input with success</label>
         <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
-        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
         <span id="inputSuccess2Status" class="sr-only">(success)</span>
       </div>
       <div class="form-group has-warning has-feedback">
         <label class="control-label" for="inputWarning2">Input with warning</label>
         <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
-        <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+        <span class="material-icons mdi-warning form-control-feedback" aria-hidden="true"></span>
         <span id="inputWarning2Status" class="sr-only">(warning)</span>
       </div>
       <div class="form-group has-error has-feedback">
         <label class="control-label" for="inputError2">Input with error</label>
         <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
-        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+        <span class="material-icons mdi-error form-control-feedback" aria-hidden="true"></span>
         <span id="inputError2Status" class="sr-only">(error)</span>
       </div>
       <div class="form-group has-success has-feedback">
@@ -761,7 +735,7 @@
           <span class="input-group-addon">@</span>
           <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
         </div>
-        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
         <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
       </div>
     </form>
@@ -770,19 +744,19 @@
 <div class="form-group has-success has-feedback">
   <label class="control-label" for="inputSuccess2">Input with success</label>
   <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
-  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
   <span id="inputSuccess2Status" class="sr-only">(success)</span>
 </div>
 <div class="form-group has-warning has-feedback">
   <label class="control-label" for="inputWarning2">Input with warning</label>
   <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
-  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+  <span class="material-icons mdi-warning form-control-feedback" aria-hidden="true"></span>
   <span id="inputWarning2Status" class="sr-only">(warning)</span>
 </div>
 <div class="form-group has-error has-feedback">
   <label class="control-label" for="inputError2">Input with error</label>
   <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
-  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+  <span class="material-icons mdi-error form-control-feedback" aria-hidden="true"></span>
   <span id="inputError2Status" class="sr-only">(error)</span>
 </div>
 <div class="form-group has-success has-feedback">
@@ -791,7 +765,7 @@
     <span class="input-group-addon">@</span>
     <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
   </div>
-  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
   <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
 </div>
 {% endhighlight %}
@@ -803,7 +777,7 @@
         <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
         <div class="col-sm-9">
           <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
           <span id="inputSuccess3Status" class="sr-only">(success)</span>
         </div>
       </div>
@@ -814,7 +788,7 @@
             <span class="input-group-addon">@</span>
             <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
           </div>
-          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
           <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
         </div>
       </div>
@@ -826,7 +800,7 @@
     <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
     <div class="col-sm-9">
       <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+      <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
       <span id="inputSuccess3Status" class="sr-only">(success)</span>
     </div>
   </div>
@@ -837,7 +811,7 @@
         <span class="input-group-addon">@</span>
         <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
       </div>
-      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+      <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
       <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
     </div>
   </div>
@@ -849,7 +823,7 @@
       <div class="form-group has-success has-feedback">
         <label class="control-label" for="inputSuccess4">Input with success</label>
         <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
-        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
         <span id="inputSuccess4Status" class="sr-only">(success)</span>
       </div>
     </form>
@@ -861,7 +835,7 @@
           <span class="input-group-addon">@</span>
           <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
         </div>
-        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
         <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
       </div>
     </form>
@@ -871,7 +845,7 @@
   <div class="form-group has-success has-feedback">
     <label class="control-label" for="inputSuccess4">Input with success</label>
     <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
-    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
     <span id="inputSuccess4Status" class="sr-only">(success)</span>
   </div>
 </form>
@@ -882,7 +856,7 @@
       <span class="input-group-addon">@</span>
       <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
     </div>
-    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
     <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
   </div>
 </form>
@@ -894,7 +868,7 @@
     <div class="form-group has-success has-feedback">
       <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
       <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
-      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+      <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
       <span id="inputSuccess5Status" class="sr-only">(success)</span>
     </div>
     <div class="form-group has-success has-feedback">
@@ -903,7 +877,7 @@
         <span class="input-group-addon">@</span>
         <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
       </div>
-      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+      <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
       <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
     </div>
   </div>
@@ -911,7 +885,7 @@
 <div class="form-group has-success has-feedback">
   <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
   <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
-  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
   <span id="inputSuccess5Status" class="sr-only">(success)</span>
 </div>
 <div class="form-group has-success has-feedback">
@@ -920,7 +894,7 @@
     <span class="input-group-addon">@</span>
     <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
   </div>
-  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span class="material-icons mdi-check form-control-feedback" aria-hidden="true"></span>
   <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
 </div>
 {% endhighlight %}
@@ -1027,3 +1001,25 @@
 </div>
 {% endhighlight %}
 
+  <h2 id="forms-help-text">Help text</h2>
+  <p>Block level help text for form controls.</p>
+  <div class="bs-callout bs-callout-info" id="callout-help-text-accessibility">
+    <h4>Associating help text with form controls</h4>
+    <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
+  </div>
+  <div class="bs-example" data-example-id="simple-help-text">
+    <form>
+      <div class="form-group">
+        <label for="inputHelpBlock">Input with help text</label>
+        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+      </div>
+      <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<label class="sr-only" for="inputHelpBlock">Input with help text</label>
+<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+...
+<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+{% endhighlight %}
+</div>
