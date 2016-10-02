@@ -206,10 +206,10 @@
 //** `<input>` background color
 @input-bg:                       #fff;
 //** `<input disabled>` background color
-@input-bg-disabled:              @gray-lighter;
+@input-bg-disabled:              #f4f4f4;
 
 //** Text color for `<input>`s
-@input-color:                    @gray;
+@input-color:                    @gray-darker;
 //** `<input>` border color
 @input-border:                   #ccc;
 
@@ -223,7 +223,7 @@
 @input-border-radius-small:      @border-radius-small;
 
 //** Border color for inputs on focus
-@input-border-focus:             #66afe9;
+@input-border-focus:             @aq-purple;
 
 //** Placeholder text color
 @input-color-placeholder:        #999;
@@ -238,7 +238,7 @@
 //** `.form-group` margin
 @form-group-margin-bottom:       15px;
 
-@legend-color:                   @gray-dark;
+@legend-color:                   @aq-dark-grey;
 @legend-border-color:            #e5e5e5;
 
 //** Background color for textual input addons
@@ -555,23 +555,23 @@
 
 @state-primary-text:             @brand-primary;
 @state-primary-bg:               @brand-primary;
-@state-primary-border:           darken(spin(@state-primary-bg, -10), 3%);
+@state-primary-border:           @brand-primary;
 
 @state-success-text:             @brand-success;
 @state-success-bg:               @brand-success;
-@state-success-border:           darken(spin(@state-success-bg, -10), 3%);
+@state-success-border:           @brand-success;
 
 @state-info-text:                @brand-info;
 @state-info-bg:                  @brand-info;
-@state-info-border:              darken(spin(@state-info-bg, -10), 3%);
+@state-info-border:              @brand-info;
 
 @state-warning-text:             @brand-warning;
 @state-warning-bg:               @brand-warning;
-@state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
+@state-warning-border:           @brand-warning;
 
 @state-danger-text:              @brand-danger;
 @state-danger-bg:                @brand-danger;
-@state-danger-border:            darken(spin(@state-danger-bg, -10), 3%);
+@state-danger-border:            @brand-danger;
 
 
 //== Tooltips

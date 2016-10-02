@@ -33,7 +33,8 @@ label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
-  font-weight: bold;
+  color: #000;
+  //font-weight: bold;
 }
 
 
@@ -123,7 +124,7 @@ output {
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @input-border;
   border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  //.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -420,13 +421,13 @@ input[type="checkbox"] {
 
 // Feedback states
 .has-success {
-  .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+  .form-control-validation(@state-success-text; @state-success-border; @state-success-bg);
 }
 .has-warning {
-  .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
+  .form-control-validation(@state-warning-text; @state-warning-border; @state-warning-bg);
 }
 .has-error {
-  .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+  .form-control-validation(@state-danger-text; @state-danger-border; @state-danger-bg);
 }
 
 // Reposition feedback icon if input has visible label above
@@ -450,7 +451,9 @@ input[type="checkbox"] {
   display: block; // account for any element using help-block
   margin-top: 5px;
   margin-bottom: 10px;
+  padding-left: 8px;
   color: lighten(@text-color, 25%); // lighten the text some for contrast
+  border-left: 2px solid currentColor;
 }
 
 
@@ -473,6 +476,7 @@ input[type="checkbox"] {
     .form-group {
       display: inline-block;
       margin-bottom: 0;
+      margin-right: (@padding-large-horizontal / 2);
       vertical-align: middle;
     }
 
@@ -603,5 +607,147 @@ input[type="checkbox"] {
         font-size: @font-size-small;
       }
     }
+  }
+}
+
+// Custom radio & checkbox
+
+.radio,
+.radio-inline,
+.checkbox,
+.checkbox-inline {
+  label {
+    padding-left: 25px;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-left: -25px;
+  }
+}
+
+input[type="radio"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  position: relative;
+  margin-top: 5px;
+  margin-right: 4px;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: normal;
+  cursor: pointer;
+
+  // hack for alignment of custom radio in webkit browsers, where works
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    & {
+      vertical-align: -4px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+    border-radius: 50%;
+    .transition(background-color 240ms);
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: @brand-primary;
+    .scale(0);
+  }
+
+  &:after {
+    border: 1px solid @brand-primary;
+  }
+
+  &:checked:before {
+    .scale(0.5);
+  }
+
+  &:disabled:checked:before {
+    background-color: @gray-light;
+  }
+
+  &:checked:after {
+    border-color: @brand-primary;
+  }
+
+  &:disabled:after,
+  &:disabled:checked:after {
+    border-color: @gray-light;
+  }
+}
+
+input[type="checkbox"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: relative;
+  margin-right: 4px;
+  border: none;
+  -webkit-appearance: none;
+  appearance: normal;
+  cursor: pointer;
+
+  // hack for alignment of custom radio in webkit browsers, where works
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    & {
+      vertical-align: -4px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -2px;
+    margin-right: 5px;
+    border: 1px solid @brand-primary;
+    border-radius: 2px;
+    .transition(background-color 240ms);
+  }
+
+  &:checked:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 6px;
+    display: table;
+    width: 5px;
+    height: 9px;
+    border: 2px solid #fff;
+    border-top-width: 0;
+    border-left-width: 0;
+    .rotate(45deg);
+  }
+
+  &:checked:after {
+    background-color: @brand-primary;
+    border-color: @brand-primary;
+  }
+
+  &:disabled:after {
+    border-color: @gray-light;
+  }
+
+  &:disabled:checked:after {
+    background-color: @gray-light;
+    border-color: transparent;
   }
 }
