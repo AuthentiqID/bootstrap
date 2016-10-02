@@ -12,10 +12,10 @@
   </div>
 
   <div class="bs-example" data-example-id="simple-alerts">
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success mdi-info-outline" role="alert">
       <strong>Well done!</strong> You successfully read this important alert message.
     </div>
-    <div class="alert alert-info" role="alert">
+    <div class="alert alert-info mdi-info-outline" role="alert">
       <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
     </div>
     <div class="alert alert-warning" role="alert">
@@ -24,12 +24,20 @@
     <div class="alert alert-danger" role="alert">
       <strong>Oh snap!</strong> Change a few things up and try submitting again.
     </div>
+    <div class="alert alert-default" role="alert">
+      <strong>Oh snap!</strong> Default version.
+    </div>
+    <div class="alert alert-outline" role="alert">
+      <strong>Oh snap!</strong> Outlined version too.
+    </div>
   </div>
 {% highlight html %}
-<div class="alert alert-success" role="alert">...</div>
-<div class="alert alert-info" role="alert">...</div>
+<div class="alert alert-success mdi-info-outline" role="alert">...</div>
+<div class="alert alert-info mdi-info-outline" role="alert">...</div>
 <div class="alert alert-warning" role="alert">...</div>
 <div class="alert alert-danger" role="alert">...</div>
+<div class="alert alert-default" role="alert">...</div>
+<div class="alert alert-outline" role="alert">...</div>
 {% endhighlight %}
 
   <h2 id="alerts-dismissible">Dismissible alerts</h2>

@@ -7,6 +7,7 @@
 // -------------------------
 
 .alert {
+  position: relative;
   padding: @alert-padding;
   margin-bottom: @line-height-computed;
   border: 1px solid transparent;
@@ -20,8 +21,15 @@
   }
 
   // Provide class for links that match alerts
-  .alert-link {
+  a, .alert-link {
+    text-decoration: underline;
     font-weight: @alert-link-font-weight;
+    color: currentColor;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 
   // Improve alignment and spacing of inner content
@@ -32,6 +40,32 @@
 
   > p + p {
     margin-top: 5px;
+  }
+
+  &[class^="mdi-"], &[class*="mdi-"] {
+    padding-left: 50px;
+
+    &:before {
+      position: absolute;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.6em;
+      top: 7px;
+      left: 14px;
+
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+      // text-rendering: auto;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
   }
 }
 
@@ -49,12 +83,23 @@
     top: -2px;
     right: -21px;
     color: inherit;
+    font-size: 30px;
+    text-shadow: none;
   }
 }
 
 // Alternate styles
 //
 // Generate contextual modifier classes for colorizing the alert.
+
+.alert-outline {
+  background-color: transparent;
+  border-color: @alert-default-bg;
+}
+
+.alert-default {
+  .alert-variant(@alert-default-bg; @alert-default-border; @alert-default-text);
+}
 
 .alert-success {
   .alert-variant(@alert-success-bg; @alert-success-border; @alert-success-text);

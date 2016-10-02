@@ -27,7 +27,7 @@
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-darker:            #222;
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
 @gray-light:             lighten(@gray-base, 46.7%); // #777
@@ -68,7 +68,7 @@
 @font-family-serif:       "Noto Serif", "Droid Serif", Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        @font-family-serif;
 
 @font-size-base:          16px;
 @font-size-large:         18px;
@@ -683,23 +683,27 @@
 
 @alert-padding:               15px;
 @alert-border-radius:         @border-radius-base;
-@alert-link-font-weight:      bold;
+@alert-link-font-weight:      400;
 
-@alert-success-bg:            @state-success-bg;
-@alert-success-text:          @state-success-text;
-@alert-success-border:        @state-success-border;
+@alert-default-bg:            #c7c7cc;
+@alert-default-text:          @gray-darker;
+@alert-default-border:        transparent;
 
-@alert-info-bg:               @state-info-bg;
-@alert-info-text:             @state-info-text;
-@alert-info-border:           @state-info-border;
+@alert-success-bg:            @brand-success;
+@alert-success-text:          @gray-darker;
+@alert-success-border:        transparent;
 
-@alert-warning-bg:            @state-warning-bg;
-@alert-warning-text:          @state-warning-text;
-@alert-warning-border:        @state-warning-border;
+@alert-info-bg:               @brand-info;
+@alert-info-text:             @gray-darker;
+@alert-info-border:           transparent;
 
-@alert-danger-bg:             @state-danger-bg;
-@alert-danger-text:           @state-danger-text;
-@alert-danger-border:         @state-danger-border;
+@alert-warning-bg:            @brand-warning;
+@alert-warning-text:          @gray-darker;
+@alert-warning-border:        transparent;
+
+@alert-danger-bg:             @brand-danger;
+@alert-danger-text:           @gray-darker;
+@alert-danger-border:         transparent;
 
 
 //== Progress bars
@@ -881,7 +885,7 @@
 //
 //##
 
-@close-font-weight:           bold;
+@close-font-weight:           400;
 @close-color:                 #000;
 @close-text-shadow:           0 1px 0 #fff;
 
