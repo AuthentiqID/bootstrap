@@ -30,6 +30,12 @@ body {
   line-height: @line-height-base;
   color: @text-color;
   background-color: @body-bg;
+
+  letter-spacing: .01em;
+  word-spacing: -.07em;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 // Reset fonts for relevant elements
@@ -40,6 +46,9 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 
@@ -115,6 +124,26 @@ hr {
   margin-bottom: @line-height-computed;
   border: 0;
   border-top: 1px solid @hr-border;
+
+  &.primary {
+    border-top-color: @brand-primary;
+  }
+
+  &.secondary {
+    border-top-color: @aq-orange;
+  }
+
+  &.thick {
+    border-top-width: 2px;
+  }
+
+  &.small {
+    width: 100px;
+  }
+
+  &.left {
+    margin: (@line-height-computed / 2) 0;
+  }
 }
 
 

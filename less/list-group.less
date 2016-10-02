@@ -21,7 +21,7 @@
 .list-group-item {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 15px;
   // Place the border on the list items and negative margin up for better styling
   margin-bottom: -1px;
   background-color: @list-group-bg;
@@ -127,4 +127,33 @@ button.list-group-item {
 .list-group-item-text {
   margin-bottom: 0;
   line-height: 1.3;
+  color: @gray-light;
+}
+
+// lists with icons
+ul {
+  &.with-icons {
+
+	// font-family: $font-family-sans-serif;
+
+    li {
+      position: relative;
+
+      margin-left: 42px;    // same value in the material-icons below
+      margin-bottom: 24px;
+    }
+
+    .material-icons {
+
+      position: absolute;
+      top: 50%;
+      margin-top: -16px;
+
+      margin-left: -42px;   // same value in the parent li above
+      margin-right: 5px;
+      vertical-align: text-bottom;
+      font-size: floor((@font-size-base * 1.8));
+      color: @aq-orange;
+    }
+  }
 }
