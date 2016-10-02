@@ -1,0 +1,114 @@
+//
+// Extras - non- bootstrap stuff
+// --------------------------------------------------
+
+.spacer {
+  // default
+  height: 0;
+  margin-top: 48px;
+
+  @media (max-width: @screen-sm-max) {
+    margin-top: 24px !important;
+  }
+
+  &.double {
+    // default
+    margin-top: 84px;
+
+    @media (max-width: @screen-sm-max) {
+      margin-top: 48px !important;
+    }
+  }
+}
+
+.hexagon-mask {
+  -webkit-clip-path: polygon(
+            48% 0.4%, 50% 0%, 52% 0.4%,
+            98% 24.5%, 98.5% 25.2%, 100% 28%,
+            100% 72%, 98.5% 74.8%, 98% 75.5%,
+            52% 99.6%, 50% 100%, 48% 99.6%,
+            2% 75.5%, 1.3% 74.8%, 0% 72%,
+            0% 28%, 1.3% 25.2%, 2% 24.5%);
+          clip-path: polygon(
+            48% 0.4%, 50% 0%, 52% 0.4%,
+            98% 24.5%, 98.5% 25.2%, 100% 28%,
+            100% 72%, 98.5% 74.8%, 98% 75.5%,
+            52% 99.6%, 50% 100%, 48% 99.6%,
+            2% 75.5%, 1.3% 74.8%, 0% 72%,
+            0% 28%, 1.3% 25.2%, 2% 24.5%);
+
+  /* csslint ignore:start */
+  // FF, fallback to border-radius
+  @-moz-document url-prefix() {
+    & {
+      border-radius: 50%;
+    }
+  }
+  /* csslint ignore:end */
+}
+
+.hexagon-outline {
+  position: relative;
+  display: inline-block;
+  padding: 18px;
+  color: @aq-purple;
+  background-color: #fff;
+
+  vertical-align: middle;
+
+  .with-icon {
+    position: relative;
+    z-index: 3;
+    font-size: 36px;
+    color: currentColor;
+    line-height: 1;
+  }
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    background-color: currentColor;
+  }
+
+  &:after {
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    z-index: 2;
+
+    background-color: inherit;
+  }
+
+  &, &:before, &:after {
+      -webkit-clip-path: polygon(
+              48% 0.4%, 50% 0%, 52% 0.4%,
+              98% 24.5%, 98.5% 25.2%, 100% 28%,
+              100% 72%, 98.5% 74.8%, 98% 75.5%,
+              52% 99.6%, 50% 100%, 48% 99.6%,
+              2% 75.5%, 1.3% 74.8%, 0% 72%,
+              0% 28%, 1.3% 25.2%, 2% 24.5%);
+            clip-path: polygon(
+              48% 0.4%, 50% 0%, 52% 0.4%,
+              98% 24.5%, 98.5% 25.2%, 100% 28%,
+              100% 72%, 98.5% 74.8%, 98% 75.5%,
+              52% 99.6%, 50% 100%, 48% 99.6%,
+              2% 75.5%, 1.3% 74.8%, 0% 72%,
+              0% 28%, 1.3% 25.2%, 2% 24.5%);
+
+    /* csslint ignore:start */
+    // FF, fallback to broder-radius
+    @-moz-document url-prefix() {
+      & {
+        border-radius: 50%;
+      }
+    }
+    /* csslint ignore:end */
+  }
+}
