@@ -42,7 +42,7 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-            ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Authentiq Bootstrap theme v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2015-<%= grunt.template.today("yyyy") %> Authentiq\n' +
             ' * Licensed under the <%= pkg.license %> license\n' +
             ' */\n',

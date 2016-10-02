@@ -2,10 +2,6 @@
 // Button groups
 // --------------------------------------------------
 
-.btn-group > .btn {
-  font-size: @font-size-medium;
-}
-
 // Make the div behave like a button
 .btn-group,
 .btn-group-vertical {
@@ -15,6 +11,8 @@
   > .btn {
     position: relative;
     float: left;
+    font-size: @font-size-medium;
+
     // Bring the "active" button to the front
     &:hover,
     &:focus,
