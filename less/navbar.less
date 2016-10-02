@@ -20,12 +20,6 @@
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
 
-  .badge {
-    margin-left: (@navbar-padding-horizontal / 2);
-    background-color: #282727;
-    color: #fff;
-  }
-
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-border-radius;
   }
@@ -546,10 +540,6 @@
       }
     }
   }
-
-  .badge {
-    color: @aq-orange;
-  }
 }
 
 // Inverse navbar
@@ -855,9 +845,5 @@
         color: @navbar-secondary-link-disabled-color;
       }
     }
-  }
-
-  .badge {
-    background-color: @aq-orange;
   }
 }

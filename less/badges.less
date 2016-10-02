@@ -52,7 +52,8 @@
     background-color: @badge-active-bg;
   }
 
-  .list-group-item > & {
+  .list-group-item > &,
+  .nav-stacked & {
     float: right;
   }
 
@@ -60,7 +61,22 @@
     margin-right: 5px;
   }
 
+  .nav-tabs > li > a > &,
   .nav-pills > li > a > & {
     margin-left: 3px;
+  }
+
+  .navbar & {
+    margin-left: 3px;
+  }
+
+  .navbar-default & {
+    background-color: @aq-darker-grey;
+    color: @aq-orange;
+  }
+
+  .navbar-inverse & {
+    background-color: @aq-darker-grey;
+    color: #fff;
   }
 }
