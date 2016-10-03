@@ -12,7 +12,7 @@
     <title>Documentation Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../dist/css/dashboard-theme.css" rel="stylesheet">
+    <link href="../../../dist/css/bootstrap-theme.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 
   <body class="full-bg" data-spy="scroll" data-target=".toc" data-offset="145">
     <!--<div id="wrapper">-->
-      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
@@ -164,7 +164,7 @@
               Better check yourself, you're not looking too good. <a href="">Sample link</a>
             </div>
 
-            <div class="alert alert-dismissible mdi-info-outline" role="alert">
+            <div class="alert alert-default alert-dismissible mdi-info-outline" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               Better check yourself, you're not looking too good. <a href="">Sample link</a>
             </div>
@@ -207,6 +207,10 @@
               Default button
             </button>
 
+            <button type="button" class="btn btn-primary btn-pill">
+              Pill button
+            </button>
+
             <hr />
 
             <!-- button sizes -->
@@ -214,7 +218,6 @@
             <p>
               <button type="button" class="btn btn-primary btn-sm">Primary small button</button>
               <button type="button" class="btn btn-primary">Primary button</button>
-              <button type="button" class="btn btn-primary btn-lg">Primary large button</button>
             </p>
 
 
@@ -417,8 +420,8 @@
 
             <nav>
               <ul class="pager">
-                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                <li class="previous"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
+                <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
               </ul>
             </nav>
 
