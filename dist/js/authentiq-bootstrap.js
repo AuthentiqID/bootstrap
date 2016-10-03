@@ -1,6 +1,6 @@
 /*!
- * Bootstrap v3.3.7aq1 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Authentiq Bootstrap theme v3.3.7aq1 (http://getbootstrap.com)
+ * Copyright 2015-2016 Authentiq
  * Licensed under the MIT license
  */
 
