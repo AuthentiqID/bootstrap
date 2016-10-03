@@ -66,10 +66,8 @@
       </div>
     </div>
     <div class="btn-toolbar" role="toolbar">
-      <button type="button" class="btn btn-default btn-lg"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
       <button type="button" class="btn btn-default"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
       <button type="button" class="btn btn-default btn-sm"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
-      <button type="button" class="btn btn-default btn-xs"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
     </div>
   </div>
 {% highlight html %}
@@ -83,15 +81,13 @@
 {% endhighlight %}
   <p>An icon used in an <a href="#alerts">alert</a> to convey that it's an error message, with additional <code>.sr-only</code> text to convey this hint to users of assistive technologies.</p>
   <div class="bs-example" data-example-id="glyphicons-accessibility">
-    <div class="alert alert-danger" role="alert">
-      <span class="material-icons mdi-info" aria-hidden="true"></span>
+    <div class="alert alert-danger mdi-info" role="alert">
       <span class="sr-only">Error:</span>
       Enter a valid email address
     </div>
   </div>
 {% highlight html %}
-<div class="alert alert-danger" role="alert">
- <span class="material-icons mdi-info" aria-hidden="true"></span>
+<div class="alert alert-danger mdi-info" role="alert">
   <span class="sr-only">Error:</span>
   Enter a valid email address
 </div>

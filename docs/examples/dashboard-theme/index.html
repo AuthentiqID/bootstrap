@@ -33,7 +33,7 @@
 
   <body>
     <div id="wrapper">
-      <nav class="navbar navbar-fixed-top navbar-inverse">
+      <nav class="navbar navbar-fixed-top navbar-default">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -129,7 +129,7 @@
 
           <div class="navbar-form navbar-left navbar-action">
             CONFIGURATION MODE
-            <button type="submit" class="btn btn-primary">Activate</button>
+            <button type="submit" class="btn btn-primary btn-pill">Activate</button>
           </div>
 
           <!--<p class="navbar-text">-->
@@ -156,11 +156,6 @@
                   </dl>
                 </div>
               </div>
-
-              <h4 id="Select-technology">Select a technology</h4>
-              <select>
-                <option>Python</option>
-              </select>
 
               <hr />
 
@@ -272,6 +267,10 @@
                 Default button
               </button>
 
+              <button type="button" class="btn btn-primary btn-pill">
+                Pill button
+              </button>
+
               <hr />
 
               <!-- button sizes -->
@@ -279,7 +278,6 @@
               <p>
                 <button type="button" class="btn btn-primary btn-sm">Primary small button</button>
                 <button type="button" class="btn btn-primary">Primary button</button>
-                <button type="button" class="btn btn-primary btn-lg">Primary large button</button>
               </p>
 
 
@@ -482,8 +480,8 @@
 
               <nav>
                 <ul class="pager">
-                  <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-                  <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                  <li class="previous"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
+                  <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
                 </ul>
               </nav>
 

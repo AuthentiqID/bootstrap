@@ -99,17 +99,6 @@
   <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
   <div class="bs-example" data-example-id="pagination-sizing">
     <nav aria-label="...">
-      <ul class="pagination pagination-lg">
-        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-      </ul>
-    </nav>
-    <nav aria-label="...">
       <ul class="pagination">
         <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
         <li><a href="#">1</a></li>
@@ -133,7 +122,6 @@
     </nav>
   </div>
 {% highlight html %}
-<nav aria-label="..."><ul class="pagination pagination-lg">...</ul></nav>
 <nav aria-label="..."><ul class="pagination">...</ul></nav>
 <nav aria-label="..."><ul class="pagination pagination-sm">...</ul></nav>
 {% endhighlight %}
@@ -166,16 +154,16 @@
   <div class="bs-example" data-example-id="aligned-pager-links">
     <nav aria-label="...">
       <ul class="pager">
-        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+        <li class="previous"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
+        <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
       </ul>
     </nav>
   </div>
 {% highlight html %}
 <nav aria-label="...">
   <ul class="pager">
-    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    <li class="previous"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
+    <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
   </ul>
 </nav>
 {% endhighlight %}
@@ -186,16 +174,16 @@
   <div class="bs-example" data-example-id="disabled-pager">
     <nav aria-label="...">
       <ul class="pager">
-        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+        <li class="previous disabled"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
+        <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
       </ul>
     </nav>
   </div>
 {% highlight html %}
 <nav aria-label="...">
   <ul class="pager">
-    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    <li class="previous disabled"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
+    <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
   </ul>
 </nav>
 {% endhighlight %}

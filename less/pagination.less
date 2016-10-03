@@ -6,6 +6,7 @@
   padding-left: 0;
   margin: @line-height-computed 0;
   border-radius: @border-radius-base;
+  font-family: @font-family-sans-serif;
   font-size: @font-size-medium;
 
   > li {
@@ -14,7 +15,7 @@
     > span {
       position: relative;
       float: left; // Collapse white-space
-      padding: @padding-base-vertical @padding-base-horizontal;
+      padding: @padding-small-vertical 12px;
       line-height: @line-height-base;
       text-decoration: none;
       color: @pagination-color;
@@ -26,13 +27,13 @@
       > a,
       > span {
         margin-left: 0;
-        .border-left-radius(@border-radius-base);
+        .border-left-radius(@border-radius-small);
       }
     }
     &:last-child {
       > a,
       > span {
-        .border-right-radius(@border-radius-base);
+        .border-right-radius(@border-radius-small);
       }
     }
   }
@@ -78,11 +79,6 @@
 
 // Sizing
 // --------------------------------------------------
-
-// Large
-.pagination-lg {
-  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
-}
 
 // Small
 .pagination-sm {

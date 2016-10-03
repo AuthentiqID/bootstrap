@@ -22,6 +22,11 @@
 @aq-dark-grey:                   #404040;
 @aq-light-grey:                  #f0f0f0;
 
+@nav-text-color:                 #222;
+@aq-orange-darker:               #e5603d;
+@nav-background-color:           #f0f0f0;
+@nav-lighter-button:             rgba(255, 255, 255, 0.4);
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -509,12 +514,12 @@
 @pagination-border:                    #ddd;
 
 @pagination-hover-color:               #fff;
-@pagination-hover-bg:                  #a7a7a7;
-@pagination-hover-border:              #ddd;
+@pagination-hover-bg:                  @aq-dark-grey;
+@pagination-hover-border:              @aq-dark-grey;
 
 @pagination-active-color:              #fff;
-@pagination-active-bg:                 @aq-dark-grey;
-@pagination-active-border:             #ddd;
+@pagination-active-bg:                 @aq-darker-grey;
+@pagination-active-border:             @aq-darker-grey;
 
 @pagination-disabled-color:            @gray-light;
 @pagination-disabled-bg:               #fff;
@@ -583,11 +588,11 @@
 //** Tooltip text color
 @tooltip-color:               #fff;
 //** Tooltip background color
-@tooltip-bg:                  #000;
-@tooltip-opacity:             .9;
+@tooltip-bg:                  #333;
+@tooltip-opacity:             1.0;
 
 //** Tooltip arrow width
-@tooltip-arrow-width:         5px;
+@tooltip-arrow-width:         7px;
 //** Tooltip arrow color
 @tooltip-arrow-color:         @tooltip-bg;
 
@@ -715,18 +720,18 @@
 //** Progress bar text color
 @progress-bar-color:          #fff;
 //** Variable for setting rounded corners on progress bar.
-@progress-border-radius:      @border-radius-base;
+@progress-border-radius:      @border-radius-small;
 
 //** Default progress bar color
 @progress-bar-bg:             @brand-primary;
 //** Success progress bar color
-@progress-bar-success-bg:     @brand-success;
+@progress-bar-success-bg:     #5cb85c;
 //** Warning progress bar color
-@progress-bar-warning-bg:     @brand-warning;
+@progress-bar-warning-bg:     #f0ad4e;
 //** Danger progress bar color
-@progress-bar-danger-bg:      @brand-danger;
+@progress-bar-danger-bg:      #d9534f;
 //** Info progress bar color
-@progress-bar-info-bg:        @brand-info;
+@progress-bar-info-bg:        #5bc0de;
 
 
 //== List group
@@ -825,8 +830,8 @@
 //
 //##
 
-@well-bg:                     #f5f5f5;
-@well-border:                 darken(@well-bg, 7%);
+@well-bg:                     #f9f9f9;
+@well-border:                 #ddd;
 
 
 //== Badges
@@ -900,9 +905,9 @@
 @kbd-color:                   #fff;
 @kbd-bg:                      #333;
 
-@pre-bg:                      #f5f5f5;
-@pre-color:                   @gray-dark;
-@pre-border-color:            #ccc;
+@pre-bg:                      #404040;
+@pre-color:                   #fff;
+@pre-border-color:            @pre-bg;
 @pre-scrollable-max-height:   340px;
 
 

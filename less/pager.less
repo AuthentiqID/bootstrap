@@ -8,6 +8,7 @@
   margin: @line-height-computed 0;
   list-style: none;
   text-align: center;
+  font-family: @font-family-sans-serif;
   font-size: @font-size-medium;
   &:extend(.clearfix all);
   li {
@@ -20,12 +21,14 @@
       background-color: @pager-bg;
       border: 1px solid @pager-border;
       border-radius: @pager-border-radius;
+      white-space: nowrap;
     }
 
     > a:hover,
     > a:focus {
       text-decoration: none;
       background-color: @pager-hover-bg;
+      color: #fff;
     }
   }
 
@@ -34,12 +37,20 @@
     > span {
       float: right;
     }
+
+    .material-icons {
+      margin-right: -8px
+    }
   }
 
   .previous {
     > a,
     > span {
       float: left;
+    }
+
+    .material-icons {
+      margin-left: -8px
     }
   }
 
@@ -52,5 +63,9 @@
       background-color: @pager-bg;
       cursor: @cursor-disabled;
     }
+  }
+
+  .material-icons {
+    font-size: @font-size-medium;
   }
 }

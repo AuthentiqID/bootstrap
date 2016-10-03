@@ -37,6 +37,7 @@ h5, .h5,
 h6, .h6 {
   margin-top: (@line-height-computed / 2);
   margin-bottom: (@line-height-computed / 2);
+  font-weight: 700;
 
   small,
   .small {
@@ -83,7 +84,7 @@ small,
 
 mark,
 .mark {
-  background-color: @state-warning-bg;
+  background-color: fade(@state-warning-bg, 50%);
   padding: .2em;
 }
 
@@ -222,6 +223,13 @@ dd {
     }
     dd {
       margin-left: @dl-horizontal-offset;
+    }
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    dt {
+      text-align: left;
+      font-weight: 400;
     }
   }
 }
