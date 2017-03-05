@@ -6426,7 +6426,7 @@ button.close {
   top: 2px;
   display: inline-block;
   font-family: 'Material Icons';
-  font-size: 1.1em !important;
+  font-size: 1.1em;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
