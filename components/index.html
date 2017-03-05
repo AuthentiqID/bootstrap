@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <title>
@@ -30,7 +31,6 @@
 
 <!-- Documentation extras -->
 
-<link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 <link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="../assets/css/src/docs.css" rel="stylesheet">
 
@@ -39,7 +39,7 @@
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
@@ -61,7 +61,7 @@
     <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
 
     <!-- Docs master nav -->
-    <header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
@@ -92,11 +92,6 @@
         <li>
           <a href="../customize/">Customize</a>
         </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes')">Themes</a></li>
-        <li><a href="http://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a></li>
-        <li><a href="http://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Blog</a></li>
       </ul>
     </nav>
   </div>
@@ -130,6 +125,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-ac-unit" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-ac-unit</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-access-alarm" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-access-alarm</span>
         </li>
@@ -147,6 +147,11 @@
         <li>
           <span class="material-icons mdi-accessibility" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-accessibility</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-accessible" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-accessible</span>
         </li>
       
         <li>
@@ -180,6 +185,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-add-a-photo" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-add-a-photo</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-add-alarm" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-add-alarm</span>
         </li>
@@ -205,6 +215,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-add-location" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-add-location</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-add-shopping-cart" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-add-shopping-cart</span>
         </li>
@@ -212,6 +227,11 @@
         <li>
           <span class="material-icons mdi-add-to-photos" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-add-to-photos</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-add-to-queue" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-add-to-queue</span>
         </li>
       
         <li>
@@ -275,6 +295,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-airport-shuttle" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-airport-shuttle</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-alarm" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-alarm</span>
         </li>
@@ -297,6 +322,16 @@
         <li>
           <span class="material-icons mdi-album" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-album</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-all-inclusive" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-all-inclusive</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-all-out" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-all-out</span>
         </li>
       
         <li>
@@ -325,6 +360,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-arrow-downward" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-arrow-downward</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-arrow-drop-down" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-arrow-drop-down</span>
         </li>
@@ -342,6 +382,16 @@
         <li>
           <span class="material-icons mdi-arrow-forward" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-arrow-forward</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-arrow-upward" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-arrow-upward</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-art-track" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-art-track</span>
         </li>
       
         <li>
@@ -457,6 +507,11 @@
         <li>
           <span class="material-icons mdi-battery-unknown" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-battery-unknown</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-beach-access" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-beach-access</span>
         </li>
       
         <li>
@@ -670,6 +725,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-business-center" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-business-center</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-cached" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-cached</span>
         </li>
@@ -702,6 +762,11 @@
         <li>
           <span class="material-icons mdi-call-missed" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-call-missed</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-call-missed-outgoing" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-call-missed-outgoing</span>
         </li>
       
         <li>
@@ -762,6 +827,11 @@
         <li>
           <span class="material-icons mdi-card-travel" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-card-travel</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-casino" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-casino</span>
         </li>
       
         <li>
@@ -832,6 +902,16 @@
         <li>
           <span class="material-icons mdi-chevron-right" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-chevron-right</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-child-care" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-child-care</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-child-friendly" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-child-friendly</span>
         </li>
       
         <li>
@@ -935,6 +1015,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-compare-arrows" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-compare-arrows</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-computer" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-computer</span>
         </li>
@@ -942,6 +1027,11 @@
         <li>
           <span class="material-icons mdi-confirmation-number" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-confirmation-number</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-contact-mail" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-contact-mail</span>
         </li>
       
         <li>
@@ -980,8 +1070,18 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-copyright" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-copyright</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-create" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-create</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-create-new-folder" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-create-new-folder</span>
         </li>
       
         <li>
@@ -1040,6 +1140,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-crop-rotate" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-crop-rotate</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-crop-square" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-crop-square</span>
         </li>
@@ -1052,6 +1157,11 @@
         <li>
           <span class="material-icons mdi-data-usage" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-data-usage</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-date-range" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-date-range</span>
         </li>
       
         <li>
@@ -1102,6 +1212,11 @@
         <li>
           <span class="material-icons mdi-devices" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-devices</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-devices-other" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-devices-other</span>
         </li>
       
         <li>
@@ -1205,8 +1320,23 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-donut-large" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-donut-large</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-donut-small" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-donut-small</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-drafts" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-drafts</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-drag-handle" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-drag-handle</span>
         </li>
       
         <li>
@@ -1225,6 +1355,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-edit-location" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-edit-location</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-eject" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-eject</span>
         </li>
@@ -1232,6 +1367,11 @@
         <li>
           <span class="material-icons mdi-email" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-email</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-enhanced-encryption" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-enhanced-encryption</span>
         </li>
       
         <li>
@@ -1365,6 +1505,31 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-fiber-dvr" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-fiber-dvr</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-fiber-manual-record" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-fiber-manual-record</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-fiber-new" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-fiber-new</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-fiber-pin" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-fiber-pin</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-fiber-smart-record" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-fiber-smart-record</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-file-download" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-file-download</span>
         </li>
@@ -1482,6 +1647,16 @@
         <li>
           <span class="material-icons mdi-find-replace" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-find-replace</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-fingerprint" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-fingerprint</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-fitness-center" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-fitness-center</span>
         </li>
       
         <li>
@@ -1650,6 +1825,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-format-shapes" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-format-shapes</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-format-size" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-format-size</span>
         </li>
@@ -1700,6 +1880,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-free-breakfast" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-free-breakfast</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-fullscreen" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-fullscreen</span>
         </li>
@@ -1725,6 +1910,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-gavel" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-gavel</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-gesture" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-gesture</span>
         </li>
@@ -1737,6 +1927,11 @@
         <li>
           <span class="material-icons mdi-gif" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-gif</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-golf-course" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-golf-course</span>
         </li>
       
         <li>
@@ -1860,6 +2055,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-highlight" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-highlight</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-highlight-off" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-highlight-off</span>
         </li>
@@ -1872,6 +2072,11 @@
         <li>
           <span class="material-icons mdi-home" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-home</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-hot-tub" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-hot-tub</span>
         </li>
       
         <li>
@@ -1910,8 +2115,18 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-import-contacts" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-import-contacts</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-import-export" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-import-export</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-important-devices" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-important-devices</span>
         </li>
       
         <li>
@@ -2045,6 +2260,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-kitchen" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-kitchen</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-label" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-label</span>
         </li>
@@ -2130,8 +2350,33 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-lightbulb-outline" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-lightbulb-outline</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-line-style" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-line-style</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-line-weight" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-line-weight</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-linear-scale" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-linear-scale</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-link" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-link</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-linked-camera" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-linked-camera</span>
         </li>
       
         <li>
@@ -2390,6 +2635,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-mail-outline" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-mail-outline</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-map" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-map</span>
         </li>
@@ -2490,8 +2740,18 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-motorcycle" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-motorcycle</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-mouse" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-mouse</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-move-to-inbox" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-move-to-inbox</span>
         </li>
       
         <li>
@@ -2505,8 +2765,18 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-movie-filter" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-movie-filter</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-music-note" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-music-note</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-music-video" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-music-video</span>
         </li>
       
         <li>
@@ -2540,8 +2810,18 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-near-me" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-near-me</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-network-cell" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-network-cell</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-network-check" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-network-check</span>
         </li>
       
         <li>
@@ -2560,8 +2840,18 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-next-week" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-next-week</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-nfc" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-nfc</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-no-encryption" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-no-encryption</span>
         </li>
       
         <li>
@@ -2615,6 +2905,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-opacity" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-opacity</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-open-in-browser" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-open-in-browser</span>
         </li>
@@ -2642,6 +2937,11 @@
         <li>
           <span class="material-icons mdi-palette" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-palette</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-pan-tool" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-pan-tool</span>
         </li>
       
         <li>
@@ -2765,8 +3065,18 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-person-pin-circle" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-person-pin-circle</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-personal-video" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-personal-video</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-pets" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-pets</span>
         </li>
       
         <li>
@@ -2860,6 +3170,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-photo-filter" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-photo-filter</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-photo-library" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-photo-library</span>
         </li>
@@ -2887,6 +3202,11 @@
         <li>
           <span class="material-icons mdi-picture-in-picture" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-picture-in-picture</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-picture-in-picture-alt" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-picture-in-picture-alt</span>
         </li>
       
         <li>
@@ -2925,6 +3245,16 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-playlist-add-check" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-playlist-add-check</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-playlist-play" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-playlist-play</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-plus-one" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-plus-one</span>
         </li>
@@ -2937,6 +3267,11 @@
         <li>
           <span class="material-icons mdi-polymer" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-polymer</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-pool" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-pool</span>
         </li>
       
         <li>
@@ -2962,6 +3297,11 @@
         <li>
           <span class="material-icons mdi-power-settings-new" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-power-settings-new</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-pregnant-woman" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-pregnant-woman</span>
         </li>
       
         <li>
@@ -3005,6 +3345,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-queue-play-next" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-queue-play-next</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-radio" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-radio</span>
         </li>
@@ -3035,6 +3380,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-record-voice-over" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-record-voice-over</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-redeem" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-redeem</span>
         </li>
@@ -3062,6 +3412,11 @@
         <li>
           <span class="material-icons mdi-remove-circle-outline" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-remove-circle-outline</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-remove-from-queue" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-remove-from-queue</span>
         </li>
       
         <li>
@@ -3145,6 +3500,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-room-service" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-room-service</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-rotate-90-degrees-ccw" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-rotate-90-degrees-ccw</span>
         </li>
@@ -3160,8 +3520,23 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-rounded-corner" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-rounded-corner</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-router" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-router</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-rowing" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-rowing</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-rv-hookup" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-rv-hookup</span>
         </li>
       
         <li>
@@ -3207,6 +3582,11 @@
         <li>
           <span class="material-icons mdi-screen-rotation" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-screen-rotation</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-screen-share" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-screen-share</span>
         </li>
       
         <li>
@@ -3355,6 +3735,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-short-text" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-short-text</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-shuffle" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-shuffle</span>
         </li>
@@ -3365,8 +3750,8 @@
         </li>
       
         <li>
-          <span class="material-icons mdi-signal" aria-hidden="true"></span>
-          <span class="material-icon-class">mdi-signal</span>
+          <span class="material-icons mdi-signal-cellular-connected-no-internet-4-bar" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-signal-cellular-connected-no-internet-4-bar</span>
         </li>
       
         <li>
@@ -3425,8 +3810,23 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-slow-motion-video" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-slow-motion-video</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-smartphone" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-smartphone</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-smoke-free" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-smoke-free</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-smoking-rooms" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-smoking-rooms</span>
         </li>
       
         <li>
@@ -3452,6 +3852,11 @@
         <li>
           <span class="material-icons mdi-sort-by-alpha" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-sort-by-alpha</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-spa" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-spa</span>
         </li>
       
         <li>
@@ -3530,6 +3935,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-stop-screen-share" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-stop-screen-share</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-storage" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-storage</span>
         </li>
@@ -3560,8 +3970,23 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-subdirectory-arrow-left" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-subdirectory-arrow-left</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-subdirectory-arrow-right" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-subdirectory-arrow-right</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-subject" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-subject</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-subscriptions" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-subscriptions</span>
         </li>
       
         <li>
@@ -3675,6 +4100,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-text-fields" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-text-fields</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-text-format" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-text-format</span>
         </li>
@@ -3720,6 +4150,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-timeline" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-timeline</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-timer" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-timer</span>
         </li>
@@ -3757,6 +4192,11 @@
         <li>
           <span class="material-icons mdi-tonality" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-tonality</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-touch-app" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-touch-app</span>
         </li>
       
         <li>
@@ -3820,6 +4260,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-unarchive" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-unarchive</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-undo" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-undo</span>
         </li>
@@ -3832,6 +4277,11 @@
         <li>
           <span class="material-icons mdi-unfold-more" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-unfold-more</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-update" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-update</span>
         </li>
       
         <li>
@@ -3877,6 +4327,11 @@
         <li>
           <span class="material-icons mdi-videocam-off" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-videocam-off</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-videogame-asset" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-videogame-asset</span>
         </li>
       
         <li>
@@ -4015,6 +4470,11 @@
         </li>
       
         <li>
+          <span class="material-icons mdi-watch-later" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-watch-later</span>
+        </li>
+      
+        <li>
           <span class="material-icons mdi-wb-auto" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-wb-auto</span>
         </li>
@@ -4047,6 +4507,16 @@
         <li>
           <span class="material-icons mdi-web" aria-hidden="true"></span>
           <span class="material-icon-class">mdi-web</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-web-asset" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-web-asset</span>
+        </li>
+      
+        <li>
+          <span class="material-icons mdi-weekend" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-weekend</span>
         </li>
       
         <li>
@@ -4099,6 +4569,11 @@
           <span class="material-icon-class">mdi-zoom-out</span>
         </li>
       
+        <li>
+          <span class="material-icons mdi-zoom-out-map" aria-hidden="true"></span>
+          <span class="material-icon-class">mdi-zoom-out-map</span>
+        </li>
+      
     </ul>
   </div>
 
@@ -4149,8 +4624,10 @@
       </div>
     </div>
     <div class="btn-toolbar" role="toolbar">
+      <button type="button" class="btn btn-default btn-lg"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
       <button type="button" class="btn btn-default"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
       <button type="button" class="btn btn-default btn-sm"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
+      <button type="button" class="btn btn-default btn-xs"><span class="material-icons mdi-star" aria-hidden="true"></span> Star</button>
     </div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">aria-label=</span><span class="s">"Left Align"</span><span class="nt">&gt;</span>
@@ -4162,12 +4639,14 @@
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
   <p>An icon used in an <a href="#alerts">alert</a> to convey that it's an error message, with additional <code>.sr-only</code> text to convey this hint to users of assistive technologies.</p>
   <div class="bs-example" data-example-id="glyphicons-accessibility">
-    <div class="alert alert-danger mdi-info" role="alert">
+    <div class="alert alert-danger" role="alert">
+      <span class="material-icons mdi-info" aria-hidden="true"></span>
       <span class="sr-only">Error:</span>
       Enter a valid email address
     </div>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger mdi-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"material-icons mdi-info"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Error:<span class="nt">&lt;/span&gt;</span>
   Enter a valid email address
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -4202,7 +4681,6 @@
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -4230,7 +4708,6 @@
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -4376,21 +4853,15 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-  <h2 id="btn-groups-toolbar-pills">Button toolbar pills</h2>
-  <div class="bs-example" data-example-id="simple-button-toolbar-pills">
-    <div class="btn-group btn-group-pills" role="group" aria-label="...">
-      <button type="button" class="btn btn-default">LEFT</button>
-      <button type="button" class="btn btn-default active">RIGHT</button>
-    </div>
-  </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-pills"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default active"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
   <h2 id="btn-groups-sizing">Sizing</h2>
   <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each <code>.btn-group</code>, including when nesting multiple groups.</p>
   <div class="bs-example" data-example-id="button-group-sizing">
+    <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <br>
     <div class="btn-group" role="group" aria-label="Default button group">
       <button type="button" class="btn btn-default">Left</button>
       <button type="button" class="btn btn-default">Middle</button>
@@ -4403,9 +4874,16 @@
       <button type="button" class="btn btn-default">Right</button>
     </div>
     <br>
+    <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-lg"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-xs"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
   <h2 id="btn-groups-nested">Nesting</h2>
   <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
@@ -4606,7 +5084,27 @@
       </ul>
     </div><!-- /btn-group -->
     <div class="btn-group">
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success <span class="caret"></span></button>
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="#">Action</a></li>
         <li><a href="#">Another action</a></li>
@@ -4672,8 +5170,36 @@
       </ul>
     </div><!-- /btn-group -->
     <div class="btn-group">
-      <button type="button" class="btn btn-secondary">Success</button>
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="caret"></span>
         <span class="sr-only">Toggle Dropdown</span>
       </button>
@@ -4737,6 +5263,20 @@
       <div class="btn-group">
         <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Small button <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Extra small button <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
           <li><a href="#">Action</a></li>
@@ -4827,7 +5367,7 @@
 <div class="bs-docs-section">
   <h1 id="input-groups" class="page-header">Input groups</h1>
 
-  <p class="lead">Extend form controls by adding text or buttons before, after, or on both sides of any text-based <code>&lt;input&gt;</code>. Use <code>.input-group</code> with an <code>.input-group-addon</code> or <code>.input-group-btn</code> to prepend or append elements to a single <code>.form-control</code>.</p>
+  <p class="lead">Extend form controls by adding text or buttons before, after, or on both sides of any text-based <code>&lt;input&gt;</code>. Use <code>.input-group</code> with an <code>.input-group-addon</code> to prepend or append elements to a single <code>.form-control</code>.</p>
 
   <div class="bs-callout bs-callout-danger" id="callout-inputgroup-text-input-only">
     <h4>Textual <code>&lt;input&gt;</code>s only</h4>
@@ -4845,12 +5385,12 @@
   <div class="bs-callout bs-callout-warning" id="callout-inputgroup-form-labels">
     <h4>Always add labels</h4>
     <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
-    <p>The exact technique to be used (visible <code>&lt;label&gt;</code> elements, <code>&lt;label&gt;</code> elements hidden using the <code>.sr-only</code> class, or use of the <code>aria-label</code>, <code>aria-labelledby</code>, <code>aria-describedby</code>, <code>title</code> or <code>placeholder</code> attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches.</p>
+    <p>The exact technique to be used (<code>&lt;label&gt;</code> elements hidden using the <code>.sr-only</code> class, or use of the <code>aria-label</code>, <code>aria-labelledby</code>, <code>aria-describedby</code>, <code>title</code> or <code>placeholder</code> attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches.</p>
   </div>
 
   <h2 id="input-groups-basic">Basic example</h2>
   <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input.</p>
-  <p><strong class="text-danger">We do not support multiple add-ons (<code>.input-group-addon</code> or <code>.input-group-btn</code>) on a single side.</strong></p>
+  <p><strong class="text-danger">We do not support multiple add-ons on a single side.</strong></p>
   <p><strong class="text-danger">We do not support multiple form-controls in a single input group.</strong></p>
   <form class="bs-example bs-example-form" data-example-id="simple-input-groups">
     <div class="input-group">
@@ -4868,12 +5408,6 @@
       <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
       <span class="input-group-addon">.00</span>
     </div>
-    <br>
-    <label for="basic-url">Your vanity URL</label>
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
-      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-    </div>
   </form>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
@@ -4889,12 +5423,6 @@
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Amount (to the nearest dollar)"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>.00<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"basic-url"</span><span class="nt">&gt;</span>Your vanity URL<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>https://example.com/users/<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"basic-url"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
   <h2 id="input-groups-sizing">Sizing</h2>
@@ -4929,6 +5457,7 @@
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"sizing-addon3"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Username"</span> <span class="na">aria-describedby=</span><span class="s">"sizing-addon3"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
 
   <h2 id="input-groups-checkboxes-radios">Checkboxes and radio addons</h2>
   <p>Place any checkbox or radio option within an input group's addon instead of text.</p>
@@ -4970,6 +5499,7 @@
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /input-group --&gt;</span>
   <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.col-lg-6 --&gt;</span>
 <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.row --&gt;</span></code></pre></figure>
+
 
   <h2 id="input-groups-buttons">Button addons</h2>
   <p>Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon</code>, you'll need to use <code>.input-group-btn</code> to wrap the buttons. This is required due to default browser styles that cannot be overridden.</p>
@@ -5013,6 +5543,7 @@
 <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.row --&gt;</span></code></pre></figure>
 
   <h2 id="input-groups-buttons-dropdowns">Buttons with dropdowns</h2>
+  <p></p>
   <form class="bs-example bs-example-form" data-example-id="input-group-dropdowns">
     <div class="row">
       <div class="col-lg-6">
@@ -5136,44 +5667,6 @@
     <span class="c">&lt;!-- Button and dropdown menu --&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-  <h2 id="input-groups-buttons-multiple">Multiple buttons</h2>
-  <p>While you can only have one add-on per side, you can have multiple buttons inside a single <code>.input-group-btn</code>.</p>
-  <form class="bs-example bs-example-form" data-example-id="input-group-multiple-buttons">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="input-group">
-          <div class="input-group-btn">
-            <button type="button" class="btn btn-default" aria-label="Bold"><span class="material-design mdi-format-bold"></span></button>
-            <button type="button" class="btn btn-default" aria-label="Italic"><span class="material-design mdi-format-italic"></span></button>
-          </div>
-          <input type="text" class="form-control" aria-label="Text input with multiple buttons">
-        </div><!-- /.input-group -->
-      </div><!-- /.col-lg-6 -->
-      <div class="col-lg-6">
-        <div class="input-group">
-          <input type="text" class="form-control" aria-label="Text input with multiple buttons">
-          <div class="input-group-btn">
-            <button type="button" class="btn btn-default" aria-label="Help"><span class="material-design mdi-question-answer"></span></button>
-            <button type="button" class="btn btn-default">Action</button>
-          </div>
-        </div><!-- /.input-group -->
-      </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
-  </form>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- Buttons --&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- Buttons --&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 </div>
 
 <div class="bs-docs-section">
@@ -5197,13 +5690,13 @@
     <ul class="nav nav-tabs">
       <li role="presentation" class="active"><a href="#">Home</a></li>
       <li role="presentation"><a href="#">Profile</a></li>
-      <li role="presentation"><a href="#">Messages <span class="badge">24</span></a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
     </ul>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Messages <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>24<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Messages<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
 
@@ -5226,7 +5719,7 @@
     <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
       <li role="presentation" class="active"><a href="#">Home</a></li>
       <li role="presentation"><a href="#">Profile</a></li>
-      <li role="presentation"><a href="#">Messages <span class="badge">24</span></a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
     </ul>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills nav-stacked"</span><span class="nt">&gt;</span>
@@ -5239,7 +5732,7 @@
   <p><strong class="text-danger">Justified navbar nav links are currently not supported.</strong></p>
   <div class="bs-callout bs-callout-warning" id="callout-navs-justified-safari">
     <h4>Safari and responsive justified navs</h4>
-    <p>As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the <a href="../examples/justified-nav/">justified nav example</a>.</p>
+    <p>As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the <a href="../examples/justified-nav/">justified nav example</a>.</p>
   </div>
   <div class="bs-example" data-example-id="simple-nav-justified">
     <ul class="nav nav-tabs nav-justified">
@@ -5400,7 +5893,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link <span class="badge">4</span></a></li>
+            <li><a href="#">Link</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -5499,7 +5992,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
-            <img class="svg" src="../assets/brand/authentiq-logo-a.svg" alt="Authentiq" width="25" height="25">
+            <img class="svg" src="../assets/brand/authentiq-logo-a.svg" alt="Authentiq" width="20" height="20">
           </a>
         </div>
       </div>
@@ -5665,6 +6158,11 @@
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
           </ul>
+
+          <ul class="nav navbar-nav navbar-nav-inverse navbar-right">
+            <li><a href="#">Link #1</a></li>
+            <li><a href="#">Link #2</a></li>
+          </ul>
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
@@ -5757,6 +6255,7 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
+
   <h2 id="navbar-inverted">Inverted navbar</h2>
   <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
   <div class="bs-example" data-example-id="inverted-navbar">
@@ -5777,48 +6276,22 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link <span class="badge">4</span></a></li>
             <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-nav-inverse navbar-right">
+            <li><a href="#">Link #1</a></li>
+            <li><a href="#">Link #2</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
+
     </nav>
   </div><!-- /example -->
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
-
-  <h2 id="navbar-secondary">Secondary navbar</h2>
-   <p>Modify the look of the navbar by adding <code>.navbar-secondary</code>.</p>
-   <div class="bs-example" data-example-id="secondary-navbar">
-     <nav class="navbar navbar-secondary">
-       <div class="container-fluid">
-         <!-- Brand and toggle get grouped for better mobile display -->
-         <div class="navbar-header">
-           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-10" aria-expanded="false">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-           <a class="navbar-brand" href="#">Brand</a>
-         </div>
-
-         <!-- Collect the nav links, forms, and other content for toggling -->
-         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-10">
-           <ul class="nav navbar-nav">
-             <li class="active"><a href="#">Home</a></li>
-             <li><a href="#">Link <span class="badge">4</span></a></li>
-             <li><a href="#">Link</a></li>
-           </ul>
-         </div><!-- /.navbar-collapse -->
-       </div><!-- /.container-fluid -->
-     </nav>
-   </div><!-- /example -->
- <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-secondary"</span><span class="nt">&gt;</span>
-   ...
- <span class="nt">&lt;/nav&gt;</span>
- </code></pre></figure>
 </div>
 
 <div class="bs-docs-section">
@@ -5855,7 +6328,7 @@
   <h2 id="pagination-default">Default pagination</h2>
   <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
   <div class="bs-example" data-example-id="simple-pagination">
-    <nav aria-label="Page navigation">
+    <nav>
       <ul class="pagination">
         <li>
           <a href="#" aria-label="Previous">
@@ -5875,7 +6348,7 @@
       </ul>
     </nav>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"Page navigation"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;</span>
@@ -5895,15 +6368,10 @@
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
-  <div class="bs-callout bs-callout-info" id="callout-pagination-label">
-    <h4>Labelling the pagination component</h4>
-    <p>The pagination component should be wrapped in a <code>&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies. In addition, as a page is likely to have more than one such navigation section already (such as the primary navigation in the header, or a sidebar navigation), it is advisable to provide a descriptive <code>aria-label</code> for the <code>&lt;nav&gt;</code> which reflects its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code>aria-label="Search results pages"</code>.</p>
-  </div>
-
   <h3>Disabled and active states</h3>
   <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
   <div class="bs-example" data-example-id="disabled-active-pagination">
-    <nav aria-label="...">
+    <nav>
       <ul class="pagination">
         <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
         <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
@@ -5915,15 +6383,15 @@
      </ul>
    </nav>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(current)<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
     ...
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
-  <p>We recommend that you swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+  <p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span&gt;</span>
@@ -5941,7 +6409,18 @@
   <h3>Sizing</h3>
   <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
   <div class="bs-example" data-example-id="pagination-sizing">
-    <nav aria-label="...">
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+      </ul>
+    </nav>
+    <nav>
       <ul class="pagination">
         <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
         <li><a href="#">1</a></li>
@@ -5952,7 +6431,7 @@
         <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
       </ul>
     </nav>
-    <nav aria-label="...">
+    <nav>
       <ul class="pagination pagination-sm">
         <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
         <li><a href="#">1</a></li>
@@ -5964,8 +6443,9 @@
       </ul>
     </nav>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination pagination-sm"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination pagination-lg"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span>
+<span class="nt">&lt;nav&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span>
+<span class="nt">&lt;nav&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"pagination pagination-sm"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/ul&gt;&lt;/nav&gt;</span></code></pre></figure>
 
 
   <h2 id="pagination-pager">Pager</h2>
@@ -5974,14 +6454,14 @@
   <h3>Default example</h3>
   <p>By default, the pager centers links.</p>
   <div class="bs-example" data-example-id="simple-pager">
-    <nav aria-label="...">
+    <nav>
       <ul class="pager">
         <li><a href="#">Previous</a></li>
         <li><a href="#">Next</a></li>
       </ul>
     </nav>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -5991,17 +6471,17 @@
   <h3>Aligned links</h3>
   <p>Alternatively, you can align each link to the sides:</p>
   <div class="bs-example" data-example-id="aligned-pager-links">
-    <nav aria-label="...">
+    <nav>
       <ul class="pager">
-        <li class="previous"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
-        <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
+        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
       </ul>
     </nav>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"material-icons mdi-chevron-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Older<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Newer <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"material-icons mdi-chevron-right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;larr;</span><span class="nt">&lt;/span&gt;</span> Older<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Newer <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;rarr;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
@@ -6009,17 +6489,17 @@
   <h3>Optional disabled state</h3>
   <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
   <div class="bs-example" data-example-id="disabled-pager">
-    <nav aria-label="...">
+    <nav>
       <ul class="pager">
-        <li class="previous disabled"><a href="#"><span class="material-icons mdi-chevron-left" aria-hidden="true"></span> Older</a></li>
-        <li class="next"><a href="#">Newer <span class="material-icons mdi-chevron-right" aria-hidden="true"></span></a></li>
+        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
       </ul>
     </nav>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pager"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"material-icons mdi-chevron-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> Older<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Newer <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"material-icons mdi-chevron-right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;larr;</span><span class="nt">&lt;/span&gt;</span> Older<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Newer <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;rarr;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 </div>
@@ -6246,10 +6726,10 @@
   </div>
 
   <div class="bs-example" data-example-id="simple-alerts">
-    <div class="alert alert-success mdi-info-outline" role="alert">
+    <div class="alert alert-success" role="alert">
       <strong>Well done!</strong> You successfully read this important alert message.
     </div>
-    <div class="alert alert-info mdi-info-outline" role="alert">
+    <div class="alert alert-info" role="alert">
       <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
     </div>
     <div class="alert alert-warning" role="alert">
@@ -6258,19 +6738,11 @@
     <div class="alert alert-danger" role="alert">
       <strong>Oh snap!</strong> Change a few things up and try submitting again.
     </div>
-    <div class="alert alert-default" role="alert">
-      <strong>Oh snap!</strong> Default version.
-    </div>
-    <div class="alert alert-outline" role="alert">
-      <strong>Oh snap!</strong> Outlined version too.
-    </div>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success mdi-info-outline"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info mdi-info-outline"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-default"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-outline"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
   <h2 id="alerts-dismissible">Dismissible alerts</h2>
   <p>Build on any alert by adding an optional <code>.alert-dismissible</code> and close button.</p>
@@ -6332,11 +6804,6 @@
   <div class="bs-callout bs-callout-danger" id="callout-progress-animation-css3">
     <h4>Cross-browser compatibility</h4>
     <p>Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.</p>
-  </div>
-
-  <div class="bs-callout bs-callout-info">
-    <h4 id="callout-progress-csp">Content Security Policy (CSP) compatibility</h4>
-    <p>If your website has a <a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP">Content Security Policy (CSP)</a> which doesn't allow <code>style-src 'unsafe-inline'</code>, then you won't be able to use inline <code>style</code> attributes to set progress bar widths as shown in our examples below. Alternative methods for setting the widths that are compatible with strict CSPs include using a little custom JavaScript (that sets <code>element.style.width</code>) or using custom CSS classes.</p>
   </div>
 
   <h2 id="progress-basic">Basic example</h2>
@@ -6923,7 +7390,7 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
   <h2 id="panels-heading">Panel with heading</h2>
-  <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with a <code>.panel-title</code> class to add a pre-styled heading. However, the font sizes of <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> are overridden by <code>.panel-heading</code>.</p>
+  <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with a <code>.panel-title</code> class to add a pre-styled heading.</p>
   <p>For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
   <div class="bs-example" data-example-id="panel-with-heading">
     <div class="panel panel-default">
@@ -6939,20 +7406,6 @@
       <div class="panel-body">
         Panel content
       </div>
-    </div>
-
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          Panel title
-          <small>description</small>
-        </h4>
-        <span class="desc">secondary description</span>
-      </div>
-      <div class="panel-body">
-        Panel content
-      </div>
-      <div class="panel-footer">Panel footer</div>
     </div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
@@ -6986,6 +7439,33 @@
     Panel content
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-footer"</span><span class="nt">&gt;</span>Panel footer<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+  <h2 id="panels-heading-desc">Panel with heading descriptions</h2>
+  <p>Add description in <code>.panel-heading</code>.</p>
+  <div class="bs-example" data-example-id="contextual-panels">
+    <div class="panel panel-primary">
+      <div class="panel-heading clearfix">
+        <span class="pull-right">secondary description</span>
+        <h3 class="panel-title">Panel title
+          <small>description</small>
+        </h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-primary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading clearfix"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>secondary description<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>Panel title
+      <span class="nt">&lt;small&gt;</span>description<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+    Panel content
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
   <h2 id="panels-alternatives">Contextual alternatives</h2>
@@ -7286,7 +7766,6 @@
     <li><a href="#input-groups-buttons">Button addons</a></li>
     <li><a href="#input-groups-buttons-dropdowns">Buttons with dropdowns</a></li>
     <li><a href="#input-groups-buttons-segmented">Segmented buttons</a></li>
-    <li><a href="#input-groups-buttons-multiple">Multiple buttons</a></li>
   </ul>
 </li>
 <li>
@@ -7378,9 +7857,10 @@
     <li><a href="#panels-basic">Basic example</a></li>
     <li><a href="#panels-heading">Panel with heading</a></li>
     <li><a href="#panels-footer">Panel with footer</a></li>
+    <li><a href="#panels-heading-desc">Panel with heading descriptions</a></li>
     <li><a href="#panels-alternatives">Contextual alternatives</a></li>
-    <li><a href="#panels-tables">With tables</a></li>
-    <li><a href="#panels-list-group">With list groups</a></li>
+    <li><a href="#panels-tables">With tables</a>
+    <li><a href="#panels-list-group">With list groups</a>
   </ul>
 </li>
 <li><a href="#responsive-embed">Responsive embed</a></li>
@@ -7404,28 +7884,46 @@
 
     <!-- Footer
 ================================================== -->
-<footer class="bs-docs-footer">
+<footer class="bs-docs-footer" role="contentinfo">
   <div class="container">
+    <div class="bs-docs-social">
+  <ul class="bs-docs-social-buttons">
+    <li>
+      <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=AuthentiqID&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+    </li>
+    <li class="follow-btn">
+      <a href="https://twitter.com/AuthentiqID" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @AuthentiqID</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://theme.authentiq.io/" data-count="horizontal" data-via="authentiq">Tweet</a>
+    </li>
+  </ul>
+</div>
 
-    <ul class="bs-docs-footer-links">
+
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Code licensed under <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+    <ul class="bs-docs-footer-links text-muted">
+      <li>Currently v3.3.7aq1</li>
+      <li>&middot;</li>
       <li><a href="https://github.com/AuthentiqID/bootstrap">GitHub</a></li>
-      <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
+      <li>&middot;</li>
       <li><a href="../getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
       <li><a href="../about/">About</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/AuthentiqID/bootstrap/issues">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/AuthentiqID/bootstrap/releases">Releases</a></li>
     </ul>
-
-    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-
-    <p>Code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-
   </div>
 </footer>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
   <script src="../dist/js/bootstrap.js"></script>
@@ -7437,7 +7935,7 @@
   
   <script src="../assets/js/vendor/ZeroClipboard.min.js"></script>
   
-  <script src="../assets/js/vendor/anchor.min.js"></script>
+  <script src="../assets/js/vendor/anchor.js"></script>
   
   <script src="../assets/js/src/application.js"></script>
   
@@ -7447,6 +7945,16 @@
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
 
 <!-- Analytics
 ================================================== -->

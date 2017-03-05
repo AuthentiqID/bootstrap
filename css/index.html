@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 
 <title>
@@ -30,7 +31,6 @@
 
 <!-- Documentation extras -->
 
-<link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 <link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
 <link href="../assets/css/src/docs.css" rel="stylesheet">
 
@@ -39,7 +39,7 @@
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
@@ -61,7 +61,7 @@
     <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
 
     <!-- Docs master nav -->
-    <header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
@@ -92,11 +92,6 @@
         <li>
           <a href="../customize/">Customize</a>
         </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes')">Themes</a></li>
-        <li><a href="http://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a></li>
-        <li><a href="http://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Blog</a></li>
       </ul>
     </nav>
   </div>
@@ -275,32 +270,34 @@
 
   <h2 id="grid-example-basic">Example: Stacked-to-horizontal</h2>
   <p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
-  <div class="row show-grid">
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-md-8">.col-md-8</div>
-    <div class="col-md-4">.col-md-4</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4">.col-md-4</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-md-6">.col-md-6</div>
-    <div class="col-md-6">.col-md-6</div>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
@@ -340,18 +337,20 @@
 
   <h2 id="grid-example-mixed">Example: Mobile and desktop</h2>
   <p>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
-  <div class="row show-grid">
-    <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-xs-6">.col-xs-6</div>
-    <div class="col-xs-6">.col-xs-6</div>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-xs-6">.col-xs-6</div>
+      <div class="col-xs-6">.col-xs-6</div>
+    </div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -374,16 +373,18 @@
 
   <h2 id="grid-example-mixed-complete">Example: Mobile, tablet, desktop</h2>
   <p>Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</p>
-  <div class="row show-grid">
-    <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-    <!-- Optional: clear the XS cols if their content doesn't match in height -->
-    <div class="clearfix visible-xs-block"></div>
-    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <!-- Optional: clear the XS cols if their content doesn't match in height -->
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-8"</span><span class="nt">&gt;</span>.col-xs-12 .col-sm-6 .col-md-8<span class="nt">&lt;/div&gt;</span>
@@ -399,10 +400,12 @@
 
   <h2 id="grid-example-wrapping">Example: Column wrapping</h2>
   <p>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</p>
-  <div class="row show-grid">
-    <div class="col-xs-9">.col-xs-9</div>
-    <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
-    <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-9">.col-xs-9</div>
+      <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+      <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+    </div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-9"</span><span class="nt">&gt;</span>.col-xs-9<span class="nt">&lt;/div&gt;</span>
@@ -412,19 +415,21 @@
 
   <h2 id="grid-responsive-resets">Responsive column resets</h2>
   <p>With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our <a href="#responsive-utilities">responsive utility classes</a>.</p>
-  <div class="row show-grid">
-    <div class="col-xs-6 col-sm-3">
-      .col-xs-6 .col-sm-3
-      <br>
-      Resize your viewport or check it out on your phone for an example.
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-6 col-sm-3">
+        .col-xs-6 .col-sm-3
+        <br>
+        Resize your viewport or check it out on your phone for an example.
+      </div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+      <!-- Add the extra clearfix for only the required viewport -->
+      <div class="clearfix visible-xs-block"></div>
+
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
     </div>
-    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-
-    <!-- Add the extra clearfix for only the required viewport -->
-    <div class="clearfix visible-xs-block"></div>
-
-    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-    <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-sm-3"</span><span class="nt">&gt;</span>.col-xs-6 .col-sm-3<span class="nt">&lt;/div&gt;</span>
@@ -450,16 +455,18 @@
 
   <h2 id="grid-offsetting">Offsetting columns</h2>
   <p>Move columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.</p>
-  <div class="row show-grid">
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-  </div>
-  <div class="row show-grid">
-    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+      <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+    </div>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
@@ -473,15 +480,6 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6 col-md-offset-3"</span><span class="nt">&gt;</span>.col-md-6 .col-md-offset-3<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-  <p>You can also override offsets from lower grid tiers with <code>.col-*-offset-0</code> classes.</p>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-sm-4"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-sm-4"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
   <h2 id="grid-nesting">Nesting columns</h2>
   <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).</p>
@@ -696,27 +694,27 @@
       <tbody>
         <tr>
           <td><h1>h1. Bootstrap heading</h1></td>
-          <td class="type-info">Regular 36px</td>
+          <td class="type-info">Semibold 36px</td>
         </tr>
         <tr>
           <td><h2>h2. Bootstrap heading</h2></td>
-          <td class="type-info">Regular 26px</td>
+          <td class="type-info">Semibold 30px</td>
         </tr>
         <tr>
           <td><h3>h3. Bootstrap heading</h3></td>
-          <td class="type-info">Regular 22px</td>
+          <td class="type-info">Semibold 24px</td>
         </tr>
         <tr>
           <td><h4>h4. Bootstrap heading</h4></td>
-          <td class="type-info">Bold 18px</td>
+          <td class="type-info">Semibold 18px</td>
         </tr>
         <tr>
           <td><h5>h5. Bootstrap heading</h5></td>
-          <td class="type-info">Bold 16px</td>
+          <td class="type-info">Semibold 14px</td>
         </tr>
         <tr>
           <td><h6>h6. Bootstrap heading</h6></td>
-          <td class="type-info">Bold 16px</td>
+          <td class="type-info">Semibold 12px</td>
         </tr>
       </tbody>
     </table>
@@ -901,8 +899,8 @@
   <div class="bs-example" data-example-id="simple-address">
     <address>
       <strong>Twitter, Inc.</strong><br>
-      1355 Market Street, Suite 900<br>
-      San Francisco, CA 94103<br>
+      795 Folsom Ave, Suite 600<br>
+      San Francisco, CA 94107<br>
       <abbr title="Phone">P:</abbr> (123) 456-7890
     </address>
     <address>
@@ -912,8 +910,8 @@
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;address&gt;</span>
   <span class="nt">&lt;strong&gt;</span>Twitter, Inc.<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
-  1355 Market Street, Suite 900<span class="nt">&lt;br&gt;</span>
-  San Francisco, CA 94103<span class="nt">&lt;br&gt;</span>
+  795 Folsom Ave, Suite 600<span class="nt">&lt;br&gt;</span>
+  San Francisco, CA 94107<span class="nt">&lt;br&gt;</span>
   <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Phone"</span><span class="nt">&gt;</span>P:<span class="nt">&lt;/abbr&gt;</span> (123) 456-7890
 <span class="nt">&lt;/address&gt;</span>
 
@@ -1485,7 +1483,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
   </div>
   <div class="bs-callout bs-callout-warning" id="callout-tables-responsive-ff-fieldset">
     <h4>Firefox and fieldsets</h4>
-    <p>Firefox has some awkward fieldset styling involving <code>width</code> that interferes with the responsive table. This cannot be overridden without a Firefox-specific hack that we <strong>don't</strong> provide in Bootstrap:</p>
+    <p>Firefox has some awkward fieldset styling involving <code>width</code> that interferes with the responsive table. This cannot be overriden without a Firefox-specific hack that we <strong>don't</strong> provide in Bootstrap:</p>
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@-moz-document</span> <span class="n">url-prefix</span><span class="p">()</span> <span class="p">{</span>
   <span class="nt">fieldset</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">table-cell</span><span class="p">;</span> <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
@@ -1615,7 +1613,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
           <input type="checkbox"> Check me out
         </label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </div><!-- /example -->
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
@@ -1637,7 +1635,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Check me out
     <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
   <div class="bs-callout bs-callout-warning" id="callout-formgroup-inputgroup">
     <h4>Don't mix form groups with input groups</h4>
@@ -1666,7 +1664,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
         <label for="exampleInputEmail2">Email</label>
         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
       </div>
-      <button type="submit" class="btn btn-primary">Send invitation</button>
+      <button type="submit" class="btn btn-default">Send invitation</button>
     </form>
   </div><!-- /example -->
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
@@ -1678,7 +1676,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail2"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span> <span class="na">placeholder=</span><span class="s">"jane.doe@example.com"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Send invitation<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Send invitation<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
 
   <div class="bs-example" data-example-id="simple-form-inline">
@@ -1696,7 +1694,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
           <input type="checkbox"> Remember me
         </label>
       </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="submit" class="btn btn-default">Sign in</button>
     </form>
   </div><!-- /example -->
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
@@ -1713,7 +1711,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Remember me
     <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
 
   <div class="bs-example" data-example-id="form-inline-with-input-group">
@@ -1768,7 +1766,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-default">Sign in</button>
         </div>
       </div>
     </form>
@@ -1797,7 +1795,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-offset-2 col-sm-10"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
@@ -2063,7 +2061,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
         <label for="inputPassword2" class="sr-only">Password</label>
         <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
       </div>
-      <button type="submit" class="btn btn-primary">Confirm identity</button>
+      <button type="submit" class="btn btn-default">Confirm identity</button>
     </form>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
@@ -2075,7 +2073,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword2"</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword2"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Confirm identity<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Confirm identity<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
 
   <h2 id="forms-control-focus">Focus state</h2>
@@ -2181,23 +2179,14 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
       <div class="form-group has-success">
         <label class="control-label" for="inputSuccess1">Input with success</label>
         <input type="text" class="form-control" id="inputSuccess1">
-        <div class="help-block">
-          Informational text for success
-        </div>
       </div>
       <div class="form-group has-warning">
         <label class="control-label" for="inputWarning1">Input with warning</label>
         <input type="text" class="form-control" id="inputWarning1">
-        <div class="help-block">
-          Informational text for warning
-        </div>
       </div>
       <div class="form-group has-error">
         <label class="control-label" for="inputError1">Input with error</label>
         <input type="text" class="form-control" id="inputError1">
-        <div class="help-block">
-          Informational text for error
-        </div>
       </div>
       <div class="has-success">
         <div class="checkbox">
@@ -2228,23 +2217,14 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputSuccess1"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess1"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>
-    Informational text for success
-  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-warning"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>Input with warning<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>
-    Informational text for warning
-  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-error"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputError1"</span><span class="nt">&gt;</span>Input with error<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputError1"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>
-    Informational text for error
-  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"has-success"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
@@ -2617,61 +2597,34 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
   <h2 id="buttons-options">Options</h2>
   <p>Use any of the available button classes to quickly create a styled button.</p>
   <div class="bs-example" data-example-id="btn-variants">
-    <!-- CTA button -->
-    <p>
-      <button type="button" class="btn btn-primary">Primary CTA button</button>
-      <button type="button" class="btn btn-primary btn-outline">Secondary CTA button</button>
-      <button type="button" class="btn btn-link">Tertiary button</button>
-    </p>
-
-    <!-- Primary button -->
-    <p>
-      <button type="button" class="btn btn-secondary">Primary button</button>
-      <button type="button" class="btn btn-secondary btn-outline">Secondary button</button>
-      <button type="button" class="btn btn-link btn-link-secondary">Tertiary button</button>
-    </p>
-
-    <button type="button" class="btn btn-default">
-      Default button
-    </button>
-
-    <!-- Indicates a dangerous or potentially negative action -->
-    <button type="button" class="btn btn-danger">
-      Delete button
-      <span class="material-icons mdi-clear" aria-hidden="true"></span>
-    </button>
-
-    <button type="button" class="btn btn-primary btn-pill">
-      Button Pill
-    </button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
   </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- CTA button --&gt;</span>
-<span class="nt">&lt;p&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary CTA button<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-outline"</span><span class="nt">&gt;</span>Secondary CTA button<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Tertiary button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Standard button --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
 
-<span class="c">&lt;!-- Primary button --&gt;</span>
-<span class="nt">&lt;p&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-outline"</span><span class="nt">&gt;</span>Secondary button<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link btn-link-secondary"</span><span class="nt">&gt;</span>Tertiary button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/p&gt;</span>
+<span class="c">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>
-  Default button
-<span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Indicates a successful or positive action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- Contextual button for informational alert messages --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- Indicates caution should be taken with this action --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
 
 <span class="c">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>
-  Delete button
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"material-icons mdi-clear"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
 
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-pill"</span><span class="nt">&gt;</span>
-  Button Pill
-<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<span class="c">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
   <div class="bs-callout bs-callout-warning" id="callout-buttons-color-accessibility">
     <h4>Conveying meaning to assistive technologies</h4>
@@ -2682,6 +2635,10 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
   <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
   <div class="bs-example" data-example-id="btn-sizes">
     <p>
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      <button type="button" class="btn btn-default btn-lg">Large button</button>
+    </p>
+    <p>
       <button type="button" class="btn btn-primary">Default button</button>
       <button type="button" class="btn btn-default">Default button</button>
     </p>
@@ -2689,14 +2646,26 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
       <button type="button" class="btn btn-primary btn-sm">Small button</button>
       <button type="button" class="btn btn-default btn-sm">Small button</button>
     </p>
+    <p>
+      <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+      <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+    </p>
   </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-sm"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-xs"</span><span class="nt">&gt;</span>Extra small button<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-xs"</span><span class="nt">&gt;</span>Extra small button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
   <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
@@ -3828,9 +3797,9 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
     <li><a href="#forms-control-focus">Focus state</a></li>
     <li><a href="#forms-control-disabled">Disabled state</a></li>
     <li><a href="#forms-control-readonly">Readonly state</a></li>
-    <li><a href="#forms-help-text">Help text</a></li>
     <li><a href="#forms-control-validation">Validation states</a></li>
     <li><a href="#forms-control-sizes">Control sizing</a></li>
+    <li><a href="#forms-help-text">Help text</a></li>
   </ul>
 </li>
 <li>
@@ -3909,28 +3878,46 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
 
     <!-- Footer
 ================================================== -->
-<footer class="bs-docs-footer">
+<footer class="bs-docs-footer" role="contentinfo">
   <div class="container">
+    <div class="bs-docs-social">
+  <ul class="bs-docs-social-buttons">
+    <li>
+      <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=AuthentiqID&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+    </li>
+    <li class="follow-btn">
+      <a href="https://twitter.com/AuthentiqID" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @AuthentiqID</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://theme.authentiq.io/" data-count="horizontal" data-via="authentiq">Tweet</a>
+    </li>
+  </ul>
+</div>
 
-    <ul class="bs-docs-footer-links">
+
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Code licensed under <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+    <ul class="bs-docs-footer-links text-muted">
+      <li>Currently v3.3.7aq1</li>
+      <li>&middot;</li>
       <li><a href="https://github.com/AuthentiqID/bootstrap">GitHub</a></li>
-      <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
+      <li>&middot;</li>
       <li><a href="../getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
       <li><a href="../about/">About</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/AuthentiqID/bootstrap/issues">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/AuthentiqID/bootstrap/releases">Releases</a></li>
     </ul>
-
-    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-
-    <p>Code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-
   </div>
 </footer>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
   <script src="../dist/js/bootstrap.js"></script>
@@ -3942,7 +3929,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
   
   <script src="../assets/js/vendor/ZeroClipboard.min.js"></script>
   
-  <script src="../assets/js/vendor/anchor.min.js"></script>
+  <script src="../assets/js/vendor/anchor.js"></script>
   
   <script src="../assets/js/src/application.js"></script>
   
@@ -3952,6 +3939,16 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
 
 <!-- Analytics
 ================================================== -->
