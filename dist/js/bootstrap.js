@@ -1,6 +1,6 @@
 /*!
  * Authentiq Bootstrap theme v3.3.7aq1 (http://getbootstrap.com)
- * Copyright 2015-2016 Authentiq
+ * Copyright 2015-2017 Authentiq
  * Licensed under the MIT license
  */
 
