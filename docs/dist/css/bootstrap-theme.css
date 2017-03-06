@@ -2689,6 +2689,18 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #404040;
 }
+.btn-default.btn-outline {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn-default.btn-outline:hover,
+.btn-default.btn-outline:focus,
+.btn-default.btn-outline:active {
+  color: #404040;
+  background-color: #fff;
+  border-color: #fff;
+}
 .btn-secondary {
   color: #fff;
   background-color: #404040;

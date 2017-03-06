@@ -88,6 +88,20 @@
 
   padding: (@padding-base-vertical + 1) (@padding-base-horizontal + 1);
   border-width: 1px;
+
+  &.btn-outline {
+    background-color: transparent;
+    border-color: @btn-default-color;
+    color: @btn-default-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @btn-default-color;
+      color: @btn-default-bg;
+      border-color: @btn-default-color;
+    }
+  }
 }
 
 .btn-secondary {

@@ -2527,6 +2527,18 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #404040;
 }
+.btn-default.btn-outline {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn-default.btn-outline:hover,
+.btn-default.btn-outline:focus,
+.btn-default.btn-outline:active {
+  color: #404040;
+  background-color: #fff;
+  border-color: #fff;
+}
 .btn-secondary {
   color: #fff;
   background-color: #404040;
@@ -4059,7 +4071,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-left-color: #d95c3b;
 }
 .navbar-inverse .navbar-nav-inverse > li > a {
-  color: red;
+  color: #1b1b22;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav-inverse {
@@ -4177,7 +4189,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-left-color: #000;
 }
 .navbar-secondary .navbar-nav-secondary > li > a {
-  color: red;
+  color: #1b1b22;
 }
 @media (max-width: 767px) {
   .navbar-secondary .navbar-nav-secondary {

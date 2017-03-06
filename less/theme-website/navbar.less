@@ -1,0 +1,63 @@
+//
+// Navbars
+// --------------------------------------------------
+
+.navbar {
+  font-family: @font-family-sans-serif;
+  font-size: @navbar-font-size;
+  font-weight: @navbar-font-weight;
+}
+
+// Navbar nav links
+//
+// Builds on top of the `.nav` components with its own modifier class to make
+// the nav the full height of the horizontal nav (above 768px).
+
+.navbar-nav {
+  &.navbar-nav-inverse {
+    border-left: 1px solid @navbar-default-border;
+
+    // when menu is collapsed
+    @media (max-width: @grid-float-breakpoint-max) {
+      border-left: 0 transparent;
+      border-top: 1px solid @navbar-default-border;
+    }
+  }
+}
+
+.navbar-inverse {
+  .navbar-nav-inverse {
+    padding-left:  @navbar-padding-horizontal;
+    border-left-color: @navbar-inverse-border;
+
+    > li > a {
+      color: @navbar-nav-inverse-default-link-color;
+    }
+
+    // when menu is collapsed
+    @media (max-width: @grid-float-breakpoint-max) {
+      padding-left:  0;
+      padding-top:  @navbar-padding-vertical;
+      border-left: 0 transparent;
+      border-top-color: @navbar-inverse-border;
+    }
+  }
+}
+
+// Brand/project name
+
+.navbar-brand {
+  padding-top:  (@navbar-padding-vertical - 1);
+  font-size:    ceil((@navbar-font-size * 1.15));
+}
+
+// Dropdown menus
+
+.navbar-nav > li.dropdown {
+  word-spacing: initial;
+}
+
+// Menu position and menu carets
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 1px;
+}
