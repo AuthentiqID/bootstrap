@@ -38,7 +38,7 @@
   .box-shadow(0px 1px 0 0 @aq-orange-hover);
 
   @media (min-width: @screen-sm-min) {
-    width: 250px;
+    width: @sidebar-width;
   }
 
   @media (min-width: @grid-float-breakpoint) {
@@ -167,6 +167,21 @@
   border-width: 1px 0 0;
 }
 
+.navbar-side {
+  position: fixed;
+  left: 0;
+  z-index: @zindex-navbar-fixed;
+
+  @media (max-width: @grid-float-breakpoint) {
+    right: 0;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    .navbar-header {
+      width: (@sidebar-width - 2px);
+    }
+  }
+}
 
 // Brand/project name
 
@@ -417,7 +432,10 @@
 // Declared after the navbar components to ensure more specificity on the margins.
 
 @media (min-width: @grid-float-breakpoint) {
-  .navbar-left  { .pull-left(); }
+  .navbar-left  {
+    .pull-left();
+  }
+
   .navbar-right {
     .pull-right();
     margin-right: -@navbar-padding-horizontal;
@@ -620,11 +638,18 @@
 .navbar-selector {
   background-color: rgba(255, 255, 255, 0.4);
 
+  .navbar-side & {
+    // re-position, because of container paddings
+    margin-top: (-(2*@padding-large-vertical+4px));
+    margin-left: -@navbar-padding-horizontal;
+    margin-bottom: @navbar-padding-vertical;
+  }
+
   > li {
     > a {
       .text-overflow();
-      //width: ((2 * @grid-gutter-lg-width) + (1 * @grid-gutter-width));
-      width: ((3 * @grid-gutter-lg-width) + (2 * @grid-gutter-width));
+      //width: ((3 * @grid-gutter-lg-width) + (2 * @grid-gutter-width));
+      width: @sidebar-width;
       padding-left: @grid-gutter-width;
       padding-right: @grid-gutter-width;
 
@@ -633,6 +658,16 @@
         padding-top: (@navbar-padding-vertical / 2);
         padding-bottom: (@navbar-padding-vertical / 2);
         width: auto;
+      }
+
+      .navbar-side & {
+        padding-top: (@navbar-padding-vertical / 2);
+        padding-bottom: (@navbar-padding-vertical / 2);
+        border-right: 0;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.6);
+        }
       }
 
       // Desktop
@@ -677,12 +712,17 @@
   //}
 
   .dropdown-menu {
-    min-width: ((3 * @grid-gutter-lg-width) + (2 * @grid-gutter-width));
+    min-width: @sidebar-width;
     padding: 0;
     border-radius: 0;
     border-right: 1px solid @navbar-default-border;
     background-color: #f6f6f6;
     box-shadow: none;
+
+    .side-nav & {
+      margin-top: -1px;
+      border: 0;
+    }
 
     > li {
       border-bottom: 1px solid @navbar-default-border;

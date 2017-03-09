@@ -111,7 +111,7 @@
   padding-left: 0;
 
   @media (min-width: @screen-sm-min) {
-    padding-left: 250px;
+    padding-left: @sidebar-width;
   }
 
   //@media (min-width: @screen-lg) {
@@ -120,7 +120,7 @@
   //}
 }
 
-#page-wrapper {
+.page-wrapper {
   width: 100%;
   padding: 0;
 
@@ -131,6 +131,10 @@
   // Keep content in smaller container for bigger screens
   @media (min-width: 1400px) {
     max-width: 80%;
+  }
+
+  .sidebar-only & {
+    padding-top: ceil((@grid-gutter-width / 2));
   }
 }
 
@@ -230,7 +234,7 @@
 
 /* Side Navigation */
 
-.nav-toolbar {
+.nav-menu {
   > li {
     // Links
     > a {
@@ -275,7 +279,7 @@
     //background-color: @aq-orange;
     top: (@navbar-height + (@padding-large-vertical * 2) + 6px);
     left: ceil((@grid-gutter-width / 2));
-    width: (250px - @grid-gutter-width);
+    width: (@sidebar-width - @grid-gutter-width);
     //margin-left: -225px;
     //border: none;
     //border-radius: 0;
@@ -288,7 +292,7 @@
 
     font-family: @font-family-sans-serif;
 
-    .nav-toolbar {
+    .nav-menu {
       > li {
         display: inline-block;
         float: left;
@@ -343,7 +347,7 @@
       top: 0;
       bottom: 0;
       left: 0;
-      width: 250px;
+      width: @sidebar-width;
       //margin-right: 50%;
       z-index: -1;
       background-color: @aq-orange;
@@ -373,6 +377,32 @@
       margin-right: ceil((@grid-gutter-width / 2));
       border-top-color: @aq-orange-hover;
     }
+  }
+}
+
+// handle menu scroll for smaller screens
+@media(max-height: 700px) {
+  .side-nav .menu {
+    overflow-y: auto;
+    max-height: calc(100% - 210px);
+    position: fixed;
+    top: 168px;
+    padding-top: 30px;
+  }
+}
+
+.nav-toolbar {
+  position: fixed;
+  width: @sidebar-width;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid @navbar-inverse-link-hover-bg;
+  color: #fff;
+
+  > a {
+    float: right;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    border-left: 1px solid @navbar-inverse-link-hover-bg;
   }
 }
 
