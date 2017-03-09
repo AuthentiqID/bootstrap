@@ -442,7 +442,8 @@
       &:hover,
       &:focus {
         color: @navbar-default-link-active-color;
-        background-color: @navbar-default-link-active-bg;
+        border-bottom: 6px solid @navbar-default-link-active-bg;
+        padding-bottom: (@navbar-padding-vertical - 6px);
       }
     }
     > .disabled > a {
@@ -576,7 +577,8 @@
       &:hover,
       &:focus {
         color: @navbar-inverse-link-active-color;
-        background-color: @navbar-inverse-link-active-bg;
+        border-bottom: 6px solid @navbar-inverse-link-active-bg;
+        padding-bottom: (@navbar-padding-vertical - 6px);
       }
     }
     > .disabled > a {
@@ -729,7 +731,8 @@
       &:hover,
       &:focus {
         color: @navbar-secondary-link-active-color;
-        background-color: @navbar-secondary-link-active-bg;
+        border-bottom: 6px solid @navbar-secondary-link-active-bg;
+        padding-bottom: (@navbar-padding-vertical - 6px);
       }
     }
     > .disabled > a {

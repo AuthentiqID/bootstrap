@@ -67,8 +67,11 @@ a {
   &:focus {
     .tab-focus();
   }
-}
 
+  &[rel~="external"] {
+    @extend .material-icons .mdi-launch;
+  }
+}
 
 // Figures
 //
