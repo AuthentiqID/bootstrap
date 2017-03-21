@@ -69,7 +69,15 @@ a {
   }
 
   &[rel~="external"] {
-    @extend .material-icons .mdi-launch;
+    &:after {
+      &:extend(.material-icons);
+      content: "\e895";
+      display: inline-block;
+      speak: none;
+      text-decoration: inherit;
+      font-size: .9em !important;
+      color: #666;
+    }
   }
 }
 
@@ -115,6 +123,7 @@ img {
 }
 
 // Perfect circle
+
 .img-circle {
   border-radius: 50%; // set radius in percents
 }
@@ -181,6 +190,17 @@ hr {
   }
 }
 
+// when navbar is fixed-top fix the anchor links spacing
+
+.anchor-sticky-menu {
+  :target:before {
+    content: "";
+    display: block;
+    height: (floor(@navbar-height + @navbar-margin-bottom));
+    margin: (-(floor(@navbar-height + @navbar-margin-bottom))) 0 0;
+    visibility: hidden;
+  }
+}
 
 // iOS "clickable elements" fix for role="button"
 //

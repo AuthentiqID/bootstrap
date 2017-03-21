@@ -172,7 +172,7 @@
   left: 0;
   z-index: @zindex-navbar-fixed;
 
-  @media (max-width: @grid-float-breakpoint) {
+  @media (max-width: @grid-float-breakpoint-max) {
     right: 0;
   }
 
@@ -476,6 +476,10 @@
       &:focus {
         color: @navbar-default-link-hover-color;
         background-color: @navbar-default-link-hover-bg;
+
+        .navbar-side& {
+          background-color: rgba(255, 255, 255, 0.6);
+        }
       }
     }
     > .active > a {
@@ -510,6 +514,11 @@
   .navbar-collapse,
   .navbar-form {
     border-color: @navbar-default-border;
+
+    .navbar-side& {
+      background-color: @aq-orange;
+      border-color: @aq-orange;
+    }
   }
 
   // Dropdown menu items
@@ -521,6 +530,10 @@
       &:focus {
         background-color: @navbar-default-link-active-bg;
         color: @navbar-default-link-active-color;
+
+        .navbar-side& {
+          background-color: rgba(255, 255, 255, 0.6);
+        }
       }
     }
 
@@ -533,6 +546,10 @@
           &:focus {
             color: @navbar-default-link-hover-color;
             background-color: @navbar-default-link-hover-bg;
+
+            .navbar-side& {
+              background-color: rgba(255, 255, 255, 0.6);
+            }
           }
         }
         > .active > a {
@@ -638,13 +655,6 @@
 .navbar-selector {
   background-color: rgba(255, 255, 255, 0.4);
 
-  .navbar-side & {
-    // re-position, because of container paddings
-    margin-top: (-(2*@padding-large-vertical+4px));
-    margin-left: -@navbar-padding-horizontal;
-    margin-bottom: @navbar-padding-vertical;
-  }
-
   > li {
     > a {
       .text-overflow();
@@ -694,10 +704,20 @@
         font-size: 95%;
 
         &:hover {
-          background-color: fade(#404040, 75%);
+          background-color: fade(#404040, 80%) !important;
           color: #fff;
         }
       }
+    }
+  }
+
+  // on desktop
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar-side & {
+      // re-position, because of container paddings
+      margin-top: (-(2*@padding-large-vertical+4px));
+      margin-left: -@navbar-padding-horizontal;
+      margin-bottom: 25px;
     }
   }
 
@@ -732,12 +752,16 @@
       }
 
       &:last-child {
-        background-color: #404040;
-
         > a {
-          color: #fff !important;
           font-weight: bold;
           font-size: ceil((@font-size-base * 0.75));
+          color: #fff !important;
+          background-color: #404040 !important;
+
+          &:hover,
+          &:focus {
+            background-color: #707070 !important;
+          }
         }
       }
     }

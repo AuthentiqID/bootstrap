@@ -312,8 +312,14 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-a[rel~="external"] {
-  @extend .material-icons .mdi-launch;
+a[rel~="external"]:after {
+  display: inline-block;
+  font-size: .9em !important;
+  color: #666;
+  text-decoration: inherit;
+  content: "\e895";
+
+  speak: none;
 }
 figure {
   margin: 0;
@@ -388,6 +394,13 @@ hr.left {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+.anchor-sticky-menu :target:before {
+  display: block;
+  height: 77px;
+  margin: -77px 0 0;
+  visibility: hidden;
+  content: "";
 }
 [role="button"] {
   cursor: pointer;
@@ -3917,7 +3930,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:focus {
   padding-bottom: 7.5px;
   color: #fff;
-  border-bottom: 6px solid #6f43a9;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #734fa1;
+  }
+}
+@media (min-width: 767px) {
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    border-bottom: 6px solid #6f43a9;
+  }
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4014,7 +4040,20 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .active > a:focus {
   padding-bottom: 7.5px;
   color: #fff;
-  border-bottom: 6px solid #cf5231;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #cf5231;
+  }
+}
+@media (min-width: 767px) {
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    border-bottom: 6px solid #cf5231;
+  }
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -6450,7 +6489,8 @@ button.close {
 
   src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat-light-webfont.woff2') format('woff2'), url('../fonts/montserrat-light-webfont.woff') format('woff'), url('../fonts/montserrat-light-webfont.ttf') format('truetype'), url('../fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
 }
-.material-icons {
+.material-icons,
+a[rel~="external"]:after {
   position: relative;
   top: 2px;
   display: inline-block;

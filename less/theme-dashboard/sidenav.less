@@ -1,0 +1,200 @@
+//
+// Side nav
+// --------------------------------------------------
+
+
+/* Side Navigation */
+
+.nav-menu {
+  > li {
+    // Links
+    > a {
+      padding-top:    10px;
+      padding-bottom: 10px;
+      line-height: @line-height-computed;
+      color: @navbar-inverse-link-color;
+    }
+    //+ li {
+    //  margin-top: 2px;
+    //  //margin-left: 0; // no need for this gap between nav items
+    //}
+
+    // Hover state
+    & > a:hover,
+    & > a:focus {
+      background-color: @navbar-inverse-link-hover-bg;
+      color: @navbar-inverse-link-hover-color;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-inverse-link-hover-bg;
+      }
+    }
+
+    img, svg {
+      display: inline-block;
+      vertical-align: text-top;
+      margin-right: @padding-large-vertical;
+      color: @aq-orange;
+    }
+  }
+}
+
+@media(min-width:768px) {
+  .side-nav {
+    position: fixed;
+    //background-color: @aq-orange;
+    top: (@navbar-height + (@padding-large-vertical * 2) + 6px);
+    left: ceil((@grid-gutter-width / 2));
+    width: (@sidebar-width - @grid-gutter-width);
+    //margin-left: -225px;
+    //border: none;
+    //border-radius: 0;
+    bottom: 0;
+    //overflow-y: auto;
+    //overflow-x: hidden;
+    z-index: -1;
+    //padding-bottom: 40px;
+    //padding: @padding-base-vertical ceil((@grid-gutter-width / 2));
+
+    font-family: @font-family-sans-serif;
+
+    .nav-menu {
+      > li {
+        display: inline-block;
+        float: left;
+        clear: left;
+        white-space: nowrap;
+
+        // Links
+        > a {
+          padding-right: @padding-large-horizontal;
+          color: #fff;
+          border-radius: 2em;
+          font-size: ceil((@font-size-base * 1.05));
+
+          //@media (min-width: @screen-lg-min) {
+          //  font-size: ceil((@font-size-base * 1.05));
+          //}
+        }
+        + li {
+          margin-top: 2px;
+          //margin-left: 0; // no need for this gap between nav items
+        }
+
+        // Hover state
+        & > a:hover,
+        & > a:focus {
+          background-color: @aq-orange-hover;
+        }
+
+        // Active state
+        &.active > a {
+          &,
+          &:hover,
+          &:focus {
+            background-color: @aq-orange-hover;
+          }
+        }
+
+        img {
+          color: #fff;
+        //  display: inline-block;
+        //  vertical-align: text-top;
+        //  margin-right: @padding-small-vertical;
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: fixed;
+      //right: 50%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: @sidebar-width;
+      //margin-right: 50%;
+      z-index: -1;
+      background-color: @aq-orange;
+
+      //@media (min-width: @screen-sm-min) {
+      //  margin-right: ((@container-sm / 2) - (4 * @grid-gutter-sm-width) - (3 * @grid-gutter-width) - ceil((@grid-gutter-width / 2)));
+      //}
+      //@media (min-width: @screen-md-min) {
+      //  margin-right: ((@container-md / 2) - (3 * @grid-gutter-md-width) - (2 * @grid-gutter-width) - ceil((@grid-gutter-width / 2)));
+      //}
+      //@media (min-width: @screen-lg-min) {
+      //  margin-right: ((@container-lg / 2) - (3 * @grid-gutter-lg-width) - (2 * @grid-gutter-width) - ceil((@grid-gutter-width / 2)));
+      //}
+
+      //@media (min-width: @screen-sm-min) {
+      //  margin-right: ((@container-sm / 2) - (4 * @grid-gutter-sm-width) - (3 * @grid-gutter-width) - ceil((@grid-gutter-width / 2)));
+      //}
+      //@media (min-width: @screen-md-min) {
+      //  margin-right: ((@container-md / 2) - (3 * @grid-gutter-md-width) - (2 * @grid-gutter-width) - ceil((@grid-gutter-width / 2)));
+      //}
+      //@media (min-width: @screen-lg-min) {
+      //  margin-right: ((@container-lg / 2) - (3 * @grid-gutter-lg-width) - (2 * @grid-gutter-width) - ceil((@grid-gutter-width / 2)));
+      //}
+    }
+
+    hr {
+      margin-right: ceil((@grid-gutter-width / 2));
+      border-top-color: @aq-orange-hover;
+    }
+  }
+}
+
+// handle menu scroll for smaller screens
+@media(max-height: 700px) {
+  .side-nav .menu {
+    overflow-y: auto;
+    max-height: calc(100% - 210px);
+    top: 168px;
+    padding-top: 30px;
+
+    // when the nav is Uncollapsed
+    @media (min-width: @grid-float-breakpoint) {
+      position: fixed;
+    }
+  }
+}
+
+.nav-toolbar {
+  left: 0;
+  color: #fff;
+  background-color: @aq-orange-hover;
+
+  // on mobile
+  @media (max-width: @grid-float-breakpoint-max) {
+    position: absolute;
+    right: 0;
+  }
+
+  // on desktop
+  @media (min-width: @grid-float-breakpoint) {
+    position: fixed;
+    width: @sidebar-width;
+    bottom: 0;
+  }
+
+  * {
+    vertical-align: middle;
+  }
+
+  > a {
+    float: right;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    border-left: 1px solid @aq-orange;
+
+    &:hover {
+      background-color: @aq-orange-darker;
+    }
+  }
+}
