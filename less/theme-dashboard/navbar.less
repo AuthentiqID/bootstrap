@@ -70,6 +70,10 @@
     overflow-y: auto;
   }
 
+  .navbar-side & {
+    padding-right: 0;
+  }
+
   @media (min-width: @grid-float-breakpoint) {
     width: auto;
     border-top: 0;
@@ -176,11 +180,11 @@
     right: 0;
   }
 
-  @media (min-width: @screen-sm-min) {
-    .navbar-header {
-      width: (@sidebar-width - 2px);
-    }
-  }
+  //@media (min-width: @screen-sm-min) {
+  //  .navbar-header {
+  //    width: (@sidebar-width - 2px);
+  //  }
+  //}
 }
 
 // Brand/project name

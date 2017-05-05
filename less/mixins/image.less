@@ -2,6 +2,40 @@
 // - Responsive image
 // - Retina image
 
+// adds some styling to broken images
+img {
+  position: relative;
+  // min-height: 50px;
+
+  &:before {
+    content: " ";
+    display: block;
+
+    position: absolute;
+    top: -@padding-base-vertical;
+    bottom: 0;
+    left: 0;
+    // height: calc(100% + @padding-base-vertical);
+    width: 100%;
+    background-color: @gray-lighter;
+    border: 1px dotted @gray-light;
+    border-radius: @border-radius-base;
+  }
+
+  &:after {
+    content: "Broken Image of \00a0\"" attr(alt) "\"";
+    display: block;
+    position: absolute;
+    top: @padding-base-vertical;
+    // bottom: @padding-base-vertical / 2;
+    left: 0;
+    width: 100%;
+
+    color: @gray;
+    font-size: @font-size-base;
+    text-align: center;
+  }
+}
 
 // Responsive image
 //

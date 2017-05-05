@@ -5,6 +5,32 @@
  *
  * Theme: Authentiq Dashboard
  */
+img {
+  position: relative;
+}
+img:before {
+  position: absolute;
+  top: -8px;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  content: " ";
+  background-color: #eee;
+  border: 1px dotted #777;
+  border-radius: 6px;
+}
+img:after {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  content: "Broken Image of \00a0\"" attr(alt) "\"";
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -314,14 +340,8 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-a[rel~="external"]:after {
-  display: inline-block;
-  font-size: .9em !important;
-  color: #666;
-  text-decoration: inherit;
-  content: "\e895";
-
-  speak: none;
+a[rel~="external"] {
+  border-bottom: 1px dotted currentColor;
 }
 figure {
   margin: 0;
@@ -802,6 +822,7 @@ dd {
 }
 abbr[title],
 abbr[data-original-title] {
+  text-decoration: none;
   cursor: help;
   border-bottom: 1px dotted #777;
 }
@@ -3692,6 +3713,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
+.navbar-side .navbar-collapse {
+  padding-right: 0;
+}
 @media (min-width: 768px) {
   .navbar-collapse {
     width: auto;
@@ -3780,11 +3804,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (max-width: 767px) {
   .navbar-side {
     right: 0;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-side .navbar-header {
-    width: 248px;
   }
 }
 .navbar-brand {
@@ -6799,8 +6818,7 @@ Author: Pedro Oliveira <kanytu@gmail . com>
 
   src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat-light-webfont.woff2') format('woff2'), url('../fonts/montserrat-light-webfont.woff') format('woff'), url('../fonts/montserrat-light-webfont.ttf') format('truetype'), url('../fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
 }
-.material-icons,
-a[rel~="external"]:after {
+.material-icons {
   position: relative;
   top: 2px;
   display: inline-block;
