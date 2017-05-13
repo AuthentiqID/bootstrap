@@ -4261,7 +4261,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 @media (max-width: 767px) {
   .navbar-selector {
-    margin: 0 -15px;
+    margin: 0;
   }
 }
 .navbar-selector .dropdown-menu {
@@ -4409,10 +4409,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 @media (max-height: 700px) {
   .side-nav .menu {
     top: 168px;
-    max-height: -webkit-calc(100% - 210px);
-    max-height:         calc(100% - 210px);
+    width: 100vw;
+    max-height: 236px;
     padding-top: 30px;
     overflow-y: auto;
+  }
+  .side-nav .open .dropdown-menu {
+    position: absolute;
+    width: 100vw;
+    max-height: 236px;
+    margin-top: 0;
+    overflow-y: auto;
+    background-color: #f7a38d;
   }
 }
 @media (max-height: 700px) and (min-width: 768px) {

@@ -155,15 +155,25 @@
 @media(max-height: 700px) {
   .side-nav .menu {
     overflow-y: auto;
-    max-height: 210px;
-    max-height: calc(100% - 210px);
+    max-height: 236px;
+    //max-height: calc(100% - 210px);
     top: 168px;
     padding-top: 30px;
+    width: 100vw;
 
     // when the nav is Uncollapsed
     @media (min-width: @grid-float-breakpoint) {
       position: fixed;
     }
+  }
+
+  .side-nav .open .dropdown-menu {
+    position: absolute;
+    width: 100vw;
+    max-height: 236px;
+    margin-top: 0;
+    overflow-y: auto;
+    background-color: #f7a38d;
   }
 }
 
