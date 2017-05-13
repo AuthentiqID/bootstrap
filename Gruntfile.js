@@ -157,7 +157,7 @@ module.exports = function (grunt) {
       compileCore: {
         options: {
           strictMath: true,
-          sourceMap: true,
+          sourceMap: grunt.cli.tasks[0] !== 'prep-release',
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
@@ -168,7 +168,7 @@ module.exports = function (grunt) {
       compileTheme: {
         options: {
           strictMath: true,
-          sourceMap: true,
+          sourceMap: grunt.cli.tasks[0] !== 'prep-release',
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
@@ -179,7 +179,7 @@ module.exports = function (grunt) {
       compileWebsiteTheme: {
         options: {
           strictMath: true,
-          sourceMap: true,
+          sourceMap: grunt.cli.tasks[0] !== 'prep-release',
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme-website.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>-theme-website.css.map'
@@ -195,19 +195,19 @@ module.exports = function (grunt) {
       },
       core: {
         options: {
-          map: true
+          map: grunt.cli.tasks[0] !== 'prep-release'
         },
         src: 'dist/css/<%= pkg.name %>.css'
       },
       theme: {
         options: {
-          map: true
+          map: grunt.cli.tasks[0] !== 'prep-release'
         },
         src: 'dist/css/<%= pkg.name %>-theme.css'
       },
       websiteTheme: {
         options: {
-          map: true
+          map: grunt.cli.tasks[0] !== 'prep-release'
         },
         src: 'dist/css/<%= pkg.name %>-theme-website.css'
       },
@@ -249,8 +249,8 @@ module.exports = function (grunt) {
         //    and then simplify the fix for https://github.com/twbs/bootstrap/issues/14837 accordingly
         compatibility: 'ie8',
         keepSpecialComments: '*',
-        sourceMap: true,
-        sourceMapInlineSources: true,
+        sourceMap: grunt.cli.tasks[0] !== 'prep-release',
+        sourceMapInlineSources: grunt.cli.tasks[0] !== 'prep-release',
         advanced: false
       },
       minifyCore: {
