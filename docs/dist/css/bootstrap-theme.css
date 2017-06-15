@@ -3451,6 +3451,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 16px;
+  background-color: #ccc;
 }
 .input-group-btn > .btn + .btn {
   margin-left: -1px;
@@ -4426,6 +4427,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 @media (max-height: 700px) and (min-width: 768px) {
   .side-nav .menu {
     position: fixed;
+    max-width: 222px;
+  }
+}
+@media (max-height: 700px) and (min-width: 768px) {
+  .side-nav .open .dropdown-menu {
+    max-width: 222px;
   }
 }
 .nav-toolbar {

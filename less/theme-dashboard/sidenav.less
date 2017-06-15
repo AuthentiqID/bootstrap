@@ -164,6 +164,7 @@
     // when the nav is Uncollapsed
     @media (min-width: @grid-float-breakpoint) {
       position: fixed;
+      max-width: (@sidebar-width - (@padding-base-horizontal * 2));
     }
   }
 
@@ -174,6 +175,11 @@
     margin-top: 0;
     overflow-y: auto;
     background-color: #f7a38d;
+
+    // when the nav is Uncollapsed
+    @media (min-width: @grid-float-breakpoint) {
+      max-width: (@sidebar-width - (@padding-base-horizontal * 2));
+    }
   }
 }
 
